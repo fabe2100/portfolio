@@ -1,0 +1,22 @@
+/* Example: Change the primary color */
+.btn-primary {
+    background-color: #00aaff; /* Example color */
+    border-color: #00aaff;
+}
+
+.btn-primary:hover {
+    background-color: #0077cc;
+    border-color: #0077cc;
+}
+
+/* Example: Adjust hero section */
+.hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Example: Add spacing to the navbar */
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
