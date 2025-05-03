@@ -1,38 +1,423 @@
-html,
+html, body {
+  height: 100%;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff47;
+  color: #000000;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #5D4037;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 0;
+  
+}
+
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.comparison-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.before-image,
+.after-image {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.after-image {
+  clip-path: inset(0 50% 0 0);
+  transition: clip-path 0.3s ease;
+  z-index: 1;
+}
+
+.slider {
+  width: 100%;
+  margin-top: 20px;
+  appearance: none;
+  height: 6px;
+  background: #D7CCC8;
+  border-radius: 5px;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #FFCDD2;
+  border: 2px solid #5D4037;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Detaljer */
+.details h3 {
+  margin-bottom: 0.5rem;
+}
+
+.detail-pair {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.detail-pair img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsivitet */
+@media (max-width: 768px) {
+  .detail-pair {
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+}
+
+
+.carousel-item img {
+  height: 300px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensure the images maintain aspect ratio and fill the height */
+}
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
 }
-
 body {
+  position: relative;
+}
+/* Content Container */
+.hero-content {
+  font-size: 2rem;
+  max-width: 100%;
+  
+  z-index: 2;
+}
+.hero-content h1{
+  color: black;
+  padding-bottom: 50px;
+  font-weight: 800;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
+  justify-content: start;
+  align-items: center;
+  max-width: 100%;
+
+}
+.hero-container {
+  align-items: flex-start;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 300px;
+  padding: 0 5%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.content-below-hero {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.hero-description{
+  color: rgb(0, 0, 0);
+}
+/* Typography Scaling */
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: black;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  
+}
+
+/* Button Group */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Scroll Hint */
+.hero-scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 5%;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  animation: bounce 2s infinite;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 1.5rem;
+    min-height: 500px;
+  }
+  .hero-video video{
+    display: none;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn {
+    width: 100%;
+    text-align: center;
+    
+  }
+  
+  .hero-scroll-hint {
+    left: 1.5rem;
+    bottom: 1.5rem;
+  }
+
+  .hero-container {
+    flex-direction: column; /* Ändra till vertikal layout på mindre skärmar */
+    align-items: center; /* Centrera innehållet */
+  }
+
+  .hero-content, .hero-image {
+    max-width: 100%; /* Låt text och bild ta upp hela bredden */
+    text-align: center; /* Centrera texten */
+    font-size: 1rem;
+  }
+  .hero-content h1{
+    font-size: 1rem;
+    padding-bottom: 20px;
+  }
+
+  .hero-image {
+    justify-content: center; /* Centrera bilden */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    margin-bottom: 2rem;
+  }
+  
+  .hero-scroll-hint {
+    font-size: 0.8rem;
+  }
+}
+
+.hero-video {
+  flex: 1; /* Ökad bredd för videodelen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeInRight 1s ease-out;
+  max-width: 850px;
+  width: 100%;
+  height: auto;
+  margin-top: 30px; /* Justera detta värde för att flytta videon högre (negativt värde flyttar uppåt) */
+  position: relative;
+}
+
+
+
+/* Animationer */
+@keyframes fadeInLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* Minst hela skärmens höjd */
 }
 
-/* Main Content */
+.video-header {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full höjd */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Gör att videon täcker hela ytan */
+  z-index: -1; /* Placera videon bakom innehållet */
+}
+
+.welcome-text {
+  position: relative;
+  z-index: 1; /* Placera texten ovanpå videon */
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+
+.welcome-text .hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.welcome-text .hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.welcome-text .hero-scroll a {
+  color: black !important;
+  text-decoration: none;
+}
+
+.welcome-text .hero-scroll a:hover {
+  color: #ccc;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+  .welcome-text {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .welcome-text .hero-title {
+    font-size: 2rem;
+  }
+
+  .welcome-text .hero-description {
+    font-size: 1rem;
+  }
+
+  .welcome-text .hero-scroll a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome-text .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .welcome-text .hero-description {
+    font-size: 0.9rem;
+  }
+}
+
 header {
   animation-name: gradient;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-
-  /*background: url("/images/hero_ex.svg") no-repeat center center/cover;*/
-  background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  color: #fff;
+  background-image: url("images/169906-842039585_small.mp4");
+  /*background: url("/images/6913794_Motion\ Graphics_Motion\ Graphic_3840x2160.mp4") no-repeat center center/cover;/*
   background-position: bottom;
   position: absolute;
-  width: 100%;
+  max-width: 100%;
   height: 90vh;
   /* Minska höjden på headern */
   top: 0;
@@ -40,19 +425,9 @@ header {
   padding-left: 40px;
   padding-right: 40px;
 }
-@keyframes gradient{
-  0%{
-    background-position: 0 50%;
-  }
-  50%{
-    background-position: 100% 50%;
-  }
-  100%{
-    background-position: 0 50%;
-  }
-}
+
 main {
-  padding-top: 100vh;
+  padding-top: 0; /* Ta bort onödig padding */
   /* Lägg till marginal för att kompensera för headerns höjd */
   flex: 1;
   /* Gör att main-sektionen tar upp all ledig plats */
@@ -74,37 +449,26 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  color: black;
   /* Justera avståndet mellan länkarna efter behov */
 }
 
 nav ul li {
   display: inline;
+  font-size: 1.5rem;
+  color: black;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: white !important;
+.navbar-light .navbar-nav .nav-link {
+  color: black !important;
+  font-weight: 500;
+  font-size: 1.7rem;
   /* Tvinga vit färg */
 }
 
 nav a:hover {
   color: rgb(0, 0, 0);
 }
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /* Justera innehållet till vänster */
-  justify-content: center;
-  height: 100%;
-  /* Justera höjden för att matcha headern */
-  text-align: left;
-  /* Justera texten till vänster */
-  padding-left: 20px;
-  /* Lägg till padding för att skapa utrymme från vänsterkanten */
-
-}
-
 .welcome-text {
   font-size: 1.4em;
   padding-left: 15px;
@@ -112,36 +476,42 @@ nav a:hover {
 }
 .welcome-text h1{
   font-size: 3em;
-  animation-name: logo;
-  animation-duration: 3s;
-  animation-iteration-count: 2;
-  animation-play-state: running;
+
 }
 
 .link-projects {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-weight: 700;
   padding: 10px;
   text-decoration: none !important;
 
 }
-@keyframes logo{
-0%{
-  opacity: 1;
-}
-50%{
-  opacity: 0;
-  
-}
-100%{
-  opacity: 1;
-}
-}
+
 .btn-outline-secondary{
   font-size: 1em;
   border-radius: 50px;
   padding: 2px;
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid rgb(0, 0, 0);
+  color: black;
+}
+
+.btn-outline-secondary a {
+  color: black !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover a {
+  color: white !important;
+  text-decoration: none;
 }
 .link-projects a {
   font-size: 3em;
@@ -173,13 +543,33 @@ nav a:hover {
 
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(30px) scale(0.95);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
 }
 
 .reveal.active {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Letter animation for hero title */
+.hero-title .letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-name: letterFadeInUp;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes letterFadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /**/
@@ -206,7 +596,8 @@ hr {
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 0;
+  overflow: visible;
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -217,16 +608,35 @@ hr {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
-
+  height: auto;
+  padding: 1rem;
 }
 
 .carousel-item>img {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   min-width: 100%;
-  height: 32rem;
+  height: auto;
+}
+
+/* Mobile carousel styles */
+@media (max-width: 768px) {
+  .carousel-item {
+    padding: 0.5rem;
+  }
+  
+  .carousel-inner {
+    padding: 0 15px;
+  }
+  
+  .card {
+    margin-bottom: 1rem;
+  }
+  
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
 }
 
 
@@ -288,13 +698,59 @@ hr {
   }
 }
 
+/* Card text colors */
+.card-title,
+.card-text {
+  color: black !important;
+}
+
 /* Footer */
 footer {
-  font-family: "Poppins", sans-serif;
-  background-color: rgb(125, 73, 80);
-  color: white;
-  text-align: center;
-  padding: 20px;
+  background-color: #1a1a1a; /* Mörk bakgrund */
+  color: #fff; /* Vit text */
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #ccc; /* Ljusare färg vid hover */
+}
+
+footer .list-inline-item {
+  margin-right: 1rem;
+}
+
+footer .list-inline-item a {
+  font-size: 1.2rem; /* Justera storleken på ikonerna */
+}
+
+footer .list-inline-item a:hover {
+  color: #007bff; /* Blå färg vid hover */
+}
+
+hr.border-secondary {
+  border-color: #444; /* Ljusare linje för separation */
 }
 
 :root {
@@ -334,7 +790,7 @@ footer {
 }
 
 footer p {
-  color: white;
+  color: black;
   margin-bottom: .25rem;
 }
 
@@ -352,22 +808,387 @@ footer p {
 header {
   position: absolute;
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   /* Minska höjden på headern */
   top: 0;
   z-index: 1000;
   padding-left: 0px;
   padding-right: 0px;
 }
-main {
-  padding-top: 120vh;
 
-}
 .container-cards{
-  padding-bottom: 90vh;
+  padding-bottom: 0;
 }
 .welcome-text {
   font-size: 1.4em;
-  padding-left: 15px;
-  padding-top: 35px;
+ 
 }
+
+#contact {
+  background-color: #f9f9f9; /* Ljus bakgrund */
+}
+
+#contact h3 {
+  font-weight: bold;
+}
+
+#contact ul {
+  padding: 0;
+  list-style: none;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+}
+
+#contact ul li i {
+  color: #333;
+  margin-right: 10px;
+}
+
+#contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: #007bff; /* Blå färg vid hover */
+}
+
+#contact .form-control {
+  border-radius: 0;
+  border: 1px solid #ddd;
+}
+
+#contact .btn-dark {
+  background-color: #333;
+  border: none;
+}
+
+#contact .btn-dark:hover {
+  background-color: #555;
+}
+
+#about {
+  background-color: #f9f9f9; /* Ljus bakgrundsfärg */
+}
+
+#about h6 {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#about h2 {
+  font-weight: bold;
+}
+
+#about p {
+  line-height: 1.6;
+  color: #555;
+}
+
+#about ul {
+  padding: 0;
+  list-style: none;
+}
+
+#about ul li {
+  display: flex;
+  align-items: center;
+}
+
+#about ul li i {
+  color: #28a745; /* Grön färg för ikoner */
+  margin-right: 10px;
+}
+
+#about img {
+  border-radius: 8px; /* Rundade hörn för bilden */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Skugga för bilden */
+}
+
+#featured-projects .badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.pagination .page-link {
+  color: #000;
+}
+
+.pagination .page-link:hover {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.pagination .active .page-link {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Video Header */
+.video-header {
+  width: 100%;
+  height: 110vh; /* Full höjd */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Gör att videon täcker hela ytan */
+  z-index: -1; /* Placera videon bakom innehållet */
+}
+
+.welcome-text {
+  position: relative;
+  z-index: 1; /* Placera texten ovanpå videon */
+  color: white;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-scroll a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-scroll a:hover {
+  color: #ccc;
+}
+
+/* Navigation Button */
+.nav-btn {
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 25px; /* Rundade hörn */
+  transition: all 0.3s ease;
+  color: black;
+}
+
+.nav-btn:hover {
+  background-color: #333; /* Mörk bakgrund vid hover */
+  color: #fff; /* Vit text vid hover */
+  border-color: #333;
+}
+
+.nav-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* För små skärmar (max-width: 768px) */
+@media (max-width: 768px) {
+  .nav-btn {
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 0; /* Ta bort knappens padding */
+    border: none; /* Ta bort knappens kantlinje */
+    border-radius: 0; /* Ta bort rundade hörn */
+    background: none; /* Ingen bakgrund */
+    color: black; /* Behåll textfärgen */
+  }
+
+  .nav-btn:hover {
+    background-color: transparent; /* Ingen bakgrund vid hover */
+    color: inherit; /* Behåll textfärgen vid hover */
+    border: none; /* Ingen kantlinje vid hover */
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: black !important;
+    font-weight: 500;
+    font-size: 1.5rem;
+    /* Tvinga vit färg */
+  }
+ .navbar-toggler-icon .navbar-toggler{
+color: black;
+ }
+  
+}
+@media (max-width: 768px) {
+  .navbar-toggler {
+    background-color: transparent !important;
+    border: none !important;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  }
+}
+.filters.active {
+  background-color: #792828;
+  color: #fff;
+  border-color: #333;
+}
+
+/* Föräldern till etiketten måste vara position-relative */
+.position-relative {
+  position: relative;
+}
+
+/* Etikett på kort */
+.card-label {
+  position: absolute;
+  top: 10px; /* Placera etiketten nära toppen av kortet */
+  left: 10px; /* Placera etiketten nära vänsterkanten */
+  font-size: 0.8rem; /* Justera storleken för att passa kortet */
+  padding: 5px 10px; /* Lägg till lite padding för bättre utseende */
+  background-color: rgba(0, 0, 0, 0.7); /* Halvtransparent bakgrund */
+  color: #fff; /* Vit text */
+  border-radius: 5px; /* Rundade hörn */
+  z-index: 10; /* Se till att etiketten ligger ovanpå bilden */
+}
+
+/* Responsiv design för etiketten */
+@media (max-width: 768px) {
+  .card-label {
+    font-size: 0.7rem; /* Minska storleken på mindre skärmar */
+    padding: 4px 8px; /* Justera padding för mindre skärmar */
+  }
+}
+
+/* Etiketter för verktyg och kodningsspråk */
+.tech-tags {
+  margin-top: 1rem; /* Avstånd från texten ovanför */
+  display: flex;
+  flex-wrap: wrap; /* Gör att etiketterna radbryts vid behov */
+  gap: 0.5rem; /* Avstånd mellan etiketterna */
+}
+
+.tech-tags .badge {
+  font-size: 0.75rem; /* Mindre textstorlek för etiketter */
+  font-weight: 500;
+  padding: 0.4rem 0.8rem; /* Padding för en modern look */
+  background-color: #f8f9fa; /* Ljus bakgrund */
+  color: #333; /* Mörk text */
+  border: 1px solid #ddd; /* Tunn kantlinje */
+  border-radius: 20px; /* Rundade hörn */
+  transition: all 0.3s ease;
+}
+
+.tech-tags .badge:hover {
+  background-color: #333; /* Mörkare bakgrund vid hover */
+  color: #fff; /* Vit text vid hover */
+  border-color: #333; /* Matcha kantlinjen vid hover */
+}
+
+/* General reset and base styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Video header container */
+.video-header {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+/* Background video styling */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Welcome text container: flexbox centering */
+.welcome-text {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* Hero container: flex column to stack text and button */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 5%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero content: flex column, center aligned */
+.hero-content {
+  font-size: 2rem;
+  max-width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  gap: 1rem; /* space between animated title and button */
+}
+
+/* Hero scroll button styling */
+.hero-scroll {
+  margin-bottom: 100px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .welcome-text {
+    padding: 10px;
+  }
+  .hero-content {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    font-size: 1.2rem;
+  }
+}
+
+

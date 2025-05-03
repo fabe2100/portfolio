@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+    rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Min Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- icon library -->
+  <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <header class="video-header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo">
+        </a>
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">KONTAKT</a></li>
+            <li class="nav-item">
+              <a href="#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
+            </li>          </ul>
+        </div>
+      </nav>
+
+      <video autoplay muted loop playsinline class="background-video">
+        <source src="images/6917913_Motion Graphics_Motion Graphic_3840x2160.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="welcome-text">
+        <div class="row p-5">
+          <div class="col-md-6 ml-md-5">
+            <div class="hero-container">
+              <div class="hero-content">
+                <h1 class="hero-title">UX/UI, GRAPHIC & WEBDESIGN</h1>
+                <p class="hero-description">Driven by curiosity and a love for the digital landscape, I design experiences that are both meaningful and beautiful. Journey through my UX/UI, graphic, and web design portfolio.</p>
+                <div class="hero-scroll">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <a href="projects.html" class="d-flex justify-content-center link-projects"> See the Details
+                      <i class="fas fa-arrow-down"></i>
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+        <section class="jumbotron text-center">
+          <div class="container">
+            <h1 class="jumbotron-heading">Project examples</h1>
+            <p class="lead text-muted">Explore a curated selection of my creative work, showcasing diverse projects in UX/UI, graphic, and web design. Each piece reflects my passion for crafting meaningful and impactful digital experiences.</p>
+          </div>
+        </section>
+  
+        <!--section 1 graphic design-->
+        <section class="pt-5 pb-5 ">
+          <div class="container container-cards">
+            <div class="row">
+              <div class="col-6">
+                <h3 class="mb-3">Graphic Design </h3>
+              </div>
+              <div class="col-6 text-right">
+                <a class="btn btn-dark mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                  <i class="fas fa-arrow-left"></i>
+                </a>
+                <a class="btn btn-dark mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+              <div class="col-12">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="false">
+  
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <!--logo section-->
+                        <div class="col-md-4 mb-3">
+                          <a href="logotype.html" class="card-link">
+                            <div class="card">
+                              <img class="img-fluid" alt="100%x280" src="images/logotyp_freshly.svg">
+                              <div class="card-body">
+                                <h4 class="card-title">Logo Design Portfolio</h4>
+                                <p class="card-text">Explore my collection of distinctive brand identities and logo
+                                  designs. Each crafted with careful attention to typography, symbolism and brand
+                                  personality.
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <!--Business card section-->
+                        <div class="col-md-4 mb-3">
+                          <a href="cards.html" class="card-link">
+                            <div class="card">
+                              <img class="img-fluid" alt="100%x280" src="images/tech_card.png">
+                              <div class="card-body">
+                                <h4 class="card-title">Business Card Portfolio</h4>
+                                <p class="card-text">Discover my collection of professional business card designs. Each
+                                  crafted to make a lasting impression with unique layouts, typography and brand
+                                  consistency.
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <!--Posters section-->
+                        <div class="col-md-4 mb-3">
+                          <a href="posters.html" class="card-link">
+                            <div class="card">
+                              <img class="img-fluid" alt="100%x280" src="images/Art_poster.png">
+                              <div class="card-body">
+                                <h4 class="card-title">Affishes and posters Portfolio</h4>
+                                <p class="card-text">Discover my collection of professional business card designs. Each
+                                  crafted to make a lasting impression with unique layouts, typography and brand
+                                  consistency.
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="carousel-item">
+                      <div class="row">
+  
+                        <!--magazine section-->
+                        <div class="col-md-4 mb-3">
+                          <a href="businesscards.html" class="card-link">
+                            <div class="card">
+                              <img class="img-fluid" alt="100%x280" src="images/Art_poster.png">
+                              <div class="card-body">
+                                <h4 class="card-title">Magazines</h4>
+                                <p class="card-text">Discover my collection of professional business card designs. Each
+                                  crafted to make a lasting impression with unique layouts, typography and brand
+                                  consistency.
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <!--Visual identity-->
+                        <div class="col-md-4 mb-3">
+                          <a href="businesscards.html" class="card-link">
+                            <div class="card">
+                              <img class="img-fluid" alt="100%x280" src="images/Art_poster.png">
+                              <div class="card-body">
+                                <h4 class="card-title">Visual identity</h4>
+                                <p class="card-text">Discover my collection of professional business card designs. Each
+                                  crafted to make a lasting impression with unique layouts, typography and brand
+                                  consistency.
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+  
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--section 2-->
+            <div class="row">
+              <div class="col-6">
+                <h3 class="mb-3">UX/UI Design </h3>
+              </div>
+              <div class="col-6 text-right">
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                  <i class="fas fa-arrow-left"></i>
+                </a>
+                <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators3" role="button" data-slide="next">
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+              <div class="col-12">
+                <div id="carouselExampleIndicators3" class="carousel slide" data-ride="false">
+  
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+  
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="" src="images/logotyp namn_black.svg">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+  
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="images/tech_card.png">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="images/logotyp_freshly.svg">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+  
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280"
+                              src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+  
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280"
+                              src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="images/">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+  
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="images/logo_etoile_restaurang.svg">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+  
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="images/logotyp_freshly.svg">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280"
+                              src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!--section 3-->
+            <div class="row">
+              <div class="col-6">
+                <h3 class="mb-3">Webbdevelopping </h3>
+              </div>
+              <div class="col-6 text-right">
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                  <i class="fas fa-arrow-left"></i>
+                </a>
+                <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+              <div class="col-12">
+                <div id="carouselExampleIndicators4" class="carousel slide" data-ride="false">
+  
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+  
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="" src="images/logotyp namn_black.svg">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+  
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="images/tech_card.png">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="images/logotyp_freshly.svg">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+  
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280"
+                              src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+  
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280"
+                              src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="images/">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+  
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="images/logo_etoile_restaurang.svg">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+  
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280" src="images/logotyp_freshly.svg">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+  
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <div class="card">
+                            <img class="img-fluid" alt="100%x280"
+                              src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                            <div class="card-body">
+                              <h4 class="card-title">Special title treatment</h4>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section id="featured-projects" class="py-5 text-center">
+          <div class="container">
+            <h3 class="text-uppercase text-muted" style="font-size: 0.85rem;">My Portfolio</h3>
+            <h2 class="mb-4 font-weight-bold">Featured Projects</h2>
+            <p class="text-muted mb-5">
+              A collection of my latest work in UX/UI design, web design, and graphic design.
+            </p>
+  
+            <!-- Filter Buttons -->
+            <div class="mb-4">
+              <button class="btn btn-outline-dark mx-1 filters active" data-filter="all">All</button>
+              <button class="btn btn-outline-dark mx-1 filters" data-filter="ux-ui">UX/UI Design</button>
+              <button class="btn btn-outline-dark mx-1 filters" data-filter="web">Web Design</button>
+              <button class="btn btn-outline-dark mx-1 filters" data-filter="graphic">Graphic Design</button>
+            </div>
+  
+            <!-- Project Cards -->
+            <div class="row">
+                          <div class="col-md-4 mb-4" data-category="ux-ui">
+                <div class="card shadow-lg h-100">
+                  <div class="position-relative">
+                    <img src="images/Art_poster.png" class="card-img-top border-bottom" alt="Project Image">
+                    <span class="badge badge-dark card-label">UX/UI Design</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="font-weight-bold">E-commerce App Redesign</h5>
+                    <p class="text-muted">Complete redesign of an e-commerce platform focusing on user experience and conversion optimization.</p>
+                    <div class="tech-tags">
+                      <span class="badge badge-light">Figma</span>
+                      <span class="badge badge-light">React</span>
+                      <span class="badge badge-light">CSS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 mb-4" data-category="ux-ui">
+                <div class="card shadow-lg h-100">
+                  <div class="position-relative">
+                    <img src="images/Art_poster.png" class="card-img-top border-bottom" alt="Project Image">
+                    <span class="badge badge-dark card-label">UX/UI Design</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="font-weight-bold">E-commerce App Redesign</h5>
+                    <p class="text-muted">Complete redesign of an e-commerce platform focusing on user experience and conversion optimization.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4" data-category="web">
+                <div class="card shadow-lg h-100">
+                  <div class="position-relative">
+                    <img src="images/web_design_project.jpg" class="card-img-top border-bottom" alt="Project Image">
+                    <span class="badge badge-dark card-label">Web Design</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="font-weight-bold">Financial Dashboard</h5>
+                    <p class="text-muted">Custom financial dashboard with data visualization and analytics features.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4" data-category="graphic">
+                <div class="card shadow-lg h-100">
+                  <div class="position-relative">
+                    <img src="images/graphic_design_project.jpg" class="card-img-top border-bottom" alt="Project Image">
+                    <span class="badge badge-dark card-label">Graphic Design</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="font-weight-bold">Brand Identity System</h5>
+                    <p class="text-muted">Complete brand identity including logo, color palette, typography, and guidelines.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+      </main>
+  
+      <section id="about" class="py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Image Section -->
+            <div class="col-md-6">
+              <img src="images/your-image.jpg" alt="Work Environment" class="img-fluid rounded shadow">
+            </div>
+  
+            <!-- Text Section -->
+            <div class="col-md-6">
+              <h6 class="text-uppercase text-muted mb-3">About Me</h6>
+              <h2 class="mb-4">I create meaningful digital experiences</h2>
+              <p>
+                I'm a passionate designer with over 5 years of experience in creating user-centered digital products. I specialize in UX/UI design, web design, and graphic design. My approach combines creativity with a strong understanding of design principles and user behavior.
+              </p>
+              <ul class="list-unstyled mb-4">
+                <li class="mb-2"><i class="fas fa-check text-success mr-2"></i>Collaborative approach to design challenges</li>
+                <li class="mb-2"><i class="fas fa-check text-success mr-2"></i>User-centered design methodology</li>
+                <li class="mb-2"><i class="fas fa-check text-success mr-2"></i>Cross-functional team experience</li>
+                <li class="mb-2"><i class="fas fa-check text-success mr-2"></i>Strong understanding of design systems</li>
+              </ul>
+              <a href="#contact" class="btn btn-dark">Let's Work Together</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-6 mb-4">
+              <h3 class="mb-4">Contact Information</h3>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <i class="fas fa-envelope fa-lg mr-3"></i>
+                  <span>Email: <a href="mailto:hello@yourportfolio.com" class="text-dark text-decoration-none">hello@yourportfolio.com</a></span>
+                </li>
+                <li class="mb-3">
+                  <i class="fas fa-phone fa-lg mr-3"></i>
+                  <span>Phone: <a href="tel:+15551234567" class="text-dark text-decoration-none">+1 (555) 123-4567</a></span>
+                </li>
+                <li class="mb-3">
+                  <i class="fas fa-user fa-lg mr-3"></i>
+                  <span>Social Media: <a href="#" class="text-dark text-decoration-none">@portfoliodesigner</a></span>
+                </li>
+              </ul>
+              <h5 class="mt-4">Working Hours</h5>
+              <p>Monday - Friday: 9am - 5pm<br>Weekend: By appointment</p>
+            </div>
+  
+            <!-- Contact Form -->
+            <div class="col-md-6">
+              <h3 class="mb-4">Let's Work Together</h3>
+              <p class="mb-4">Have a project in mind? Let's discuss how I can help bring your ideas to life.</p>
+              <form>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your email">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark btn-block">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <footer class="bg-dark text-white py-4">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Footer Brand -->
+            <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
+                <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo" style="max-width: 100px; height: auto;">
+            </div>
+  
+            <!-- Footer Navigation -->
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
+                <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
+                <li class="list-inline-item"><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+                <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+              </ul>
+            </div>
+  
+            <!-- Footer Social Media -->
+            <div class="col-md-4 text-md-end text-center">
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-dribbble"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <hr class="border-secondary my-3">
+          <div class="text-center">
+            <p class="mb-0">&copy; 2025 Your Portfolio. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+  
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    </body>
+  
+  </html>
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Cupcakes Redesign</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <a class="back-link" href="index.html">← Tillbaka till projekt</a>
+    <h1>Sweet Cupcakes Redesign</h1>
+  </header>
+
+  <main>
+    <section class="intro fade-in">
+      <p>Här kan du jämföra den gamla designen med min nya version för Sweet Cupcakes. Fokus låg på att förbättra färgval, typografi och struktur för en mer inbjudande användarupplevelse.</p>
+    </section>
+
+    <section class="slider-section fade-in">
+      <h2>Före & Efter</h2>
+      <div class="comparison-slider">
+        <div class="slider-wrapper">
+          <img src="fore-full.jpg" alt="Före-design" class="before-image" />
+          <img src="after-full.jpg" alt="Efter-design" class="after-image" />
+          <input type="range" min="0" max="100" value="50" class="slider" />
+        </div>
+      </div>
+    </section>
+
+    <section class="details fade-in">
+      <h2>Förbättrade detaljer</h2>
+
+      <div class="detail-pair">
+        <div>
+          <h3>Före</h3>
+          <img src="fore-button.jpg" alt="Före-knapp" />
+        </div>
+        <div>
+          <h3>Efter</h3>
+          <img src="after-button.jpg" alt="Efter-knapp" />
+        </div>
+      </div>
+
+      <div class="detail-pair">
+        <div>
+          <h3>Före</h3>
+          <img src="fore-typography.jpg" alt="Före-typografi" />
+        </div>
+        <div>
+          <h3>Efter</h3>
+          <img src="after-typography.jpg" alt="Efter-typografi" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const slider = document.querySelector('.slider');
+    const afterImg = document.querySelector('.after-image');
+
+    slider.addEventListener('input', (e) => {
+      const value = e.target.value;
+      afterImg.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+    });
+
+    // Fade-in effect
+    const fadeSections = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeSections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>

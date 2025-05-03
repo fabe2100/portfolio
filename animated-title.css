@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: #000000;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+  /* Remove absolute positioning */
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.animated-title > div {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.animated-title > div div {
+  font-size: 5rem;
+  padding: 0vmin 0;
+  position: relative;
+  width: 100%;
+  left: 0;
+  text-align: center;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #000000;
+  font-weight: 900;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .animated-title {
+    max-width: 95vw;
+    max-height: 40vh;
+  }
+  .animated-title > div div {
+    font-size: clamp(2rem, 8vmin, 5rem);
+  }
+}
+@media (max-width: 480px) {
+  .animated-title {
+    max-width: 95vw;
+    max-height: 30vh;
+  }
+  .animated-title > div div {
+    font-size: clamp(1.5rem, 6vmin, 3rem);
+  }
+}
+
