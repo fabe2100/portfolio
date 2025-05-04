@@ -18,6 +18,11 @@ header {
   text-align: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+.shadow {
+  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+  0 0  0 2px rgb(190, 190, 190),
+  0.3em 0.3em 1em rgba(0,0,0,0.3);
+  }
 
 .back-link {
   display: inline-block;
@@ -459,16 +464,68 @@ nav ul li {
   color: black;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link .nav-btn.btn-outline-dark{
   color: black !important;
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   /* Tvinga vit färg */
 }
 
-nav a:hover {
-  color: rgb(0, 0, 0);
+/* Add underline hover effect similar to button */
+.navbar-light .navbar-nav .nav-link {
+  position: relative;
+  overflow: hidden;
 }
+
+.navbar-light .navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background: black;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Mobile: Add underline effect to About button with underline matching text width */
+@media (max-width: 768px) {
+  .navbar-light .navbar-nav .nav-link {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 5px;
+    }
+    
+    .navbar-light .navbar-nav .nav-btn .nav-link::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover::after,
+    .navbar-light .navbar-nav .nav-link:focus::after {
+    width: 100%;
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    }
+
+}
+
 .welcome-text {
   font-size: 1.4em;
   padding-left: 15px;
@@ -630,6 +687,8 @@ hr {
   
   .card {
     margin-bottom: 1rem;
+   
+                
   }
   
   .col-md-4 {
@@ -919,6 +978,7 @@ header {
 
 .card {
   transition: all 0.3s ease;
+  
 }
 
 .card:hover {
@@ -987,7 +1047,7 @@ header {
 
 /* Navigation Button */
 .nav-btn {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 25px; /* Rundade hörn */
@@ -1009,30 +1069,64 @@ header {
 /* För små skärmar (max-width: 768px) */
 @media (max-width: 768px) {
   .nav-btn {
-    font-weight: 500;
-    font-size: 1.5rem;
-    padding: 0; /* Ta bort knappens padding */
-    border: none; /* Ta bort knappens kantlinje */
-    border-radius: 0; /* Ta bort rundade hörn */
-    background: none; /* Ingen bakgrund */
-    color: black; /* Behåll textfärgen */
-  }
-
-  .nav-btn:hover {
-    background-color: transparent; /* Ingen bakgrund vid hover */
-    color: inherit; /* Behåll textfärgen vid hover */
-    border: none; /* Ingen kantlinje vid hover */
-  }
-  .navbar-light .navbar-nav .nav-link {
+    display: inline-block !important;
+    position: relative !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: fit-content !important;
+    background: none !important;
+    border: none !important;
     color: black !important;
-    font-weight: 500;
-    font-size: 1.5rem;
-    /* Tvinga vit färg */
-  }
- .navbar-toggler-icon .navbar-toggler{
-color: black;
- }
+    box-sizing: border-box !important;
+    }
+    
+    .nav-btn::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: black !important;
+    width: 100% !important;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box !important;
+    transition: transform 0.5s ease !important;
+    transform-origin: left;
+    transform: scaleX(0);
+    }
+    
+    .nav-btn:hover::after,
+    .nav-btn:focus::after {
+    transform: scaleX(1);
+    }
+    
+    .nav-btn:hover {
+    background-color: transparent !important;
+    color: inherit !important;
+    border: none !important;
+    }
+    .underline-text {
+      position: relative;
+      display: inline-block;
+    }
   
+    .underline-text::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      background: black;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      transform-origin: left;
+      transform: scaleX(0);
+      transition: transform 0.5s ease;
+    }
+  
+    .nav-btn:hover .underline-text::after,
+    .nav-btn:focus .underline-text::after {
+      transform: scaleX(1);
+    }
 }
 @media (max-width: 768px) {
   .navbar-toggler {
@@ -1183,12 +1277,151 @@ html, body {
   .hero-content {
     font-size: 1.5rem;
   }
+
 }
 
 @media (max-width: 480px) {
   .hero-content {
     font-size: 1.2rem;
   }
+ 
 }
 
+  .clickable-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .clickable-card:hover,
+  .clickable-card:focus {
+    transform: scale(1.01);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-decoration: none;
+    color: inherit;
+  }
+.container-kivra{
+  margin-top: 100px;
+}
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+  position: fixed !important;
+  top: 100px; /* height of navbar */
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 56px);
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 1050;
+  overflow-y: auto;
+  padding: 1.5rem;
+  }
+  
+  .navbar-collapse .nav-link,
+  .navbar-collapse .nav-btn{
+  color: #000000 !important;
+  font-weight: 600;
+  margin: 0.75rem 0;
+  display: block;
+  text-shadow: none;
+  }
+  
+  .navbar-collapse .nav-link:hover,
+  .navbar-collapse .nav-btn:hover {
+  color: #000000 !important;
+  }
+  }
+  @media (max-width: 468px) {
+    #process ul.list-inline {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    padding-left: 0;
+    }
+    
+    #process ul.list-inline li.list-inline-item {
+    display: block !important;
+    text-align: center;
+    }
+    
+    #process ul.list-inline li.list-inline-item:nth-child(2n) {
+    display: none !important; /* Hide the arrow items on small screens */
+    }
+    } 
+    @media (max-width: 768px) {
+      .redesign-images {
+      flex-direction: column !important;
+      gap: 1rem !important;
+      }
+      .redesign-images img {
+      width: 100% !important;
+      height: auto;
+      }
+      }
+
+/* Marquee text animation with stop on hover */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #000;
+  border: 1px solid #333;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
+.marquee-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100%;
+  animation: marquee 40s linear infinite;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+  list-style-type: none;
+  gap: 2rem;
+  margin: 0;
+}
+
+.marquee-text li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 1.4em;
+  color: #fff;
+  margin: 0;
+}
+.marquee-text li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 0.9em;
+  color: #fff;
+  margin: 0;
+  }
+  
+  .marquee-text li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  }
+
+.marquee-container:hover .marquee-text {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 

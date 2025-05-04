@@ -65,6 +65,9 @@
 }
 .animated-title > div.text-bottom {
   bottom: 0;
+  white-space: nowrap;
+  font-weight: 400;
+
 }
 .animated-title > div.text-bottom div {
   animation: showBottomText 0.5s;
