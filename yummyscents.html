@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Portfolio – Webshop för Gourmande Parfymer</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
-    rel="stylesheet" />
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- FontAwesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="styles.css" />
+    rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Min Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animated-title.css">
+  <!-- icon library -->
+  <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="parallax.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-  <div class="wrapper d-flex flex-column min-vh-100">
-    <!-- Header / Navbar -->
-    <header class="video-header">
+  <div class="wrapper">
+
+    <header>
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo" />
+        <a class="navbar-brand" href="#">
+          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo">
         </a>
         <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,81 +34,83 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html#projects">PROJECTS</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#contact">KONTAKT</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">CONTAKT</a></li>
             <li class="nav-item">
-              <a href="index.html#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
+              <a href="#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main role="main" class="flex-grow-1 container py-5">
-      <h1 class="display-4 font-weight-bold mb-4">Webshop för Gourmande Parfymer</h1>
-
-      <section class="mb-5">
-        <div class="card shadow-sm rounded p-4">
-          <h2>Projektintroduktion</h2>
-          <p>
-            I detta projekt har jag fungerat som projektledare och digital designer för att skapa en användarvänlig och estetiskt tilltalande webshop för gourmande parfymer. Projektet omfattar hela processen från projektplan till färdig, responsiv webbplats.
-          </p>
-          <p><strong>Verktyg och tekniker:</strong> HTML, CSS, wireframes, projektplan, video-presentation</p>
-        </div>
+    <main role="main" class="flex-grow-1 container" style="padding-top: 30vh;">
+      <section id="mockup-image" class="section text-center mb-5">
+        <img src="images/yummyscents_mockup.jpg" alt="Yummy Scents Mockup" class="img-fluid rounded shadow" />
       </section>
-
-      <section class="mb-5">
-        <div class="card shadow-sm rounded p-4">
-          <h2>Projektplan</h2>
-          <p>
-            Projektplanen täckte kravspecifikation, mål, leveransplan, intressentanalys, riskhantering och tidsplan. Den var anpassad efter kursens ramar och timmar.
-          </p>
-          <p>Vill du kan du <a href="URL-till-din-projektplan.pdf" target="_blank" rel="noopener noreferrer">ladda ner projektplanen som PDF</a>.</p>
-        </div>
+      <section class="marquee-container mb-4">
+        <ul class="marquee-text">
+          <li>Responsive Design</li>
+          <li>E-commerce Webstore</li>
+          <li>Gourmand Perfumes</li>
+          <li>Natural Ingredients</li>
+          <li>User-friendly Experience</li>
+          <li>Multi-device Optimization</li>
+        </ul>
       </section>
-
-      <section class="mb-5">
-        <div class="card shadow-sm rounded p-4">
-          <h2>Designprocess och Wireframes</h2>
-          <p>
-            Under designarbetet skapade jag wireframes som tydligt visar layout och navigationsflöde. Dessa fungerade som underlag för det slutgiltiga designkonceptet.
-          </p>
-          <div class="mb-3">
-            <img src="URL-till-wireframe-bild1.jpg" alt="Wireframe exempel 1" class="img-fluid rounded" />
-          </div>
-          <div class="mb-3">
-            <img src="URL-till-wireframe-bild2.jpg" alt="Wireframe exempel 2" class="img-fluid rounded" />
-          </div>
-          <div class="video-container">
-            <iframe src="URL-till-din-presentation-video" frameborder="0" allowfullscreen class="w-100" style="height: 400px;"></iframe>
-          </div>
+      <div class="project-overview">
+        <h2>Yummy Scents - E-commerce Webstore Development</h2>
+        <p>This project involved the design and development of "Yummy Scents," a responsive e-commerce webstore specializing in gourmand perfumes with natural ingredients. The objective was to create an engaging and user-friendly online shopping experience, optimized for various devices.</p>
         </div>
-      </section>
-
-      <section class="mb-5">
-        <div class="card shadow-sm rounded p-4">
-          <h2>Färdig Webbplats</h2>
-          <p>
-            Den slutgiltiga webbplatsen är responsiv och anpassad för mobiler, surfplattor och datorer. Den har en tydlig sitemap med flera sidor och en ren, inbjudande design som framhäver parfymernas unika egenskaper.
-          </p>
-          <div class="mb-3">
-            <img src="URL-till-webbsidesskärmdump1.jpg" alt="Webbplats på desktop" class="img-fluid rounded" />
-          </div>
-          <div class="mb-3">
-            <img src="URL-till-webbsidesskärmdump2.jpg" alt="Webbplats på mobil" class="img-fluid rounded" />
-          </div>
-          <p>Se webbplatsen live här: <a href="URL-till-din-webshop" target="_blank" rel="noopener noreferrer">Webshop för Gourmande Parfymer</a></p>
+      
+        <div class="image-placeholder">
+        <img src="image_project_planning.jpg" alt="Project Planning Image" style="max-width: 100%;">
+        <p>Image: Project Planning (Replace 'image_project_planning.jpg' with your image file)</p>
         </div>
-      </section>
-
-      <section class="mb-5">
-        <div class="card shadow-sm rounded p-4">
-          <h2>Reflektion och Lärdomar</h2>
-          <p>
-            Projektet har stärkt mina färdigheter i projektledning, responsiv webbutveckling, UX och visuell kommunikation. Jag har lärt mig vikten av en strukturerad planering och hur designval påverkar användarupplevelsen.
-          </p>
+      
+        <div class="section">
+        <h2>Key Skills Demonstrated</h2>
+        <ul>
+        <li><strong>Responsive Web Design:</strong> Developed a fully responsive design using HTML, CSS, and media queries to ensure optimal display across desktops, tablets, and smartphones.</li>
+        <li><strong>Front-End Development:</strong> Utilized HTML and CSS for structure and styling, incorporating modern techniques like Flexbox for layout management.</li>
+        <li><strong>User Experience (UX) Design:</strong> Focused on creating intuitive navigation, clear calls to action, and engaging product presentation to enhance the user's shopping journey.</li>
+        <li><strong>Visual Design:</strong> Implemented a cohesive visual identity, including color palette, typography (Playfair Display, Roboto), and imagery, to create an appealing and on-brand aesthetic.</li>
+        <li><strong>E-commerce Functionality:</strong> Integrated essential e-commerce features such as product displays, shopping cart notifications, and detailed product descriptions.</li>
+        <li><strong>Accessibility:</strong> Addressed web accessibility by implementing proper color contrast and addressing WAVE tool errors to ensure a better user experience.</li>
+        <li><strong>Performance Optimization:</strong> Utilized Google PageSpeed Insights to analyze and optimize website performance, including image compression (webp) to improve loading times.</li>
+        <li><strong>AI Tools Integration:</strong> Leveraged AI tools to generate product images, descriptions, and assist with JavaScript coding, demonstrating efficient use of technology in the design process.</li>
+        </ul>
         </div>
-      </section>
+      
+        <div class="image-placeholder">
+        <img src="image_wireframes.jpg" alt="Wireframes Image" style="max-width: 100%;">
+        <p>Image: Wireframes (Replace 'image_wireframes.jpg' with your image file)</p>
+        </div>
+      
+        <div class="section">
+        <h2>Design Process</h2>
+        <ol>
+        <li><strong>Wireframing:</strong> Started with low-fidelity wireframes to plan the site's structure and navigation, followed by high-fidelity wireframes for detailed design visualization. [cite: 32, 33, 38, 39]</li>
+        <li><strong>Visual Identity:</strong> Developed a unique visual identity incorporating a custom logo, color palette, and typography to reflect the brand and appeal to the target audience. [cite: 34, 35, 36, 37]</li>
+        <li><strong>Development:</strong> Built the webstore using HTML, CSS, and JavaScript, with a focus on responsive design and user-centered functionality. [cite: 52, 53]</li>
+        <li><strong>Testing and Optimization:</strong> Conducted thorough testing for code validation, accessibility (WAVE tool), performance (Google PageSpeed Insights), and cross-browser compatibility. [cite: 28, 29, 30, 81, 85]</li>
+        </ol>
+        </div>
+      
+        <div class="image-placeholder">
+        <img src="image_visual_identity.jpg" alt="Visual Identity Image" style="max-width: 100%;">
+        <p>Image: Visual Identity (Replace 'image_visual_identity.jpg' with your image file)</p>
+        </div>
+      
+        <div class="image-placeholder">
+        <img src="image_website_pictures.jpg" alt="Website Pictures" style="max-width: 100%;">
+        <p>Image: Website Pictures (Replace 'image_website_pictures.jpg' with your image file)</p>
+        </div>
+      
+        <div class="section">
+        <h2>Outcomes</h2>
+        <p>The result is a fully functional and visually appealing e-commerce webstore that effectively showcases the "Yummy Scents" brand and provides a seamless shopping experience. The project demonstrates a strong understanding of web design principles, responsive development, and the importance of user-centered design.</p>
+        </div>
     </main>
 
     <footer class="bg-dark text-white py-4 mt-auto">

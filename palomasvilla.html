@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <title>Min Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="animated-title.css" />
+  <!-- icon library -->
+  <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="parallax.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler navbar-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">CONTAKT</a></li>
+            <li class="nav-item">
+              <a href="#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container py-5 container-kivra">
+      <!-- Marquee text section added below mockup image -->
+      <section class="marquee-container mb-4">
+        <ul class="marquee-text">
+          <li>Custom WordPress Theme Development</li>
+          <li>Dynamic Content Management</li>
+          <li>Villa Listings with Booking Options</li>
+          <li>Activities and News Sections</li>
+          <li>Contact Page with Staff Info and Form</li>
+          <li>SEO Strategy and Optimization</li>
+          <li>Accessibility and Usability Focus</li>
+          <li>Design Deliverables: Sitemap, Wireframes, Mood Boards</li>
+          <li>Figma Prototype and Visual Design</li>
+          <li>CMS Editor Role Customization</li>
+          <li>Project Documentation and Reports</li>
+        </ul>
+      </section>
+      <!-- Mockup image section added at the top -->
+      <section id="mockup-image" class="section text-center mb-5">
+        <img src="images/palomasvilla-mockup.jpg" alt="Palomas Villa Mockup" class="img-fluid rounded shadow" />
+      </section>
+      <!-- Existing main content starts here -->
+      <section id="project-summary" class="section">
+        <h2>Project Summary</h2>
+        <p>
+          This project involved the creation of a custom WordPress theme for a company that rents out villas and offers related activities.
+          The theme was designed to be dynamic, allowing the client to easily manage and update content.
+        </p>
+        <p>
+          The development process was guided by design deliverables, including sitemaps, mood boards, wireframes, and design sketches, to ensure a functional and user-friendly website.
+        </p>
+        <p>
+          Accessibility was a key consideration, with the theme coded to adhere to WCAG guidelines.
+          SEO strategies were also implemented to improve the site's visibility.
+        </p>
+      </section>
+
+      <section id="problem-formulation" class="section">
+        <h2>Detailed Problem Formulation</h2>
+        <p>
+          The project addressed the need for Villas Palomas, a villa rental company in Marrakech, to establish a WordPress website with a custom theme.
+          Key requirements included:
+        </p>
+        <ul>
+          <li>Developing the theme based on CMS principles for dynamic content management. [cite: 194]</li>
+          <li>Creating a user-friendly interface with clear navigation. [cite: 191]</li>
+          <li>Ensuring accessibility and usability for a wide audience. [cite: 192]</li>
+          <li>Enabling staff to create new subpages using `functions.php`. [cite: 195]</li>
+          <li>Showcasing villas with detailed information and booking options. [cite: 196, 197]</li>
+          <li>Displaying activities and news on dedicated, dynamically updated pages. [cite: 199, 200]</li>
+          <li>Providing contact information and a contact form. [cite: 201, 202]</li>
+          <li>Implementing SEO best practices. [cite: 210, 211]</li>
+        </ul>
+      </section>
+
+      <section id="design-process" class="section">
+        <h2>Design Process</h2>
+        <p>
+          The design process began with the creation of:
+        </p>
+        <ul>
+          <li>Sitemap (as shown in Bild 4 of the report) [cite: 187]</li>
+          <li>Mood board</li>
+          <li>Wireframes</li>
+          <li>Design sketches</li>
+        </ul>
+        <p>
+          These deliverables were used to structure the website and guide the development of the custom WordPress theme.
+        </p>
+        <img src="[PATH_TO_YOUR_SITEMAP_IMAGE]" alt="Sitemap" class="visual" />
+        <p class="caption">Sitemap outlining the website's structure (Home, Villas, News, Activities, Contact).</p>
+      </section>
+
+      <section id="key-features" class="section">
+        <h2>Key Features</h2>
+        <p>
+          The developed WordPress theme includes the following key features:
+        </p>
+        <ul>
+          <li>**Dynamic Content Management:** The ability to easily update villas, news, and activities. [cite: 194, 199, 200]</li>
+          <li>**Villa Listings:** Detailed pages for each villa with descriptions, specifications, and booking options (as shown in Bild 1 of the report). [cite: 196, 197]</li>
+          <li>**Activities and News Sections:** Dedicated sections for displaying activities and news (as shown in Bild 2 of the report). [cite: 199, 200]</li>
+          <li>**Contact Page:** Includes staff information and a contact form (as shown in Bild 3 of the report). [cite: 201, 202]</li>
+          <li>**Widget Area:** For displaying promotions and offers. [cite: 209]</li>
+          <li>**SEO Optimization:** Implementation of various SEO techniques to improve search engine visibility.</li>
+          <li>**Customizable Editor Role:** A WordPress "Editor" role was created to allow staff to manage content. [cite: 199]</li>
+        </ul>
+
+        <img src="[PATH_TO_YOUR_VILLA_PAGE_IMAGE]" alt="Villa Page" class="visual" />
+        <p class="caption">Example of a villa details page with booking information.</p>
+
+        <img src="[PATH_TO_YOUR_ACTIVITIES_PAGE_IMAGE]" alt="Activities Page" class="visual" />
+        <p class="caption">Activities listing page.</p>
+
+        <img src="[PATH_TO_YOUR_CONTACT_PAGE_IMAGE]" alt="Contact Page" class="visual" />
+        <p class="caption">Contact page with staff information and form.</p>
+      </section>
+
+      <section id="seo-strategy" class="section">
+        <h2>SEO Strategy</h2>
+        <p>
+          A comprehensive SEO strategy was implemented, including:
+        </p>
+        <ul>
+          <li>Using Google Search Console and Site Kit for analysis. [cite: 212, 213]</li>
+          <li>Installing Yoast SEO plugin. [cite: 213]</li>
+          <li>Optimizing URLs, meta descriptions, and H1 headings. [cite: 214, 218]</li>
+          <li>Ensuring HTTPS security. [cite: 215]</li>
+          <li>Generating a sitemap. [cite: 216]</li>
+          <li>Improving page load speed (lazy loading). [cite: 217]</li>
+          <li>Using descriptive alt text for images. [cite: 222]</li>
+          <li>Creating clear and well-structured content. [cite: 219, 220, 221]</li>
+          <li>Responsiveness for mobile devices. [cite: 224]</li>
+        </ul>
+      </section>
+
+      <section id="technologies-used" class="section">
+        <h2>Technologies Used</h2>
+        <p>
+          The following technologies and tools were used in this project:
+        </p>
+        <ul>
+          <li>WordPress (for CMS functionality) [cite: 193]</li>
+          <li>HTML, CSS, JavaScript (for theme development) [cite: 193]</li>
+          <li>Figma (for design) [cite: 236]</li>
+          <li>Visual Studio Code (for coding) [cite: 239]</li>
+          <li>GitHub (for version control) [cite: 240]</li>
+          <li>Photopea (for image editing) [cite: 238]</li>
+        </ul>
+      </section>
+
+      <section id="figma-prototype" class="section">
+        <h2>Figma Prototype</h2>
+        <p>
+          The design prototype for this project was created in Figma. You can view it here:
+        </p>
+        <a href="[YOUR_FIGMA_PROTOTYPE_LINK]">Figma Prototype Link</a>
+      </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Your Name - CMS Project</p>
+    </footer>
+
+     <section id="related-documents" class="section">
+        <h2>Related Documents</h2>
+        <p>
+            For more detailed information about the project, please refer to the following documents:
+        </p>
+        <ul>
+            <li><a href="[PATH_TO_YOUR_PROJECT_REPORT]">Project Report (PDF)</a></li>
+            <li><a href="[PATH_TO_YOUR_PRESENTATION]">Presentation (PDF)</a></li>
+        </ul>
+    </section>
+</body>
+</html>

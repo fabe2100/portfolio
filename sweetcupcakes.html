@@ -1,59 +1,190 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
   <title>Sweet Cupcakes Redesign</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="animated-title.css" />
+  <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="parallax.js"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
 </head>
-<body>
-  <header>
-    <a class="back-link" href="index.html">← Tillbaka till projekt</a>
-    <h1>Sweet Cupcakes Redesign</h1>
-  </header>
 
-  <main>
-    <section class="intro fade-in">
-      <p>Här kan du jämföra den gamla designen med min nya version för Sweet Cupcakes. Fokus låg på att förbättra färgval, typografi och struktur för en mer inbjudande användarupplevelse.</p>
-    </section>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler navbar-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+            <li class="nav-item">
+              <a href="#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container py-5 container-kivra">
+      <section id="top-image" class="text-center mb-4">
+        <img
+          src="images/sweetcupcakes_hero.webp"
+          alt="Sweet Cupcakes Project Hero Image"
+          class="img-fluid"
+          style="max-height: 650px; object-fit: contain"
+        />
+      </section>
+
+      <section id="marquee" class="mb-4">
+        <div class="marquee-container">
+          <ul class="marquee-text">
+            <li>Web Design</li>
+            <li>Redesign</li>
+            <li>Graphic Profile</li>
+            <li>Responsive</li>
+            <li>Typography</li>
+            <li>UX/UI</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="project-description" class="mb-5">
+        <h1>Sweet Cupcakes Website Redesign</h1>
+        <p>
+          Purpose/Goal<br />
+          In this project, you are to create a website with clear content and a consistent graphic profile. The website should be of the type company or association presentation. It can be for an existing company/organization or a fictional one.<br />
+          For example, if you want to create a portfolio to present yourself as a web developer and collect your upcoming project websites, that is fine - then create the website as if you are presenting your own web development company.<br /><br />
+          The purpose of the project is to apply knowledge from previous modules in practice and in a larger coherent project. A personal website should be developed with a focus on:<br />
+          <ul>
+            <li>Chosen target audience.</li>
+            <li>Chosen graphic profile.</li>
+            <li>Chosen structure/navigation.</li>
+            <li>A complete website that works well regardless of device (computer, tablet, mobile phone, or other types of devices).</li>
+          </ul>
+          The work on the website can preferably continue throughout the course and preferably in parallel with other modules.<br />
+          I have redesigned the site to look more aesthetically pleasing and want to include before and after images.
+        </p>
+        <p>
+          Website: <a href="https://example.com/sweetcupcakes" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: underline;">https://example.com/sweetcupcakes</a>
+        </p>
+      </section>
+=======
+      <section class="intro fade-in">
+        <p>
+          Purpose/Goal<br />
+          In this project, you are to create a website with clear content and a consistent graphic profile. The website should be of the type company or association presentation. It can be for an existing company/organization or a fictional one.<br />
+          For example, if you want to create a portfolio to present yourself as a web developer and collect your upcoming project websites, that is fine - then create the website as if you are presenting your own web development company.<br /><br />
+          The purpose of the project is to apply knowledge from previous modules in practice and in a larger coherent project. A personal website should be developed with a focus on:<br />
+          <ul>
+            <li>Chosen target audience.</li>
+            <li>Chosen graphic profile.</li>
+            <li>Chosen structure/navigation.</li>
+            <li>A complete website that works well regardless of device (computer, tablet, mobile phone, or other types of devices).</li>
+          </ul>
+          The work on the website can preferably continue throughout the course and preferably in parallel with other modules.<br />
+          I have redesigned the site to look more aesthetically pleasing and want to include before and after images.
+        </p>
+      </section>
 
     <section class="slider-section fade-in">
-      <h2>Före & Efter</h2>
+      <h2>Before & After</h2>
       <div class="comparison-slider">
         <div class="slider-wrapper">
-          <img src="fore-full.jpg" alt="Före-design" class="before-image" />
-          <img src="after-full.jpg" alt="Efter-design" class="after-image" />
+          <img src="fore-full.jpg" alt="Before design" class="before-image" />
+          <img src="after-full.jpg" alt="After design" class="after-image" />
           <input type="range" min="0" max="100" value="50" class="slider" />
         </div>
       </div>
     </section>
 
     <section class="details fade-in">
-      <h2>Förbättrade detaljer</h2>
+      <h2>Improved Details</h2>
 
       <div class="detail-pair">
         <div>
-          <h3>Före</h3>
-          <img src="fore-button.jpg" alt="Före-knapp" />
+          <h3>Before</h3>
+          <img src="fore-button.jpg" alt="Before button" />
         </div>
         <div>
-          <h3>Efter</h3>
-          <img src="after-button.jpg" alt="Efter-knapp" />
+          <h3>After</h3>
+          <img src="after-button.jpg" alt="After button" />
         </div>
       </div>
 
       <div class="detail-pair">
         <div>
-          <h3>Före</h3>
-          <img src="fore-typography.jpg" alt="Före-typografi" />
+          <h3>Before</h3>
+          <img src="fore-typography.jpg" alt="Before typography" />
         </div>
         <div>
-          <h3>Efter</h3>
-          <img src="after-typography.jpg" alt="Efter-typografi" />
+          <h3>After</h3>
+          <img src="after-typography.jpg" alt="After typography" />
         </div>
       </div>
     </section>
   </main>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Footer Brand -->
+        <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
+          <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo" style="max-width: 100px; height: auto;">
+        </div>
+
+        <!-- Footer Navigation -->
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
+            <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
+            <li class="list-inline-item"><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+            <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Social Media -->
+        <div class="col-md-4 text-md-end text-center">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-dribbble"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary my-3">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 Your Portfolio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
   <script>
     const slider = document.querySelector('.slider');
@@ -78,3 +209,169 @@
   </script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Cupcakes Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* Responsive grid */
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid-item {
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+        }
+        .grid-item img {
+            width: 100%;
+            border-radius: 0.5rem;
+            aspect-ratio: 1; /* Keep images square-like */
+            object-fit: cover;
+        }
+        .before-after {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .before-after img {
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .before-after {
+                grid-template-columns: 1fr; /* Stack on mobile */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6 sm:p-10 md:p-12 lg:p-16">
+        <header class="mb-8">
+            <h1 class="text-3xl font-semibold text-gray-800">Sweet Cupcakes Project</h1>
+            <p class="text-gray-600 mt-2">Web Development Project (2021) with Redesign</p>
+        </header>
+
+        <section class="grid-container mb-8">
+            <div class="grid-item">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Project Overview</h2>
+                <p class="text-gray-600">
+                    The Sweet Cupcakes project involved the design and development of a website for a fictional cupcake business.  The goal was to create a user-friendly and visually appealing online presence using HTML, CSS, and responsive design principles.  The project was undertaken as part of the Webbutveckling 1 – Introduktion course.
+                </p>
+            </div>
+
+            <div class="grid-item">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Original Goals</h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Develop a website with a clear purpose and consistent graphic profile.</li>
+                    <li>Target the website towards cupcake enthusiasts and those celebrating events.</li>
+                    <li>Implement a chosen graphic profile with pastel colors.</li>
+                    <li>Create a well-structured and easy-to-navigate website.</li>
+                    <li>Ensure the website functioned across desktop, tablet, and mobile devices.</li>
+                </ul>
+            </div>
+
+            <div class="grid-item">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Technical Details (Original)</h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li><strong>Languages/Technologies:</strong> HTML5, CSS3, Responsive Web Design</li>
+                    <li><strong>Tools:</strong> Visual Studio Code, Color Hunt, CSS Grid Generator, Canva, Unsplash, Whimsical, Google Maps</li>
+                    <li><strong>Key Features:</strong>
+                        <ul class="list-disc list-inside ml-5 space-y-1">
+                            <li>Mobile-first design approach</li>
+                            <li>Clear navigation menu (mobile and desktop variations)</li>
+                            <li>Grid-based layout for desktop</li>
+                            <li>Subscription form and social media integration in the footer</li>
+                            <li>Display of product images with descriptions</li>
+                            <li>Contact page with Google Maps integration</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="grid-item">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Design Process (Original)</h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Sketches and wireframes for different screen sizes.</li>
+                    <li>Sitemap to define website structure.</li>
+                    <li>Development of HTML structure followed by CSS styling.</li>
+                    <li>Consideration of color palettes and typography.</li>
+                    <li>Image selection and optimization.</li>
+                </ul>
+            </div>
+
+            <div class="grid-item">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Challenges and Solutions (Original)</h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Ensuring consistent layout across browsers and screen resolutions.</li>
+                    <li>Optimizing images for web use.</li>
+                    <li>Implementing responsive navigation.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Redesign</h2>
+            <p class="text-gray-600 mb-4">
+                In a subsequent redesign, I updated the Sweet Cupcakes website to improve its visual appeal, enhance user experience, and incorporate more modern web development practices.
+            </p>
+            <div class="before-after">
+                <div class="before">
+                    <h3 class="text-lg font-semibold text-gray-700 mb-2">Original Design</h3>
+                    <img src="placeholder_before.jpg" alt="Original Sweet Cupcakes Design" class="border rounded-md">
+                </div>
+                <div class="after">
+                    <h3 class="text-lg font-semibold text-gray-700 mb-2">Redesigned Version</h3>
+                    <img src="placeholder_after.jpg" alt="Redesigned Sweet Cupcakes" class="border rounded-md">
+                </div>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-700 mb-2">Key Changes</h4>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Updated color palette and typography.</li>
+                    <li>Modernized layout.</li>
+                    <li>Improved navigation.</li>
+                    <li>Enhanced image presentation.</li>
+                    <li>Implementation of a contact form.</li>
+                    <li>Improved accessibility.</li>
+                </ul>
+            </div>
+             <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-700 mb-2">Tech (Redesign)</h4>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Lessons Learned</h2>
+            <p class="text-gray-600">
+                This project, through its original development and redesign, reinforced the importance of:
+            </p>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li>Thorough planning and wireframing.</li>
+                <li>Adhering to responsive web design principles.</li>
+                <li>The iterative nature of design and the value of redesigns.</li>
+                <li>Considering website accessibility from the outset.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
+

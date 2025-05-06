@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <title>Accessible Transit Booking Project</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="animated-title.css" />
+  <!-- icon library -->
+  <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="parallax.js"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler navbar-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">KONTAKT</a></li>
+            <li class="nav-item">
+              <a href="#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+<main class="container py-5 container-kivra">
+      <img
+        src="images/fardtjanst_mockup.webp"
+        alt="Paratransit Booking Mockup"
+        class="img-fluid my-4"
+        style="max-height: 650px; object-fit: contain;"
+      />
+      <div class="marquee-container mb-4">
+        <ul class="marquee-text">
+          <li>Accessibility</li>
+          <li>User-Centered Design</li>
+          <li>Booking</li>
+          <li>Paratransit</li>
+          <li>WCAG</li>
+          <li>Responsive Design</li>
+          <li>Usability</li>
+          <li>Prototyping</li>
+        </ul>
+      </div>
+      <div class="text-center mb-5">
+        <h1>Accessible Transit Booking Project</h1>
+        <p>
+          A university project focused on designing and developing a website for online booking of paratransit
+          services (färdtjänst) for a municipality.
+        </p>
+      </div>
+
+      <section id="project-overview" class="section mb-5">
+        <h2>Project Overview</h2>
+        <p>
+          This project involved the development of a website to enable residents to book paratransit trips online.
+          The primary goals were to create a user-friendly and accessible platform, adhering to WCAG AA guidelines,
+          and to apply a user-centered, iterative design process.
+        </p>
+        <p>
+          The challenge was to understand and address the needs of users with diverse abilities and requirements.
+          This was achieved through user research, persona creation, and scenario development.
+        </p>
+      </section>
+
+      <section id="key-features" class="section mb-5">
+        <h2>Key Features</h2>
+        <ul>
+          <li>User login and account management [cite: 31]</li>
+          <li>Booking of one-time, round trip, and recurring paratransit journeys [cite: 32, 33, 34]</li>
+          <li>Modification and cancellation of bookings [cite: 35, 36, 37, 38, 39]</li>
+          <li>Information on paratransit regulations and services [cite: 235, 236, 237, 238, 239]</li>
+          <li>Contact information and accessibility statement [cite: 235, 236, 237, 238, 239]</li>
+          <li>Compliance with WCAG AA accessibility standards [cite: 239, 240, 241, 242, 243, 244, 245]</li>
+          <li>Responsive design for cross-device compatibility [cite: 4, 5]</li>
+          <li>The site should have a well-structured and valid code [cite: 5]</li>
+          <li>Possibility to manage bookings [cite: 232]</li>
+        </ul>
+      </section>
+
+      <section id="design-process" class="section mb-5">
+        <h2>Design Process</h2>
+        <p>The design process followed a user-centered approach, incorporating the following stages:</p>
+        <ul>
+          <li>**Research:** Gathering information on paratransit services and user needs.</li>
+          <li>**User Analysis:** Developing user personas and scenarios to understand user behavior and requirements.</li>
+          <li>**Prototyping:** Creating interactive prototypes in Figma to test and refine the user interface. [cite: 270, 271]</li>
+          <li>**Development:** Implementing the design using HTML, CSS, and JavaScript, with a focus on accessibility and responsiveness. [cite: 49]</li>
+          <li>**Testing:** Conducting user testing to evaluate usability and identify areas for improvement. [cite: 223]</li>
+        </ul>
+        <img src="[PATH_TO_A_PROTOTYPE_SCREENSHOT]" alt="Prototype Screenshot" class="project-image mb-4" />
+        <p><i>A screenshot of the booking interface prototype.</i></p>
+      </section>
+
+      <section id="wireframes" class="section mb-5">
+        <h2>Wireframes</h2>
+        <div class="wireframe-container">
+          <figure class="wireframe">
+            <img src="[PATH_TO_WIREFRAME_1.jpg]" alt="Wireframe of Homepage" />
+            <figcaption>Homepage Wireframe</figcaption>
+          </figure>
+          <figure class="wireframe">
+            <img src="[PATH_TO_WIREFRAME_2.jpg]" alt="Wireframe of Booking Form" />
+            <figcaption>Booking Form Wireframe</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="prototype" class="section mb-5">
+        <h2>Figma Prototype</h2>
+        <iframe
+          style="border: 1px solid rgba(0, 0, 0, 0.1);"
+          width="800"
+          height="450"
+          src="[YOUR_FIGMA_PROTOTYPE_LINK]"
+          allowfullscreen
+        ></iframe>
+        <p><i>Interactive prototype created in Figma.</i></p>
+      </section>
+
+      <section id="personas" class="section mb-5">
+        <h2>Personas</h2>
+        <div class="persona-container">
+          <figure class="persona">
+            <img src="[PATH_TO_PERSONA_1.jpg]" alt="Persona: Elderly User" />
+            <figcaption>Persona: [Name of Persona 1] - [Brief Description]</figcaption>
+          </figure>
+          <figure class="persona">
+            <img src="[PATH_TO_PERSONA_2.jpg]" alt="Persona: User with Visual Impairment" />
+            <figcaption>Persona: [Name of Persona 2] - [Brief Description]</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="interviews" class="section mb-5">
+        <h2>User Interviews</h2>
+        <div class="interview-video">
+          <video controls width="640" height="360">
+            <source src="[PATH_TO_INTERVIEW_1.mp4]" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p><i>Interview with a potential user.</i></p>
+        </div>
+        <div class="interview-video">
+          <video controls width="640" height="360">
+            <source src="[PATH_TO_INTERVIEW_2.mp4]" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p><i>Interview with another potential user.</i></p>
+        </div>
+      </section>
+
+      <section id="technologies-used" class="section mb-5">
+        <h2>Technologies Used</h2>
+        <ul>
+          <li>HTML5 [cite: 49]</li>
+          <li>CSS3 [cite: 49]</li>
+          <li>JavaScript [cite: 49]</li>
+          <li>Figma (for prototyping) [cite: 270, 271]</li>
+          <li>WCAG AA guidelines [cite: 4, 239, 240, 241, 242, 243, 244, 245]</li>
+          <li>Lighthouse [cite: 271, 272]</li>
+          <li>Studio Visual Code [cite: 49]</li>
+          <li>w3schools.com [cite: 49]</li>
+          <li>achecker.achecks.ca/checker/index.php [cite: 49, 50]</li>
+          <li>Wave [cite: 50, 51]</li>
+          <li>webbriktlinjer.se/riktlinjer/ [cite: 51]</li>
+          <li>fontawesome.com/v5.15 [cite: 52]</li>
+          <li>fonts.google.com/ [cite: 52]</li>
+          <li>Color contrast checker [cite: 52, 53]</li>
+          <li>Web developper extension [cite: 53]</li>
+          <li>validator.w3.org/ [cite: 53, 54]</li>
+        </ul>
+      </section>
+
+      <section id="challenges-and-solutions" class="section">
+        <h2>Challenges and Solutions</h2>
+        <p>
+          A key challenge was ensuring the website was accessible to users with various disabilities. Solutions
+          included:
+        </p>
+        <ul>
+          <li>Implementing sufficient color contrast. [cite: 240, 241, 242, 243, 244, 245]</li>
+          <li>Providing clear and concise text. [cite: 240, 241, 242, 243, 244, 245]</li>
+          <li>Ensuring keyboard navigation using tabindex. [cite: 245, 246, 247, 43]</li>
+          <li>Using ARIA attributes for screen reader compatibility. [cite: 245, 246, 247, 248, 44, 45]</li>
+        </ul>
+        <p>
+          Another challenge was to create an intuitive booking process. This was addressed through iterative
+          prototyping and user testing, which helped to simplify the forms and navigation. [cite: 223, 57, 58, 59]
+        </p>
+      </section>
+
+      <section id="tags" class="section">
+        <h2>Tags</h2>
+        <span class="tag">Web Development</span>
+        <span class="tag">Accessibility</span>
+        <span class="tag">Usability</span>
+        <span class="tag">User-Centered Design</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Figma</span>
+        <span class="tag">WCAG</span>
+        <span class="tag">Front-end Development</span>
+      </section>
+
+      <section id="report" class="section">
+        <h2>Project Report</h2>
+        <p>
+          For a detailed explanation of the project, including the design process, implementation details, and user
+          testing results, please refer to the project report:
+        </p>
+        <a href="[PATH_TO_YOUR_REPORT.pdf]" class="report-link">View Project Report</a>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Footer Brand -->
+          <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
+            <img
+              src="images/logotyp namn_white.svg"
+              alt="Footer Logo"
+              class="footer-logo"
+              style="max-width: 100px; height: auto"
+            />
+          </div>
+
+          <!-- Footer Navigation -->
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
+              <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
+              <li class="list-inline-item"><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+              <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Footer Social Media -->
+          <div class="col-md-4 text-md-end text-center">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-dribbble"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary my-3" />
+        <div class="text-center">
+          <p class="mb-0">&copy; 2024 Your Name</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PizzaUno Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="animated-title.css" />
+  <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler navbar-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+            <li class="nav-item">
+              <a href="#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container py-5 container-kivra">
+      <section id="top-image" class="text-center mb-4">
+        <img
+          src="images/pizzauno_hero.webp"
+          alt="PizzaUno Project Hero Image"
+          class="img-fluid"
+          style="max-height: 650px; object-fit: contain"
+        />
+      </section>
+
+      <section id="marquee" class="mb-4">
+        <div class="marquee-container">
+          <ul class="marquee-text">
+            <li>Restaurant Website</li>
+            <li>Dynamic Menu</li>
+            <li>Booking System</li>
+            <li>Responsive Design</li>
+            <li>RESTful API</li>
+            <li>Admin Interface</li>
+            <li>Headless CMS</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="overview" class="container">
+        <h2>Project Overview</h2>
+        <p>
+          This project delivers a fully functional web application for a fictional food business (e.g., restaurant, café, pizzeria) featuring:
+          <ul>
+            <li>A public-facing site showcasing menu items and allowing customers to book tables or place take-away orders</li>
+            <li>An administration interface for staff to manage menu, bookings & orders via CRUD operations</li>
+            <li>A RESTful web service (PHP & MySQL) serving JSON data to both frontends</li>
+          </ul>
+        </p>
+        <img src="placeholder-overview.jpg" alt="Overview screenshot">
+      </section>
+    
+      <section id="purpose" class="container">
+        <h2>Purpose & Goals</h2>
+        <p>
+          The purpose is to integrate concepts from previous course modules into a cohesive project. Goals include:
+          <ul>
+            <li>Designing a graphical profile targeting a chosen audience</li>
+            <li>Implementing an automated workflow with Gulp and SCSS/Sass</li>
+            <li>Creating a headless CMS architecture: separate repos for public site, admin panel & service</li>
+            <li>Building interactivity with modern JavaScript (ES6+) or TypeScript</li>
+          </ul>
+        </p>
+      </section>
+    
+      <section id="architecture" class="container">
+        <h2>Architecture & Workflow</h2>
+        <p>
+          <strong>Repositories:</strong>
+          <ul>
+            <li>REST API (PHP, MySQL) – provides endpoints for menu & booking CRUD</li>
+            <li>Admin Panel – JavaScript frontend consuming API, secured login, content editing</li>
+            <li>Public Site – JavaScript frontend consuming API, responsive UI, booking form</li>
+          </ul>
+        </p>
+        <p>
+          The build process uses <strong>Gulp</strong> to automate:
+          <ul>
+            <li>SCSS compilation & autoprefixing</li>
+            <li>JavaScript transpilation (Babel/TypeScript)</li>
+            <li>Image optimization & live reloading (BrowserSync)</li>
+          </ul>
+        </p>
+        <img src="placeholder-architecture.jpg" alt="Workflow diagram">
+      </section>
+    
+      <section id="features" class="container">
+        <h2>Key Features</h2>
+        <ul>
+          <li>Dynamic menu display fetched via <code>fetch()</code> from API</li>
+          <li>Online table booking & take-away order form with client-side validation</li>
+          <li>Admin CRUD interface with editable tables (contenteditable) and real-time updates</li>
+          <li>Responsive design for mobile & desktop using Flexbox and media queries</li>
+          <li>Security measures: input sanitization, prepared statements in PHP</li>
+        </ul>
+        <img src="placeholder-features.jpg" alt="Feature screenshot">
+      </section>
+    
+      <section id="tech-stack" class="container">
+        <h2>Technical Stack</h2>
+        <p>Languages & Frameworks:</p>
+        <ul>
+          <li>HTML5, CSS3 (SCSS/Sass)</li>
+          <li>JavaScript (ES6+) / TypeScript</li>
+          <li>PHP 7+ for REST API</li>
+        </ul>
+        <p>Tools & Services:</p>
+        <ul>
+          <li>Gulp for task automation</li>
+          <li>MySQL / MariaDB database</li>
+          <li>Git & GitHub Classroom for version control</li>
+          <li>BrowserSync for live preview</li>
+        </ul>
+      </section>
+    
+      <section id="process" class="container">
+        <h2>Development Process</h2>
+        <ol>
+          <li>Planning & Wireframes: ER diagrams, database schema, Figma mockups</li>
+          <li>API Development: CRUD endpoints with PHP & MySQL, tested via Thunder Client</li>
+          <li>Frontend Implementation: public site & admin panel, dynamic content loading</li>
+          <li>Automated Builds: setup Gulp tasks for SCSS, JS bundling & live reload</li>
+          <li>Testing & Validation: cross-browser checks, W3C HTML/CSS validation</li>
+        </ol>
+        <img src="placeholder-process.jpg" alt="Development process flow">
+      </section>
+    
+      <section id="reflection" class="container">
+        <h2>Reflection</h2>
+        <p>
+          Completing this project enhanced my skills in full-stack web development, automated workflows, and headless architecture. The most challenging part was securing the API and syncing real-time updates between admin and public interfaces. Next steps include adding image upload support and email confirmations.
+        </p>
+      </section>
+    
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
+            <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo" style="max-width: 100px; height: auto" />
+          </div>
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
+              <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
+              <li class="list-inline-item"><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+              <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-md-end text-center">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-dribbble"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary my-3" />
+        <div class="text-center">
+          <p class="mb-0">&copy; 2025 PizzaUno. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
