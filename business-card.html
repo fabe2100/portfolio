@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Business Card Mockup - Dark Theme</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .business-card {
+    width: 360px;
+    height: 220px;
+    background: #000000;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(255,255,255,0.15);
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+  }
+  .accent-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background: #00bcd4; /* bright cyan accent */
+    border-radius: 16px 0 0 16px;
+  }
+  .graphic-element {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 140px;
+    height: 140px;
+    background: radial-gradient(circle at center, #00bcd4aa, transparent 70%);
+    border-radius: 50%;
+    filter: blur(18px);
+    z-index: 0;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+  }
+  .logo-container img {
+    max-height: 70px;
+    max-width: 100%;
+    filter: brightness(0) invert(1);
+  }
+  .name {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .title {
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    position: relative;
+    z-index: 1;
+    color: #b0bec5;
+  }
+  .contact-info {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #eceff1;
+  }
+  .contact-info span {
+    display: block;
+    margin-bottom: 6px;
+  }
+</style>
+</head>
+<body>
+  <div class="business-card">
+    <div class="accent-bar"></div>
+    <div class="graphic-element"></div>
+    <div class="logo-container">
+      <img src="images/logotyp namn_black.svg" alt="Personal Logotype" />
+    </div>
+    <div class="name">Fauzia Ben Sliman</div>
+    <div class="title">UX/UI & Graphic Designer</div>
+    <div class="contact-info">
+      <span>Email: hello@yourportfolio.com</span>
+      <span>Phone: +1 (555) 123-4567</span>
+      <span>Website: www.yourportfolio.com</span>
+    </div>
+  </div>
+</body>
+</html>

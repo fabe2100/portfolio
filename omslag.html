@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <title>Art Magazine Spread</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="animated-title.css" />
+  <!-- icon library -->
+  <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="parallax.js"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler navbar-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">CONTAKT</a></li>
+            <li class="nav-item">
+              <a href="#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container py-5 container-kivra">
+      <div class="section">
+        <h2>Art Magazine Spread</h2>
+        <p>
+          This project showcases a two-page spread designed for an art magazine,
+          focusing on the use of typography to enhance the visual narrative and
+          create a cohesive reading experience about oil painting.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Typographic Choices</h2>
+        <p>The design employs three typefaces, each chosen for a specific purpose:</p>
+
+        <div class="typeface-block">
+          <h3 class="typeface-name">Helvetica</h3>
+          <p class="typeface-example">
+            Used for the main headline. Its modern and simple design provides a
+            strong visual anchor. It captures the reader's attention and introduces
+            the article's topic: "OLJEMÅLNINGEN MELLAN: Tradition och Modernitet".
+          </p>
+        </div>
+
+        <div class="typeface-block">
+          <h3 class="typeface-name">Futura</h3>
+          <p class="typeface-example">
+            Used for captions and the pull quote ("Genom oljans magi..."). Its
+            geometric form highlights specific aspects of the content and adds a
+            contemporary feel.
+          </p>
+        </div>
+
+        <div class="typeface-block">
+          <h3 class="typeface-name">Baskerville</h3>
+          <p class="typeface-example">
+            Used for the body text. Its elegance and high readability make it
+            suitable for extended reading, providing a contrast to the modern
+            Helvetica and Futura.
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Design Principles</h2>
+        <p>The design adheres to principles of clear communication and visual harmony:</p>
+        <ul>
+          <li><span class="symmetrical-layout">Symmetrical Layout:</span> The layout is arranged around a vertical axis, creating an elegant and balanced composition.</li>
+          <li><span class="hierarchical-structure">Typographic Hierarchy:</span> Achieved through variations in font size, weight (regular, bold, italic), and the use of small caps. The sizes follow a modified Fibonacci sequence (34pt, 21pt, 13pt, 8pt) to create visual harmony.</li>
+          <li><span class="readability">Readability:</span> Optimized by adjusting leading (vertical space between lines) to enhance the reading experience and create "active air."</li>
+          <li><span class="image-text-integration">Image-Text Integration:</span> Images of oil paintings reinforce the text's theme, adhering to the concept of anchorage, where text and image work together to convey the message.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Visual Example</h2>
+        <p>Here is a visual representation of the magazine spread design:</p>
+        <div class="image-container">
+          <img src="magazine_spread_layout.jpg" alt="Magazine Spread Layout" style="max-width: 100%" />
+          <p>(Replace 'magazine_spread_layout.jpg' with your actual image file)</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Footer Brand -->
+          <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
+            <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo" style="max-width: 100px; height: auto" />
+          </div>
+
+          <!-- Footer Navigation -->
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
+              <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
+              <li class="list-inline-item"><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+              <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Footer Social Media -->
+          <div class="col-md-4 text-md-end text-center">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-dribbble"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary my-3" />
+        <div class="text-center">
+          <p class="mb-0">&copy; 2025 Your Portfolio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -2,7 +2,6 @@
 
 @keyframes showTopText {
   0% { transform: translate3d(0, 100%, 0); }
-  40%, 60% { transform: translate3d(0, 50%, 0); }
   100% { transform: translate3d(0, 0, 0); }
 }
 @keyframes showBottomText {
@@ -13,7 +12,6 @@
   color: #000000;
   font-family: Roboto, Arial, sans-serif;
   font-weight: 500;
-  /* Remove absolute positioning */
   position: relative;
   max-width: 90vw;
   max-height: 90vh;
@@ -34,10 +32,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .animated-title > div div {
-  font-size: 5rem;
   padding: 0vmin 0;
   position: relative;
   width: 100%;
@@ -52,29 +48,33 @@
   top: 0;
 }
 .animated-title > div.text-top div {
-  animation: showTopText 1s;
-
+  animation: showTopText 1s ease-out;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   bottom: 0;
   transform: translate(0, 100%);
+  font-size: 6rem;
+  font-weight: 900;
+  white-space: nowrap;
+  overflow: visible;
 }
 .animated-title > div.text-top div span:first-child {
   color: #000000;
-  font-weight: 900;
 }
 .animated-title > div.text-bottom {
   bottom: 0;
   white-space: nowrap;
   font-weight: 400;
-
 }
 .animated-title > div.text-bottom div {
-  animation: showBottomText 0.5s;
+  animation: showBottomText 0.5s ease-out;
   animation-delay: 1.75s;
   animation-fill-mode: forwards;
   top: 0;
   transform: translate(0, -100%);
+  font-size: 3rem;
+  font-weight: 400;
+  white-space: normal;
 }
 
 /* Responsive adjustments */
@@ -83,8 +83,12 @@
     max-width: 95vw;
     max-height: 40vh;
   }
-  .animated-title > div div {
-    font-size: clamp(2rem, 8vmin, 5rem);
+  .animated-title > div.text-top div {
+    font-size: clamp(3rem, 8vmin, 6rem);
+    white-space: normal;
+  }
+  .animated-title > div.text-bottom div {
+    font-size: clamp(1.5rem, 5vmin, 3rem);
   }
 }
 @media (max-width: 480px) {
@@ -92,8 +96,14 @@
     max-width: 95vw;
     max-height: 30vh;
   }
-  .animated-title > div div {
-    font-size: clamp(1.5rem, 6vmin, 3rem);
+  .animated-title > div.text-top div {
+    font-size: clamp(2rem, 6vmin, 4rem);
+    white-space: normal;
+  }
+  .animated-title > div.text-bottom div {
+    font-size: clamp(1rem, 4vmin, 2rem);
   }
 }
+
+
 

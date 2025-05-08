@@ -111,6 +111,11 @@ h2 {
   gap: 2rem;
   margin-bottom: 3rem;
 }
+.visual {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 .detail-pair img {
   width: 100%;
@@ -1057,8 +1062,39 @@ header {
 
 .nav-btn:hover {
   background-color: #333; /* Mörk bakgrund vid hover */
-  color: #fff; /* Vit text vid hover */
+  color: #fff !important; /* Vit text vid hover */
   border-color: #333;
+}
+
+/* Desktop view navigation link colors and hover */
+@media (min-width: 769px) {
+  .navbar-light .navbar-nav .nav-link {
+    color: black !important;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  /* Remove underline hover effect for About button on desktop and above */
+  .navbar-light .navbar-nav .nav-btn.btn-outline-dark {
+    position: relative;
+  }
+  .navbar-light .navbar-nav .nav-btn.btn-outline-dark::after {
+    content: none !important;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link:focus {
+    color: black !important;
+    background-color: transparent !important;
+    text-decoration: none;
+  }
+
+  /* About button hover style */
+  .navbar-light .navbar-nav .nav-btn.btn-outline-dark:hover {
+    color: white !important;
+    background-color: #333 !important;
+    border-color: #333 !important;
+  }
 }
 
 .nav-btn:focus {
@@ -1558,10 +1594,12 @@ html, body {
   from{
     opacity: 0;
     scale: 0.5;
+    transform: translateX(-100px);
   }
   to{
     opacity: 1;
     scale: 1;
+    transform: translateX(0px);
   }
 }
 .block{
