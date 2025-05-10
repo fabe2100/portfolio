@@ -15,7 +15,7 @@
   position: relative;
   max-width: 90vw;
   max-height: 90vh;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   text-align: center;
   display: flex;
@@ -23,6 +23,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+
 }
 .animated-title > div {
   height: auto;
@@ -32,6 +33,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .animated-title > div div {
   padding: 0vmin 0;
@@ -39,6 +41,7 @@
   width: 100%;
   left: 0;
   text-align: center;
+
 }
 .animated-title > div div span {
   display: block;
@@ -54,12 +57,14 @@
   bottom: 0;
   transform: translate(0, 100%);
   font-size: 6rem;
-  font-weight: 900;
+  font-weight: 800;
+  overflow:visible;
   white-space: nowrap;
-  overflow: visible;
+
 }
 .animated-title > div.text-top div span:first-child {
   color: #000000;
+
 }
 .animated-title > div.text-bottom {
   bottom: 0;
@@ -85,12 +90,13 @@
   }
   .animated-title > div.text-top div {
     font-size: clamp(3rem, 8vmin, 6rem);
-    white-space: normal;
+    white-space: nowrap;
   }
   .animated-title > div.text-bottom div {
     font-size: clamp(1.5rem, 5vmin, 3rem);
   }
 }
+
 @media (max-width: 480px) {
   .animated-title {
     max-width: 95vw;

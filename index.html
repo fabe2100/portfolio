@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper" id="top">
 
     <header class="video-header">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -57,10 +57,10 @@
               <div class="hero-content">
                 <div class="animated-title">
                   <div class="text-top">
-                    <div><span>HELLO! I'M FAUZIA</span></div>
+                    <div><span>NAME : FAUZIA</span></div>
                   </div>
                   <div class="text-bottom">
-                    <div><span>I'M A DIGITAL DESIGNER</span></div>
+                    <div><span>AND I AM A DIGITAL DESIGNER</span></div>
                   </div>
                 </div>
                 <!--<p class="hero-description">Driven by curiosity and a love for the digital landscape, I design
@@ -118,7 +118,7 @@
                 <a href="kivra.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
-                      <img src="images/kivra_omdesign.webp" class="card-img-top border-bottom" alt="Project Image">
+                      <img src="images/kivra_image.webp" class="card-img-top border-bottom" alt="Project Image">
                       <span class="badge badge-dark card-label">UX/UI Design</span>
                     </div>
                     <div class="card-body">
@@ -142,7 +142,7 @@
                 <a href="sverigesradio.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
-                      <img src="images/skiss_sverigesradio.jpeg" class="card-img-top border-bottom" alt="Project Image">
+                      <img src="images/skiss_sverigesradio.webp" class="card-img-top border-bottom" alt="Project Image">
                       <span class="badge badge-dark card-label">UX/UI Design</span>
                     </div>
                     <div class="card-body">
@@ -922,6 +922,59 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+  <a href="#top" id="button" title="Back to Top" class="show">↑</a>
+
+  <style>
+    #button {
+      display: inline-block;
+      background-color: #000000;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      border-radius: 20px;
+      position: fixed;
+      bottom: 30px;
+      right: 25px;
+      transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 20;
+      font-size: 2em;
+      line-height: 50px;
+      color: #fff;
+      font-weight: normal;
+      font-style: normal;
+    }
+    /* Removed #button::after */
+    #button:hover {
+      cursor: pointer;
+      background-color: #333;
+    }
+    #button:active {
+      background-color: #555;
+    }
+    #button.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  </style>
+
+  <script>
+const btn = document.getElementById('button');
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 0) {
+    btn.classList.add('show');
+  } else {
+    btn.classList.remove('show');
+  }
+});
+btn.addEventListener('click', () => {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+});
+
+
+  </script>
 </body>
 
 </html>
