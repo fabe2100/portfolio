@@ -16,16 +16,15 @@
   <!-- icon library -->
   <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  <script src="parallax.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
+</head>
 
 <body>
   <div class="wrapper">
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="images/logotyp namn_black.svg" alt="Logo" class="logo">
         </a>
         <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -34,12 +33,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">CONTAKT</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">CONTACT</a></li>
             <li class="nav-item">
-              <a href="#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
+              <a href="index.html#about" class="nav-link btn btn-outline-dark nav-btn "><span
+                  class="underline-text">ABOUT</span></a>
             </li>
           </ul>
+          <!-- Close button for mobile menu -->
+          <button id="mobile-menu-close" aria-label="Close menu" style="display:none;">&#x2715;</button>
         </div>
       </nav>
     </header>
@@ -49,46 +51,47 @@
       <section id="introduction" class="mb-5 text-center">
         <h1>Höga Kusten: Implementing modern techniques to attract local Tourists</h1>
         <div class="marquee-container">
-          <ul class="marquee-text">
-            <li>UX Research and User Research</li>
-            <li>Wireframing</li>
-            <li>Prototyping</li>
-            <li>User Testing</li>
-            <li>Visual Design</li>
-            <li>Interaction Design</li>
-            <li>Flowchart</li>
-            <li>Design Theories and Methods</li>
-            <li>Usability Testing and Iteration</li>
-
+          <ul class="marquee-text custom-bullets">
+            <li>Interview</li>
+            <li>Surveys</li>
+            <li>Pact analysis</li>
+            <li>Environmental analysis</li>
+            <li>Affinity diagramming</li>
+            <li>Sketches</li>
+            <li>Prototypes</li>
+            <li>Mockups</li>
+            <li>Testing</li>
+            <li>Iterations</li>
+            <li>Interaction map</li>
           </ul>
         </div>
 
         <img src="images/kusten_mockup.webp" alt="Kivra Figma Prototype Hero Image" class="img-fluid my-4"
           style="max-height: 650px; object-fit: contain;" />
-        <p class="lead">
+        <p class="lead scroll-slide-in-up">
           This project aimed to create a digital guide app for Höga Kusten, focusing on improving accessibility and
           navigation for visitors. The app would offer a rich experience of the region through customized guides and
-          language options.
+          language options with a hint for gamification to also catch the younger generation.
         </p>
       </section>
 
-      <section class="project-background fade-in">
+      <section class="project-background">
         <h2>Background and Goals</h2>
-        <p>The project was conducted as part of a university course in interaction design. Höga Kusten is a popular
+        <p>Höga Kusten is a popular
           destination, and the goal was to create an app that meets the needs of a broad audience, including those who
           value accessibility and ease of navigation.</p>
-        <ul>
+        <ul class="custom-bullets">
           <li><strong>Overall Goal:</strong> To provide a rich experience of Höga Kusten.</li>
           <li><strong>UX Goals:</strong> Improve accessibility and simplify navigation.</li>
           <li><strong>Target Audience Needs:</strong> Accessibility, ease of navigation, customized guides, language
-            options.</li>
+            options, gamification and include immersive technology.</li>
         </ul>
       </section>
 
-      <section class="my-role fade-in">
+      <section class="my-role ">
         <h2>My Role</h2>
-        <p>In this project, I was responsible for:</p>
-        <ul>
+        <p>In this project, I worked as a member in a team and we were responsible for:</p>
+        <ul class="custom-bullets">
           <li>UX Design</li>
           <li>User Research</li>
           <li>Information Architecture</li>
@@ -98,25 +101,21 @@
         </ul>
       </section>
 
-      <section class="design-process fade-in">
+      <section class="design-process ">
         <h2>Design Process</h2>
         <div class="process-step">
           <h3>Filter Dimensions</h3>
           <p>Filter dimensions were used to focus development efforts on core features such as customized guides and
-            language options to meet user needs for accessibility and easy navigation (Lim et al., 2008).</p>
+            language options to meet user needs for accessibility and easy navigation.</p>
         </div>
         <div class="process-step">
           <h3>Prototype Development</h3>
           <p>The process included a divergent phase with sketches and mockups, followed by the development of
-            low-fidelity prototypes to quickly test basic concepts (McElroy & Chochinov, 2017; Lim et al., 2008).</p>
-          <div class="detail-pair">
-            <img src="link-to-lowfi-sketch-1.jpg" alt="Low-fidelity sketch 1" />
-            <img src="link-to-lowfi-prototype-1.jpg" alt="Low-fidelity prototype 1" />
-          </div>
-          <p>High-fidelity prototypes were then created to visualize the final design and interactions (McElroy &
-            Chochinov, 2017).</p>
-          <img src="link-to-highfi-prototype-overview.jpg" alt="High-fidelity prototype overview"
-            style="max-width: 100%; border-radius: 8px;" />
+            low-fidelity prototypes to quickly test basic concepts.</p>
+            <img class="scroll-slide-in-up mb-4 img-fluid" src="images/kusten_skiss_ar_low.webp" alt="Low-fidelity sketch 1" />
+            <img class="scroll-slide-in-up mb-4 img-fluid" src="images/kusten_prototyp_lowcontrast.webp"
+              alt="Low-fidelity prototype 1" />
+
         </div>
         <div class="process-step">
           <h3>Usability Testing and Iteration</h3>
@@ -126,48 +125,58 @@
         </div>
         <div class="process-step">
           <h3>Theories and Methods</h3>
-          <p>Design decisions were informed by theories on prototyping (Lim et al., 2008; McElroy & Chochinov, 2017) and
-            principles of interaction design (Benyon, 2014).</p>
+          <p>Filter Dimensions prioritized core features like customized guides and language options for accessibility.
+          </p>
+          <p>Prototyping involved sketches, low-fidelity, and high-fidelity prototypes to refine design concepts.</p>
+          <p>Usability Testing identified issues leading to iterative improvements, especially in login flow and
+            navigation.</p>
+          <p>Evaluation used Benyon's 12 points to assess usability and overall effectiveness.</p>
         </div>
       </section>
 
-      <section class="design-solution fade-in">
+      <section class="design-solution ">
         <h2>Design Solution</h2>
         <h3>Flowchart</h3>
-        <img src="link-to-flowchart.png" alt="App flowchart" class="flowchart-image" />
-        <p><a href="https://miro.com/app/board/uXjVLK_8e8A=/?share_link_id=684137105829" target="_blank"
-            rel="noopener noreferrer">Link to Flowchart (Miro)</a></p>
 
-        <h3>Prototype</h3>
-        <div class="prototype-embed">
-          <iframe
-            src="https://www.figma.com/proto/8EENJ2BDtwusgUvA6iCh28/Delprov-2-(Slutgiltiga-Prototyp)?node-id=1-4&node-type=frame&t=sWQPd9uuRH3Uoeip-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A4&show-proto-sidebar=1"
-            allowfullscreen></iframe>
-        </div>
-        <p><a
-            href="https://www.figma.com/proto/8EENJ2BDtwusgUvA6iCh28/Delprov-2-(Slutgiltiga-Prototyp)?node-id=1-4&node-type=frame&t=sWQPd9uuRH3Uoeip-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A4&show-proto-sidebar=1"
-            target="_blank" rel="noopener noreferrer">Link to Figma Prototype</a></p>
+        <img src="images/Flowchart - Frame 1.webp" class="img-fluid scroll-slide-in-up" />
+        <p><a class="styled-link" href="https://miro.com/app/board/uXjVLK_8e8A=/?share_link_id=684137105829"
+            target="_blank" rel="noopener noreferrer">Link to Flowchart (Miro)</a></p>
+
 
         <h3>Key Improvements</h3>
         <div class="detail-pair">
           <div>
             <h3>Redesigned Login Flow</h3>
             <p>Based on usability testing, the login process was made more intuitive and accessible.</p>
-            <img src="link-to-login-before.jpg" alt="Login before" class="comparison-image" />
-            <img src="link-to-login-after.jpg" alt="Login after" class="comparison-image" />
+            <div>
+              <p>The implementation of clear filters helps users quickly find relevant guides based on their needs.</p>
+            </div>
+            <img src="images/iteration_bild_kusten.webp" alt="Login before"
+              class="comparison-image scroll-slide-in-up" />
           </div>
-          <div>
-            <h3>Useful Filters</h3>
-            <p>The implementation of clear filters helps users quickly find relevant guides based on their needs.</p>
-            <img src="link-to-filter-example.jpg" alt="Filter example" class="comparison-image" />
-          </div>
+
         </div>
       </section>
 
-      <section class="results-learnings fade-in">
+      <section class="results-learnings">
         <h2>Results and Learnings</h2>
+        <h3>Prototype</h3>
+
+        <div class="prototype-video d-none d-md-block">
+          <video controls muted loop playsinline class="responsive-video">
+            <source src="images/screen_recording_kusten.mov" type="video/mp4">
+            <source src="images/screen_recording_kusten.mov" type="video/webm">
+            Din webbläsare stöder inte video-taggen.
+          </video>
+        </div>
+        <p>
+          <a class="styled-link shakeX" href="LÄNK-TILL-DIN-FIGMA-PROTOTYP" target="_blank"
+            rel="noopener noreferrer">View Figma
+            Prototype</a>
+        </p>
+
         <h3>Results</h3>
-        <ul>
+        <ul class="custom-bullets">
           <li>Usability tests showed improved user-friendliness, aesthetics, and efficiency (according to Benyon's 12
             points).</li>
           <li>Identified areas for improvement include customization options and clearer explanations of some features.
@@ -178,67 +187,57 @@
         <p>Throughout the project, I learned the importance of early usability testing and iterative design. I also
           realized how crucial it is to continuously evaluate design decisions based on user needs and established UX
           principles.</p>
-        <p>In future projects, I would like to explore further customization options and ensure clearer communication of
-          all features to minimize confusion.</p>
+       
       </section>
 
-      <section class="further-material fade-in">
-        <h2>Further Material</h2>
-        <p><a href="link-to-user-test-report.pdf" target="_blank">User Test Report (PDF)</a> (if applicable)</p>
+      <section class="further-material">
+        <h2>Explore More</h2>
+        <p>
+          For a more in-depth look at the design process and additional materials, please visit my Padlet:
+        </p>
+        <p><a class="styled-link shakeX"
+            href="https://digitaldesign.padlet.org/fauziaben_sliman0026_1/interaktionsdesign_dp2-yy8xg38lbakr72f5"
+            target="_blank">Höga Kusten Tourist App - Padlet</a></p>
       </section>
     </main>
 
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-black text-white py-4">
       <div class="container">
         <div class="row align-items-center">
+          <!-- Footer Brand -->
           <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
             <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo"
-              style="max-width: 100px; height: auto;" />
+              style="max-width: 100px; height: auto;">
           </div>
+
+          <!-- Footer Navigation -->
           <div class="col-md-4 text-center mb-3 mb-md-0">
             <ul class="list-inline mb-0">
               <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
               <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
-              <li class="list-inline-item"><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+              <li class="list-inline-item"><a href="cv.html" class="text-white text-decoration-none">CV</a></li>
               <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
             </ul>
           </div>
+
+          <!-- Footer Social Media -->
           <div class="col-md-4 text-md-end text-center">
             <ul class="list-inline mb-0">
-              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-dribbble"></i></a></li>
               <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+
             </ul>
           </div>
         </div>
-        <hr class="border-secondary my-3" />
+        <hr class="border-secondary my-3">
         <div class="text-center">
-          <p class="mb-0">&copy; 2025 Your Portfolio. All rights reserved.</p>
+          <p class="mb-0 text-light">&copy; 2025 FB Portfolio. All rights reserved.</p>
         </div>
       </div>
     </footer>
-
-
-    <script>
-      // Fade-in animation script (can be placed in a separate js file)
-      const fadeElements = document.querySelectorAll('.fade-in');
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1 });
-
-      fadeElements.forEach(element => {
-        observer.observe(element);
-      });
-    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </div>
 </body>
 
 </html>

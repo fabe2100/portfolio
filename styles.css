@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -17,11 +18,12 @@ body {
 header {
   text-align: center;
 }
+
 .shadow {
-  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
-  0 0  0 2px rgb(190, 190, 190),
-  0.3em 0.3em 1em rgba(0,0,0,0.3);
-  }
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(190, 190, 190),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
 
 .back-link {
   display: inline-block;
@@ -32,11 +34,48 @@ header {
 }
 
 h1 {
-  font-size: 3.2rem;
+
+  font-size: 3.5rem;
   margin: 0;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
+.h1-index { 
+    font-family: 'Quicksand', sans-serif;
+
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 1px;
+  font-weight: 100;
+  background: linear-gradient(to right, black, #000000, black);
+
+}
+.h1-index::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 600px;
+  margin-left: -300px;
+  margin-top: -220px;
+  height: 600px;
+  background: radial-gradient(50% 50%, ellipse closest-side, #444, black);
+  z-index: -1;
+}
+.h1-index a {
+  background: black;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  letter-spacing: 30px;
+  color: white;
+}
+.list-unstyled li{
+  font-size: 2em;
+  text-align: center;
+}
 main {
   padding: 2rem 1rem;
   max-width: 1000px;
@@ -45,60 +84,25 @@ main {
 
 section {
   margin-bottom: 0;
-  
+
 }
 
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
-
+h3{
+  font-size: 1.5rem;
+}
 .comparison-slider {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-.slider-wrapper {
-  position: relative;
-}
-
-.before-image,
-.after-image {
-  width: 100%;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.after-image {
-  clip-path: inset(0 50% 0 0);
-  transition: clip-path 0.3s ease;
-  z-index: 1;
-}
-
-.slider {
-  width: 100%;
-  margin-top: 20px;
-  appearance: none;
-  height: 6px;
-  background: #D7CCC8;
-  border-radius: 5px;
-  outline: none;
-}
-
-.slider::-webkit-slider-thumb {
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  background: #FFCDD2;
-  border: 2px solid #5D4037;
-  border-radius: 50%;
-  cursor: pointer;
-}
 
 /* Detaljer */
 .details h3 {
@@ -108,9 +112,32 @@ h2 {
 .detail-pair {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
+
+.detail-item {
+  width: 48%;
+  /* Adjust as needed */
+  margin-bottom: 20px;
+}
+
+.detail-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+detail-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+detail-item p {
+  font-size: 0.9em;
+  color: #666;
+}
+
 .visual {
   max-width: 100%;
   height: auto;
@@ -121,7 +148,7 @@ h2 {
   width: 100%;
   max-width: 400px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Fade-in Animation */
@@ -142,33 +169,38 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
- 
+
 }
 
 
 .carousel-item img {
-  height: 300px; /* Set a fixed height for the images */
-  object-fit: cover; /* Ensure the images maintain aspect ratio and fill the height */
+  height: 300px;
+  /* Set a fixed height for the images */
+  object-fit: cover;
+  /* Ensure the images maintain aspect ratio and fill the height */
 }
+
 body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   width: 100%;
 }
+
 body {
   position: relative;
 }
+
 /* Content Container */
 .hero-content {
   font-size: 2rem;
   max-width: 100%;
-  
+
   z-index: 2;
 }
-.hero-content h1{
+
+.hero-content h1 {
   color: black;
   padding-bottom: 50px;
   font-weight: 800;
@@ -180,6 +212,7 @@ body {
   max-width: 100%;
 
 }
+
 .hero-container {
   align-items: flex-start;
   padding-top: 50px;
@@ -193,14 +226,17 @@ body {
   position: relative;
   z-index: 1;
 }
+
 .content-below-hero {
   position: relative;
   z-index: 2;
   width: 100%;
 }
-.hero-description{
+
+.hero-description {
   color: rgb(0, 0, 0);
 }
+
 /* Typography Scaling */
 .hero-title {
   font-size: clamp(2rem, 5vw, 3.5rem);
@@ -213,7 +249,7 @@ body {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   margin-bottom: 2.5rem;
   max-width: 600px;
-  
+
 }
 
 /* Button Group */
@@ -228,6 +264,7 @@ body {
   font-size: 1rem;
   border-radius: 4px;
   transition: all 0.3s ease;
+  font-family: Poppins, sans-serif;
 }
 
 /* Scroll Hint */
@@ -247,43 +284,51 @@ body {
     padding: 0 1.5rem;
     min-height: 500px;
   }
-  .hero-video video{
+
+  .hero-video video {
     display: none;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
     width: 100%;
   }
-  
+
   .btn {
     width: 100%;
     text-align: center;
-    
+
   }
-  
+
   .hero-scroll-hint {
     left: 1.5rem;
     bottom: 1.5rem;
   }
 
   .hero-container {
-    flex-direction: column; /* Ändra till vertikal layout på mindre skärmar */
-    align-items: center; /* Centrera innehållet */
+    flex-direction: column;
+    /* Ändra till vertikal layout på mindre skärmar */
+    align-items: center;
+    /* Centrera innehållet */
   }
 
-  .hero-content, .hero-image {
-    max-width: 100%; /* Låt text och bild ta upp hela bredden */
-    text-align: center; /* Centrera texten */
+  .hero-content,
+  .hero-image {
+    max-width: 100%;
+    /* Låt text och bild ta upp hela bredden */
+    text-align: center;
+    /* Centrera texten */
     font-size: 1rem;
   }
-  .hero-content h1{
+
+  .hero-content h1 {
     font-size: 1rem;
     padding-bottom: 20px;
   }
 
   .hero-image {
-    justify-content: center; /* Centrera bilden */
+    justify-content: center;
+    /* Centrera bilden */
   }
 }
 
@@ -291,18 +336,19 @@ body {
   .hero-title {
     margin-bottom: 1rem;
   }
-  
+
   .hero-subtitle {
     margin-bottom: 2rem;
   }
-  
+
   .hero-scroll-hint {
     font-size: 0.8rem;
   }
 }
 
 .hero-video {
-  flex: 1; /* Ökad bredd för videodelen */
+  flex: 1;
+  /* Ökad bredd för videodelen */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -310,7 +356,8 @@ body {
   max-width: 850px;
   width: 100%;
   height: auto;
-  margin-top: 30px; /* Justera detta värde för att flytta videon högre (negativt värde flyttar uppåt) */
+  margin-top: 30px;
+  /* Justera detta värde för att flytta videon högre (negativt värde flyttar uppåt) */
   position: relative;
 }
 
@@ -319,23 +366,25 @@ body {
 /* Animationer */
 @keyframes fadeInLeft {
   from {
-      opacity: 0;
-      transform: translateX(-50px);
+    opacity: 0;
+    transform: translateX(-50px);
   }
+
   to {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
 @keyframes fadeInRight {
   from {
-      opacity: 0;
-      transform: translateX(50px);
+    opacity: 0;
+    transform: translateX(50px);
   }
+
   to {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -348,7 +397,8 @@ body {
 .video-header {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full höjd */
+  height: 100vh;
+  /* Full höjd */
   overflow: hidden;
 }
 
@@ -358,13 +408,16 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Gör att videon täcker hela ytan */
-  z-index: -1; /* Placera videon bakom innehållet */
+  object-fit: cover;
+  /* Gör att videon täcker hela ytan */
+  z-index: -1;
+  /* Placera videon bakom innehållet */
 }
 
 .welcome-text {
   position: relative;
-  z-index: 1; /* Placera texten ovanpå videon */
+  z-index: 1;
+  /* Placera texten ovanpå videon */
   color: white;
   text-align: left;
   padding: 20px;
@@ -395,6 +448,7 @@ body {
     text-align: center;
     padding: 10px;
   }
+
   h1 {
     font-size: 2.2rem;
     margin: 0;
@@ -442,7 +496,8 @@ header {
 }
 
 main {
-  padding-top: 0; /* Ta bort onödig padding */
+  padding-top: 0;
+  /* Ta bort onödig padding */
   /* Lägg till marginal för att kompensera för headerns höjd */
   flex: 1;
   /* Gör att main-sektionen tar upp all ledig plats */
@@ -474,10 +529,10 @@ nav ul li {
   color: black;
 }
 
-.navbar-light .navbar-nav .nav-link .nav-btn.btn-outline-dark{
+.navbar-light .navbar-nav .nav-link .nav-btn.btn-outline-dark {
   color: black !important;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1rem;
   /* Tvinga vit färg */
 }
 
@@ -510,9 +565,9 @@ nav ul li {
     overflow: hidden;
     padding: 0;
     margin: 0 5px;
-    }
-    
-    .navbar-light .navbar-nav .nav-btn .nav-link::after {
+  }
+
+  .navbar-light .navbar-nav .nav-btn .nav-link::after {
     content: '';
     position: absolute;
     height: 2px;
@@ -521,18 +576,18 @@ nav ul li {
     bottom: 0;
     left: 0;
     transition: width 0.5s;
-    }
-    
-    .navbar-light .navbar-nav .nav-link:hover::after,
-    .navbar-light .navbar-nav .nav-link:focus::after {
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover::after,
+  .navbar-light .navbar-nav .nav-link:focus::after {
     width: 100%;
-    }
-    
-    .navbar-light .navbar-nav .nav-link:hover {
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
     background-color: transparent;
     color: inherit;
     border: none;
-    }
+  }
 
 }
 
@@ -541,7 +596,8 @@ nav ul li {
   padding-left: 15px;
   padding-top: 35px;
 }
-.welcome-text h1{
+
+.welcome-text h1 {
   font-size: 3em;
 
 }
@@ -554,10 +610,10 @@ nav ul li {
 
 }
 
-.btn-outline-secondary{
+.btn-outline-secondary {
   font-size: 1em;
   border-radius: 50px;
-  padding: 2px;
+  padding: 10px;
   border: 5px solid rgb(0, 0, 0);
   color: black;
 }
@@ -580,6 +636,7 @@ nav ul li {
   color: white !important;
   text-decoration: none;
 }
+
 .link-projects a {
   font-size: 3em;
   text-decoration: none !important;
@@ -589,7 +646,7 @@ nav ul li {
 }
 
 .link-projects:hover {
-  color: rgb(73, 93, 125);
+  color: rgb(255, 255, 255);
   text-decoration: none !important;
 }
 
@@ -690,22 +747,22 @@ hr {
   .carousel-item {
     padding: 0.5rem;
   }
-  
+
   .carousel-inner {
     padding: 0 15px;
   }
-  
+
   .card {
     margin-bottom: 1rem;
-   
-                
+
+
   }
-  
+
   .col-md-4 {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  
+
 }
 
 
@@ -775,8 +832,10 @@ hr {
 
 /* Footer */
 footer {
-  background-color: #1a1a1a; /* Mörk bakgrund */
-  color: #fff; /* Vit text */
+  background-color: #1a1a1a;
+  /* Mörk bakgrund */
+  color: #fff;
+  /* Vit text */
   padding: 2rem 0;
   font-size: 0.9rem;
 }
@@ -800,10 +859,28 @@ footer ul li {
 footer ul li a {
   color: #fff;
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+footer ul li a::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background: #ccc;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
 }
 
 footer ul li a:hover {
-  color: #ccc; /* Ljusare färg vid hover */
+  color: #ccc;
+  /* Ljusare färg vid hover */
+}
+
+footer ul li a:hover::after {
+  width: 100%;
 }
 
 footer .list-inline-item {
@@ -811,15 +888,19 @@ footer .list-inline-item {
 }
 
 footer .list-inline-item a {
-  font-size: 1.2rem; /* Justera storleken på ikonerna */
+  font-size: 1.2rem;
+  /* Justera storleken på ikonerna */
 }
 
 footer .list-inline-item a:hover {
-  color: #007bff; /* Blå färg vid hover */
+  color: #3388e4;
+  /* Blå färg vid hover */
 }
 
+
 hr.border-secondary {
-  border-color: #444; /* Ljusare linje för separation */
+  border-color: #444;
+  /* Ljusare linje för separation */
 }
 
 :root {
@@ -840,6 +921,7 @@ hr.border-secondary {
   }
 
 }
+
 .jumbotron p:last-child {
   margin-bottom: 0;
 }
@@ -867,6 +949,7 @@ footer p {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
   border-radius: 5px;
 }
+
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: calc(var(--jumbotron-padding-y) * 2);
@@ -874,6 +957,7 @@ footer p {
   }
 
 }
+
 header {
   position: absolute;
   width: 100%;
@@ -885,16 +969,18 @@ header {
   padding-right: 0px;
 }
 
-.container-cards{
+.container-cards {
   padding-bottom: 0;
 }
+
 .welcome-text {
   font-size: 1.4em;
- 
+
 }
 
 #contact {
-  background-color: #f9f9f9; /* Ljus bakgrund */
+  background-color: #f9f9f9;
+  /* Ljus bakgrund */
 }
 
 #contact h3 {
@@ -922,7 +1008,8 @@ header {
 }
 
 #contact a:hover {
-  color: #007bff; /* Blå färg vid hover */
+  color: #007bff;
+  /* Blå färg vid hover */
 }
 
 #contact .form-control {
@@ -940,7 +1027,8 @@ header {
 }
 
 #about {
-  background-color: #f9f9f9; /* Ljus bakgrundsfärg */
+  background-color: #f9f9f9;
+  /* Ljus bakgrundsfärg */
 }
 
 #about h6 {
@@ -968,13 +1056,16 @@ header {
 }
 
 #about ul li i {
-  color: #28a745; /* Grön färg för ikoner */
+  color: #28a745;
+  /* Grön färg för ikoner */
   margin-right: 10px;
 }
 
 #about img {
-  border-radius: 8px; /* Rundade hörn för bilden */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Skugga för bilden */
+  border-radius: 8px;
+  /* Rundade hörn för bilden */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Skugga för bilden */
 }
 
 #featured-projects .badge {
@@ -988,12 +1079,12 @@ header {
 
 .card {
   transition: all 0.3s ease;
-  
+
 }
 
 .card:hover {
   transform: scale(1.03);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .pagination .page-link {
@@ -1015,7 +1106,8 @@ header {
 /* Video Header */
 .video-header {
   width: 100%;
-  height: 110vh; /* Full höjd */
+  height: 110vh;
+  /* Full höjd */
   overflow: hidden;
 }
 
@@ -1025,13 +1117,16 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Gör att videon täcker hela ytan */
-  z-index: -1; /* Placera videon bakom innehållet */
+  object-fit: cover;
+  /* Gör att videon täcker hela ytan */
+  z-index: -1;
+  /* Placera videon bakom innehållet */
 }
 
 .welcome-text {
   position: relative;
-  z-index: 1; /* Placera texten ovanpå videon */
+  z-index: 1;
+  /* Placera texten ovanpå videon */
   color: white;
   text-align: left;
 }
@@ -1060,14 +1155,17 @@ header {
   font-size: 1.5rem;
   font-weight: 500;
   padding: 0.5rem 1rem;
-  border-radius: 25px; /* Rundade hörn */
+  border-radius: 25px;
+  /* Rundade hörn */
   transition: all 0.3s ease;
   color: black;
 }
 
 .nav-btn:hover {
-  background-color: #333; /* Mörk bakgrund vid hover */
-  color: #fff !important; /* Vit text vid hover */
+  background-color: #333;
+  /* Mörk bakgrund vid hover */
+  color: #fff !important;
+  /* Vit text vid hover */
   border-color: #333;
 }
 
@@ -1075,14 +1173,15 @@ header {
 @media (min-width: 769px) {
   .navbar-light .navbar-nav .nav-link {
     color: black !important;
-    font-weight: 500;
-    font-size: 1.5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
   }
 
   /* Remove underline hover effect for About button on desktop and above */
   .navbar-light .navbar-nav .nav-btn.btn-outline-dark {
     position: relative;
   }
+
   .navbar-light .navbar-nav .nav-btn.btn-outline-dark::after {
     content: none !important;
   }
@@ -1120,9 +1219,9 @@ header {
     border: none !important;
     color: black !important;
     box-sizing: border-box !important;
-    }
-    
-    .nav-btn::after {
+  }
+
+  .nav-btn::after {
     content: '';
     position: absolute;
     height: 2px;
@@ -1134,54 +1233,71 @@ header {
     transition: transform 0.5s ease !important;
     transform-origin: left;
     transform: scaleX(0);
-    }
-    
-    .nav-btn:hover::after,
-    .nav-btn:focus::after {
+  }
+
+  .nav-btn:hover::after,
+  .nav-btn:focus::after {
     transform: scaleX(1);
-    }
-    
-    .nav-btn:hover {
+  }
+
+  .nav-btn:hover {
     background-color: transparent !important;
     color: inherit !important;
     border: none !important;
-    }
-    .underline-text {
-      position: relative;
-      display: inline-block;
-    }
-  
-    .underline-text::after {
-      content: '';
-      position: absolute;
-      height: 2px;
-      background: black;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-      transform-origin: left;
-      transform: scaleX(0);
-      transition: transform 0.5s ease;
-    }
-  
-    .nav-btn:hover .underline-text::after,
-    .nav-btn:focus .underline-text::after {
-      transform: scaleX(1);
-    }
+  }
+
+  .underline-text {
+    position: relative;
+    display: inline-block;
+  }
+
+  .underline-text::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: black;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+
+  .nav-btn:hover .underline-text::after,
+  .nav-btn:focus .underline-text::after {
+    transform: scaleX(1);
+  }
 }
+
 @media (max-width: 768px) {
   .navbar-toggler {
     background-color: transparent !important;
     border: none !important;
   }
+
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
   }
 }
-.filters.active {
-  background-color: #792828;
-  color: #fff;
-  border-color: #333;
+
+/* Scoped styles for filter buttons inside #filter-buttons-container */
+#filter-buttons-container .filters.active {
+  background-color: black !important;
+  color: white !important;
+  border-color: black !important;
+  border-radius: 0 !important;
+}
+
+#filter-buttons-container .btn.btn-outline-dark.filters {
+  border-radius: 0 !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#filter-buttons-container .btn.btn-outline-dark.filters:hover {
+  background-color: black !important;
+  color: white !important;
+  border-color: black !important;
 }
 
 /* Föräldern till etiketten måste vara position-relative */
@@ -1192,51 +1308,74 @@ header {
 /* Etikett på kort */
 .card-label {
   position: absolute;
-  top: 10px; /* Placera etiketten nära toppen av kortet */
-  left: 10px; /* Placera etiketten nära vänsterkanten */
-  font-size: 0.8rem; /* Justera storleken för att passa kortet */
-  padding: 5px 10px; /* Lägg till lite padding för bättre utseende */
-  background-color: rgba(0, 0, 0, 0.7); /* Halvtransparent bakgrund */
-  color: #fff; /* Vit text */
-  border-radius: 5px; /* Rundade hörn */
-  z-index: 10; /* Se till att etiketten ligger ovanpå bilden */
+  top: 10px;
+  /* Placera etiketten nära toppen av kortet */
+  left: 10px;
+  /* Placera etiketten nära vänsterkanten */
+  font-size: 0.8rem;
+  /* Justera storleken för att passa kortet */
+  padding: 5px 10px;
+  /* Lägg till lite padding för bättre utseende */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Halvtransparent bakgrund */
+  color: #fff;
+  /* Vit text */
+  border-radius: 5px;
+  /* Rundade hörn */
+  z-index: 10;
+  /* Se till att etiketten ligger ovanpå bilden */
 }
 
 /* Responsiv design för etiketten */
 @media (max-width: 768px) {
   .card-label {
-    font-size: 0.7rem; /* Minska storleken på mindre skärmar */
-    padding: 4px 8px; /* Justera padding för mindre skärmar */
+    font-size: 0.7rem;
+    /* Minska storleken på mindre skärmar */
+    padding: 4px 8px;
+    /* Justera padding för mindre skärmar */
   }
 }
 
 /* Etiketter för verktyg och kodningsspråk */
 .tech-tags {
-  margin-top: 1rem; /* Avstånd från texten ovanför */
+  margin-top: 1rem;
+  /* Avstånd från texten ovanför */
   display: flex;
-  flex-wrap: wrap; /* Gör att etiketterna radbryts vid behov */
-  gap: 0.5rem; /* Avstånd mellan etiketterna */
+  flex-wrap: wrap;
+  /* Gör att etiketterna radbryts vid behov */
+  gap: 0.5rem;
+  /* Avstånd mellan etiketterna */
 }
 
 .tech-tags .badge {
-  font-size: 0.75rem; /* Mindre textstorlek för etiketter */
+  font-size: 0.75rem;
+  /* Mindre textstorlek för etiketter */
   font-weight: 500;
-  padding: 0.4rem 0.8rem; /* Padding för en modern look */
-  background-color: #f8f9fa; /* Ljus bakgrund */
-  color: #333; /* Mörk text */
-  border: 1px solid #ddd; /* Tunn kantlinje */
-  border-radius: 20px; /* Rundade hörn */
+  padding: 0.4rem 0.8rem;
+  /* Padding för en modern look */
+  background-color: #f8f9fa;
+  /* Ljus bakgrund */
+  color: #333;
+  /* Mörk text */
+  border: 1px solid #ddd;
+  /* Tunn kantlinje */
+  border-radius: 20px;
+  /* Rundade hörn */
   transition: all 0.3s ease;
 }
 
 .tech-tags .badge:hover {
-  background-color: #333; /* Mörkare bakgrund vid hover */
-  color: #fff; /* Vit text vid hover */
-  border-color: #333; /* Matcha kantlinjen vid hover */
+  background-color: #333;
+  /* Mörkare bakgrund vid hover */
+  color: #fff;
+  /* Vit text vid hover */
+  border-color: #333;
+  /* Matcha kantlinjen vid hover */
 }
 
 /* General reset and base styles */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -1250,7 +1389,8 @@ html, body {
 .video-header {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
+  /* Full viewport height */
   overflow: hidden;
 }
 
@@ -1302,7 +1442,8 @@ html, body {
   justify-content: center;
   align-items: center;
   height: auto;
-  gap: 1rem; /* space between animated title and button */
+  gap: 1rem;
+  /* space between animated title and button */
 }
 
 /* Hero scroll button styling */
@@ -1316,6 +1457,7 @@ html, body {
   .welcome-text {
     padding: 10px;
   }
+
   .hero-content {
     font-size: 1.5rem;
   }
@@ -1326,23 +1468,27 @@ html, body {
     padding-left: 0rem !important;
     margin-left: 0 !important;
   }
+
   body.nav-open {
     overflow: hidden;
   }
-  
+
 }
 
 @media (max-width: 480px) {
   .hero-content {
     font-size: 1.2rem;
   }
- 
+
 }
 
 /* Responsive fixes for index.html on small screens */
 @media (max-width: 576px) {
+
   /* Constrain main content width and add horizontal padding */
-  main, .hero-container, .welcome-text {
+  main,
+  .hero-container,
+  .welcome-text {
     max-width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1366,46 +1512,52 @@ html, body {
   }
 }
 
-  .clickable-card {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .clickable-card:hover,
-  .clickable-card:focus {
-    transform: scale(1.01);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    text-decoration: none;
-    color: inherit;
-  }
-.container-kivra{
+.clickable-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clickable-card:hover,
+.clickable-card:focus {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: inherit;
+}
+
+.container-kivra {
   margin-top: 100px;
 }
+
 @media (max-width: 991.98px) {
   .navbar-collapse {
     position: fixed !important;
-    top: 100px; /* height of logo and toggle button */
+    top: 0;
+    /* cover full viewport height */
     left: 0;
     width: 100%;
-    max-height: calc(100vh - 100px);
+    height: 100vh;
+    /* full viewport height */
     background: #fff;
-    height: auto;
     z-index: 1050;
-    overflow-y: hidden; /* Changed from auto to hidden to prevent scrollbar flicker */
+    overflow-y: auto;
+    /* allow scrolling */
     padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: none;
+    /* remove shadow to cover full page */
     transition: transform 0.3s ease-in-out;
     transform-origin: top;
     transform: translateY(-100%);
-
+    padding-top: 100px;
 
   }
 
   .navbar-collapse.show {
     transform: translateY(0);
-    overflow-y: auto; /* Enable scrolling only when menu is shown */
+    overflow-y: auto;
+    /* Enable scrolling only when menu is shown */
   }
 
 
@@ -1424,87 +1576,146 @@ html, body {
     color: #000000 !important;
   }
 }
-  @media (max-width: 468px) {
-    #process ul.list-inline {
+
+@media (max-width: 468px) {
+  #process ul.list-inline {
     flex-direction: column !important;
     gap: 1rem !important;
     padding-left: 0;
-    }
-    
-    #process ul.list-inline li.list-inline-item {
+  }
+
+  #process ul.list-inline li.list-inline-item {
     display: block !important;
     text-align: center;
-    }
-    
-    #process ul.list-inline li.list-inline-item:nth-child(2n) {
-    display: none !important; /* Hide the arrow items on small screens */
-    }
-    } 
-    @media (max-width: 768px) {
-      .redesign-images {
-      flex-direction: column !important;
-      gap: 1rem !important;
-      }
-      .redesign-images img {
-      width: 100% !important;
-      height: auto;
-      }
-      .mobile-menu-overlay {
-  position: fixed;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.7);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
-  z-index: 1000;
+  }
+
+  #process ul.list-inline li.list-inline-item:nth-child(2n) {
+    display: none !important;
+    /* Hide the arrow items on small screens */
+  }
 }
 
-.mobile-menu-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.mobile-menu {
-  position: fixed;
-  top: 0; right: 0;
-  width: 280px; height: 100%;
-  background: #fff;
-  box-shadow: -2px 0 8px rgba(0,0,0,0.2);
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
-  z-index: 1100;
-  display: flex;
-  flex-direction: column;
-  padding: 1.5rem;
-}
-
-.mobile-menu.active {
-  transform: translateX(0);
-}
-
-
-
-.navbar-toggler {
-  background: none;
-  border: none;
-  font-size: 1.7rem;
-  cursor: pointer;
-  color: #333;
-  z-index: 1200;
-  position: relative;
-}
-
-/* Hide desktop nav and show toggler on mobile */
 @media (max-width: 768px) {
-  nav.desktop-menu {
+  .redesign-images {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  .redesign-images img {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+  }
+
+  .mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1100;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .mobile-menu.active {
+    transform: translateX(0);
+  }
+
+  .navbar-toggler {
+    background: none;
+    border: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: #333;
+    z-index: 900;
+    /* Lower z-index to be below close button */
+    position: relative;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Hide toggler when menu is open */
+  .navbar-collapse.show+.navbar-toggler,
+  .navbar-collapse.show~.navbar-toggler {
+    display: none !important;
+  }
+
+  /* Ensure close button is above toggler */
+  #mobile-menu-close {
+    z-index: 1200 !important;
+  }
+
+  /* Removed incorrect sibling selector hiding toggle button */
+  /* The toggle button visibility is controlled via JavaScript */
+
+  /* Close button styling */
+  #mobile-menu-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    z-index: 1300;
     display: none;
   }
-  .navbar-toggler {
-    display: block;
-  }
-}
 
-      }
+  /* Show close button only when menu is open */
+  .navbar-collapse.show #mobile-menu-close {
+    display: block !important;
+  }
+
+  /* Ensure nav links text is black */
+  .navbar-collapse .nav-link,
+  .navbar-collapse .nav-btn {
+    color: black !important;
+    font-weight: 600;
+    margin: 0.75rem 0;
+    display: block;
+    text-shadow: none;
+  }
+
+  .navbar-collapse .nav-link:hover,
+  .navbar-collapse .nav-btn:hover {
+    color: black !important;
+  }
+
+  /* Hide desktop nav and show toggler on mobile */
+  @media (max-width: 768px) {
+    nav.desktop-menu {
+      display: none;
+    }
+
+    .navbar-toggler {
+      display: block;
+    }
+  }
+
+}
 
 /* Marquee text animation with stop on hover */
 .marquee-container {
@@ -1513,7 +1724,7 @@ html, body {
   box-sizing: border-box;
   background-color: #000;
   border: 1px solid #333;
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
   margin-bottom: 1rem;
 }
 
@@ -1522,7 +1733,7 @@ html, body {
   justify-content: center;
   align-items: center;
   padding-left: 100%;
-  animation: marquee 40s linear infinite;
+  animation: marquee 20s linear infinite;
   font-weight: 600;
   font-size: 1.1rem;
   color: #fff;
@@ -1531,34 +1742,29 @@ html, body {
   margin: 0;
 }
 
-.marquee-text li {
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding-left: 1.4em;
-  color: #fff;
-  margin: 0;
+.marquee-text.custom-bullets {
+  list-style: none;
+  padding-left: 0;
 }
-.marquee-text li {
-  display: flex;
-  align-items: center;
+
+.marquee-text.custom-bullets li {
   position: relative;
-  padding-left: 0.9em;
-  color: #fff;
-  margin: 0;
-  }
-  
-  .marquee-text li::before {
-  content: "•";
+  padding-left: 40px;
+  /* utrymme för bilden */
+}
+
+.marquee-text.custom-bullets li::before {
+  content: "";
   position: absolute;
   left: 0;
-  color: white;
-  font-weight: bold;
-  font-size: 1.2em;
-  line-height: 1;
-  top: 50%;
-  transform: translateY(-50%);
-  }
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-image: url('images/asterisk2_white.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 
 .marquee-container:hover .marquee-text {
   animation-play-state: paused;
@@ -1568,15 +1774,20 @@ html, body {
   0% {
     transform: translateX(0%);
   }
+
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
   }
 }
+
 /* Responsive fixes for index.html on small screens */
 
 @media (max-width: 576px) {
+
   /* Constrain main content width and add horizontal padding */
-  main, .hero-container, .welcome-text {
+  main,
+  .hero-container,
+  .welcome-text {
     max-width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1599,27 +1810,51 @@ html, body {
     margin-bottom: 40px !important;
   }
 }
+
+/* Style for mobile menu close button */
+#mobile-menu-close {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  font-size: 2.5rem;
+  background: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Show close button only on small screens when menu is open */
+@media (max-width: 991px) {
+  .navbar-collapse.show #mobile-menu-close {
+    display: block !important;
+  }
+}
+
 @keyframes appear {
-  from{
+  from {
     opacity: 0;
     scale: 0.5;
     transform: translateX(-100px);
   }
-  to{
+
+  to {
     opacity: 1;
     scale: 1;
     transform: translateX(0px);
   }
 }
-.block{
+
+/*.block{
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
-}
+}*/
 
 .figma-embed {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -1636,15 +1871,12 @@ html, body {
 
 /* Hide iframe and show link on small screens */
 @media (max-width: 768px) {
-  .figma-embed {
-    padding-bottom: 0 !important;
-    height: auto !important;
+  .desktop-only {
+    display: none !important;
   }
-  .figma-embed iframe {
-    display: none;
-  }
-  .figma-link {
-    display: block;
+
+  .mobile-only {
+    display: block !important;
     text-align: center;
     margin: 1rem 0;
     font-size: 1.2rem;
@@ -1653,11 +1885,17 @@ html, body {
 
 /* Hide link on larger screens */
 @media (min-width: 769px) {
-  .figma-link {
-    display: none;
+  .desktop-only {
+    display: block !important;
+  }
+
+  .mobile-only {
+    display: none !important;
   }
 }
-.main-content, .container-kivra {
+
+.main-content,
+.container-kivra {
   width: 100%;
   max-width: 700px;
   margin-top: 82px;
@@ -1666,4 +1904,408 @@ html, body {
   padding-left: 20px;
   padding-right: 20px;
   line-height: 1.5em;
+}
+
+/* Egen klass för länkar */
+.styled-link {
+  text-decoration: underline;
+
+  color: #000000;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  /* Viktigt för att bredden ska anpassas efter texten */
+}
+
+.styled-link a:hover {
+  text-decoration: none;
+}
+
+.styled-link::before {
+  content: '';
+  text-decoration: none;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  /* Justera positionen på underline */
+  width: 0;
+  /* Börja med en osynlig underline */
+  height: 2px;
+  color: black;
+  background-color: black;
+  /* Svart färg på underline */
+  transition: width 0.3s ease;
+  /* Mjuk övergång för underline */
+  background-color: hsl(0, 0%, 0%);
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  /* width: 100%; Ta bort detta */
+  height: 22px;
+  z-index: -1;
+}
+
+.styled-link:hover {
+  color: #ffffff;
+  /* Ändra textfärg vid hover (valfritt) */
+  text-decoration: none;
+}
+
+
+.styled-link:hover::before {
+  width: 100%;
+  /* Fyll ut hela bredden vid hover */
+}
+
+/* Zoom-in animation för bilder och videor */
+.zoom-animation {
+  overflow: hidden;
+  /* Dölj overflow från transformeringen */
+}
+
+.zoom-animation img,
+.zoom-animation video {
+  transform: scale(1);
+  /* Börja med normal storlek */
+  transition: transform 1s ease-out;
+  /* Mjuk övergång för transformeringen */
+}
+
+.zoom-animation.animate img,
+.zoom-animation.animate video {
+  transform: scale(1.1);
+  /* Zooma in 10% */
+}
+
+/* Before and After Section */
+.before-after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Två kolumner */
+  gap: 20px;
+  /* Utrymme mellan kolumnerna */
+  margin-bottom: 20px;
+}
+
+.before,
+.after {
+  border: 1px solid #ddd;
+  /* Subtil ram */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtil skugga */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.before img,
+.after img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* Se till att bilderna fyller utrymmet */
+}
+
+.before h4,
+.after h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .figma-embed {
+    height: auto !important;
+    padding-bottom: 0 !important;
   }
+}
+
+/* Scroll Animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.scroll-slide-in {
+  animation-name: slideInLeft;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.scroll-fade-in {
+  animation-name: fadeIn;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.scroll-scale-up {
+  animation-name: scaleUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.scroll-slide-in-up {
+  opacity: 0;
+  transform: translateY(50px);
+  /* Start below the visible area */
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.scroll-slide-in-up.animated {
+  opacity: 1;
+  transform: translateY(0);
+  /* Slide up to its original position */
+}
+
+/* ShakeX animation */
+.shakeX {
+  display: inline-block;
+  /* Ensure the element respects width/height */
+  transform-origin: center center;
+  /* Define where the animation starts */
+  transition: transform 0.3s ease;
+  /* Add a transition for a smoother effect */
+}
+
+.shakeX.animated {
+  animation: shakeX 2s;
+}
+
+@keyframes shakeX {
+  0% {
+    transform: translateX(0);
+  }
+
+  10% {
+    transform: translateX(-10px);
+  }
+
+  20% {
+    transform: translateX(10px);
+  }
+
+  30% {
+    transform: translateX(-10px);
+  }
+
+  40% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  60% {
+    transform: translateX(10px);
+  }
+
+  70% {
+    transform: translateX(-10px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* ShakeX animation */
+.shakeX {
+  display: inline-block;
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+}
+
+.shakeX.animated {
+  animation: shakeX 2s;
+}
+
+@keyframes shakeX {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+/* Bounce animation */
+.bounce {
+  animation: bounce 9s;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Pulse animation */
+.pulse {
+  animation: pulse 2s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+/*li::marker {
+    content: "*";
+  font-size: 48px;
+top: 1000;
+}*/
+ul.custom-bullets {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.custom-bullets li {
+  position: relative;
+  padding-left: 30px;
+  /* utrymme för bilden */
+}
+
+ul.custom-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-image: url('images/asterisk2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+ #button {
+      display: inline-block;
+      background-color: #000000;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      border-radius: 20px;
+      position: fixed;
+      bottom: 30px;
+      right: 25px;
+      transition: background-color .3s,
+        opacity .5s, visibility .5s;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 20;
+      font-size: 2em;
+      line-height: 50px;
+      color: #fff;
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* Removed #button::after */
+    #button:hover {
+      cursor: pointer;
+      background-color: #333;
+    }
+
+    #button:active {
+      background-color: #555;
+    }
+
+    #button.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  @media (max-width: 991.98px) {
+  .navbar-collapse a.nav-link.btn.btn-outline-dark.nav-btn[href="#about"]:hover,
+  .navbar-collapse a.nav-link.btn.btn-outline-dark.nav-btn[href="#about"]:focus,
+  .navbar-collapse a.nav-link.btn.btn-outline-dark.nav-btn[href="#about"]:active,
+  .navbar-collapse a.nav-link.btn.btn-outline-dark.nav-btn[href="#about"]:visited {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+  }
+}
+
+@media (min-width: 992px) {
+  #contact .col-md-6.d-flex.align-items-center span {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(189, 202, 216, 0.4);
+  }
+
+  #contact .col-md-6.d-flex.align-items-center i {
+    font-size: 3rem;
+    color: #000000;
+    padding-right: 12px;
+    vertical-align: middle;
+  }
+}
+

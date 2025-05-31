@@ -10,7 +10,7 @@
 }
 .animated-title {
   color: #000000;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 500;
   position: relative;
   max-width: 90vw;
@@ -56,7 +56,7 @@
   animation-fill-mode: forwards;
   bottom: 0;
   transform: translate(0, 100%);
-  font-size: 6rem;
+  font-size: 8rem;
   font-weight: 800;
   overflow:visible;
   white-space: nowrap;

@@ -22,45 +22,33 @@
   <div class="wrapper">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo" />
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo">
         </a>
-        <button
-          class="navbar-toggler navbar-light"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">CONTACT</a></li>
             <li class="nav-item">
-              <a href="#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
+              <a href="index.html#about" class="nav-link btn btn-outline-dark nav-btn "><span
+                  class="underline-text">ABOUT</span></a>
             </li>
           </ul>
+          <!-- Close button for mobile menu -->
+          <button id="mobile-menu-close" aria-label="Close menu" style="display:none;">&#x2715;</button>
         </div>
       </nav>
     </header>
 
     <main class="container py-5 container-kivra">
-      <section id="top-image" class="text-center mb-4">
-        <img
-          src="images/pizzauno_hero.webp"
-          alt="PizzaUno Project Hero Image"
-          class="img-fluid"
-          style="max-height: 650px; object-fit: contain"
-        />
-      </section>
-
+      <h1 class="mb-5 text-center">PizzaUno: Full-Stack Web Application for Restaurant Management</h1>
       <section id="marquee" class="mb-4">
         <div class="marquee-container">
-          <ul class="marquee-text">
+          <ul class="marquee-text custom-bullets">
             <li>Restaurant Website</li>
             <li>Dynamic Menu</li>
             <li>Booking System</li>
@@ -71,25 +59,27 @@
           </ul>
         </div>
       </section>
+      <section id="top-image" class="text-center mb-4">
+        <img
+          src="images/pizzastore_mockup_transparent.webp"
+          alt="PizzaUno Project Hero Image"
+          class="img-fluid"
+          style="max-height: 650px; object-fit: contain;"
+        />
+      </section>
 
-      <section id="overview" class="container">
-        <h2>Project Overview</h2>
+      <section id="overview" class="lead mb-5 text-center scroll-slide-in-up">
         <p>
-          This project delivers a fully functional web application for a fictional food business (e.g., restaurant, café, pizzeria) featuring:
-          <ul>
-            <li>A public-facing site showcasing menu items and allowing customers to book tables or place take-away orders</li>
-            <li>An administration interface for staff to manage menu, bookings & orders via CRUD operations</li>
-            <li>A RESTful web service (PHP & MySQL) serving JSON data to both frontends</li>
-          </ul>
+          This project delivers a fully functional web application for a fictional food business (e.g., restaurant, café, pizzeria) featuring a public-facing site with menu display, booking and take-away order capabilities, an administration interface for managing content, and a RESTful web service backend.
         </p>
-        <img src="placeholder-overview.jpg" alt="Overview screenshot">
+       
       </section>
     
       <section id="purpose" class="container">
         <h2>Purpose & Goals</h2>
         <p>
           The purpose is to integrate concepts from previous course modules into a cohesive project. Goals include:
-          <ul>
+          <ul class="custom-bullets">
             <li>Designing a graphical profile targeting a chosen audience</li>
             <li>Implementing an automated workflow with Gulp and SCSS/Sass</li>
             <li>Creating a headless CMS architecture: separate repos for public site, admin panel & service</li>
@@ -102,7 +92,7 @@
         <h2>Architecture & Workflow</h2>
         <p>
           <strong>Repositories:</strong>
-          <ul>
+          <ul class="custom-bullets">
             <li>REST API (PHP, MySQL) – provides endpoints for menu & booking CRUD</li>
             <li>Admin Panel – JavaScript frontend consuming API, secured login, content editing</li>
             <li>Public Site – JavaScript frontend consuming API, responsive UI, booking form</li>
@@ -110,37 +100,39 @@
         </p>
         <p>
           The build process uses <strong>Gulp</strong> to automate:
-          <ul>
+          <ul class="custom-bullets">
             <li>SCSS compilation & autoprefixing</li>
             <li>JavaScript transpilation (Babel/TypeScript)</li>
             <li>Image optimization & live reloading (BrowserSync)</li>
           </ul>
         </p>
-        <img src="placeholder-architecture.jpg" alt="Workflow diagram">
+   
       </section>
     
       <section id="features" class="container">
         <h2>Key Features</h2>
-        <ul>
+        <ul class="custom-bullets">
           <li>Dynamic menu display fetched via <code>fetch()</code> from API</li>
           <li>Online table booking & take-away order form with client-side validation</li>
           <li>Admin CRUD interface with editable tables (contenteditable) and real-time updates</li>
           <li>Responsive design for mobile & desktop using Flexbox and media queries</li>
           <li>Security measures: input sanitization, prepared statements in PHP</li>
         </ul>
-        <img src="placeholder-features.jpg" alt="Feature screenshot">
+        <img class="img-fluid mb-5 scroll-slide-in-up" src="images/pizzauno_booking.png" alt="Feature screenshot">
+        <img class="img-fluid mb-5 scroll-slide-in-up" src="images/pizza_uno_admin.png" alt="Feature screenshot">
+        <img class="img-fluid mb-5 scroll-slide-in-up" src="images/pizzauno_admin_panel.png" alt="Feature screenshot">
       </section>
     
       <section id="tech-stack" class="container">
         <h2>Technical Stack</h2>
         <p>Languages & Frameworks:</p>
-        <ul>
+        <ul class="custom-bullets">
           <li>HTML5, CSS3 (SCSS/Sass)</li>
           <li>JavaScript (ES6+) / TypeScript</li>
           <li>PHP 7+ for REST API</li>
         </ul>
         <p>Tools & Services:</p>
-        <ul>
+        <ul class="custom-bullets">
           <li>Gulp for task automation</li>
           <li>MySQL / MariaDB database</li>
           <li>Git & GitHub Classroom for version control</li>
@@ -150,14 +142,14 @@
     
       <section id="process" class="container">
         <h2>Development Process</h2>
-        <ol>
+        <ol class="custom-bullets">
           <li>Planning & Wireframes: ER diagrams, database schema, Figma mockups</li>
           <li>API Development: CRUD endpoints with PHP & MySQL, tested via Thunder Client</li>
           <li>Frontend Implementation: public site & admin panel, dynamic content loading</li>
           <li>Automated Builds: setup Gulp tasks for SCSS, JS bundling & live reload</li>
           <li>Testing & Validation: cross-browser checks, W3C HTML/CSS validation</li>
         </ol>
-        <img src="placeholder-process.jpg" alt="Development process flow">
+        <img class="img-fluid scroll-slide-in-up" src="images/databas_tabeller.drawio (1).png" alt="Development process flow">
       </section>
     
       <section id="reflection" class="container">
@@ -166,43 +158,60 @@
           Completing this project enhanced my skills in full-stack web development, automated workflows, and headless architecture. The most challenging part was securing the API and syncing real-time updates between admin and public interfaces. Next steps include adding image upload support and email confirmations.
         </p>
       </section>
+
+       <section id="website-address" class="container">
+        <h2>Website</h2>
+        <p>
+          The complete website for this project can be viewed at the following address:
+        </p>
+        <a class="styled-link shakeX mb-4" href="https://fabe2100.github.io/pizzauno/index.html" target="_blank"
+          rel="noopener noreferrer">View The Website</a>
+          <p>
+         For accsess to the admin dashboard (username = username and for the password = password):
+        </p>
+        <a class="styled-link shakeX" href="https://studenter.miun.se/~fabe2100/writeable/dt173g/projekt_admin/login.php" target="_blank"
+          rel="noopener noreferrer">Link to admin panel</a>
+      </section>
     
     </main>
 
-    <footer class="bg-dark text-white py-4">
+   <footer class="bg-black text-white py-4">
       <div class="container">
         <div class="row align-items-center">
+          <!-- Footer Brand -->
           <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
-            <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo" style="max-width: 100px; height: auto" />
+            <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo"
+              style="max-width: 100px; height: auto;">
           </div>
+
+          <!-- Footer Navigation -->
           <div class="col-md-4 text-center mb-3 mb-md-0">
             <ul class="list-inline mb-0">
               <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
               <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
-              <li class="list-inline-item"><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+              <li class="list-inline-item"><a href="cv.html" class="text-white text-decoration-none">CV</a></li>
               <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
             </ul>
           </div>
+
+          <!-- Footer Social Media -->
           <div class="col-md-4 text-md-end text-center">
             <ul class="list-inline mb-0">
-              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-dribbble"></i></a></li>
               <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+
             </ul>
           </div>
         </div>
-        <hr class="border-secondary my-3" />
+        <hr class="border-secondary my-3">
         <div class="text-center">
-          <p class="mb-0">&copy; 2025 PizzaUno. All rights reserved.</p>
+          <p class="mb-0 text-light">&copy; 2025 FB Portfolio. All rights reserved.</p>
         </div>
       </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

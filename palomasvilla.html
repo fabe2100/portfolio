@@ -8,8 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
   <title>Min Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
@@ -17,7 +16,6 @@
   <!-- icon library -->
   <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  <script src="parallax.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 </head>
 
@@ -25,63 +23,55 @@
   <div class="wrapper">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo" />
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo">
         </a>
-        <button
-          class="navbar-toggler navbar-light"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">CONTAKT</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">CONTACT</a></li>
             <li class="nav-item">
-              <a href="#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
+              <a href="index.html#about" class="nav-link btn btn-outline-dark nav-btn "><span
+                  class="underline-text">ABOUT</span></a>
             </li>
           </ul>
+          <!-- Close button for mobile menu -->
+          <button id="mobile-menu-close" aria-label="Close menu" style="display:none;">&#x2715;</button>
         </div>
       </nav>
     </header>
 
     <main class="container py-5 container-kivra">
+      <h1 class="mb-5 text-center">Custom WordPress Theme for Villas Palomas</h1>
+
       <!-- Marquee text section added below mockup image -->
       <section class="marquee-container mb-4">
-        <ul class="marquee-text">
-          <li>Custom WordPress Theme Development</li>
+        <ul class="marquee-text custom-bullets">
+          <li>Custom WordPress Theme</li>
+          <li>Villa Listings & Booking</li>
+          <li>SEO & Accessibility Focus</li>
+          <li>Design & Prototype Deliverables</li>
           <li>Dynamic Content Management</li>
-          <li>Villa Listings with Booking Options</li>
-          <li>Activities and News Sections</li>
-          <li>Contact Page with Staff Info and Form</li>
-          <li>SEO Strategy and Optimization</li>
-          <li>Accessibility and Usability Focus</li>
-          <li>Design Deliverables: Sitemap, Wireframes, Mood Boards</li>
-          <li>Figma Prototype and Visual Design</li>
-          <li>CMS Editor Role Customization</li>
-          <li>Project Documentation and Reports</li>
-
         </ul>
       </section>
       <!-- Mockup image section added at the top -->
       <section id="mockup-image" class="section text-center mb-5">
-        <img src="images/3-devices-black.png" alt="Palomas Villa Mockup" class="img-fluid rounded shadow" />
+        <img src="images/3-devices-black.webp" alt="Palomas Villa Mockup" class="img-fluid" />
       </section>
       <!-- Existing main content starts here -->
-      <section id="project-summary" class="section">
-        <h2>Project Summary</h2>
+      <section id="project-summary" class="lead mb-5 text-center scroll-slide-in-up">
         <p>
-          This project involved the creation of a custom WordPress theme for a company that rents out villas and offers related activities.
+          This project involved the creation of a custom WordPress theme for a company that rents out villas and offers
+          related activities.
           The theme was designed to be dynamic, allowing the client to easily manage and update content.
         </p>
         <p>
-          The development process was guided by design deliverables, including sitemaps, mood boards, wireframes, and design sketches, to ensure a functional and user-friendly website.
+          The development process was guided by design deliverables, including sitemaps, mood boards, wireframes, and
+          design sketches, to ensure a functional and user-friendly website.
         </p>
         <p>
           Accessibility was a key consideration, with the theme coded to adhere to WCAG guidelines.
@@ -92,10 +82,11 @@
       <section id="problem-formulation" class="section">
         <h2>Detailed Problem Formulation</h2>
         <p>
-          The project addressed the need for Villas Palomas, a villa rental company in Marrakech, to establish a WordPress website with a custom theme.
+          The project addressed the need for Villas Palomas, a villa rental company in Marrakech, to establish a
+          WordPress website with a custom theme.
           Key requirements included:
         </p>
-        <ul>
+        <ul class="custom-bullets">
           <li>Developing the theme based on CMS principles for dynamic content management.</li>
           <li>Creating a user-friendly interface with clear navigation.</li>
           <li>Ensuring accessibility and usability for a wide audience.</li>
@@ -112,8 +103,8 @@
         <p>
           The design process began with the creation of:
         </p>
-        <ul>
-          <li>Sitemap (as shown in Bild 4 of the report) [cite: 187]</li>
+        <ul class="custom-bullets">
+          <li>Sitemap</li>
           <li>Mood board</li>
           <li>Wireframes</li>
           <li>Design sketches</li>
@@ -121,11 +112,13 @@
         <p>
           These deliverables were used to structure the website and guide the development of the custom WordPress theme.
         </p>
-        <img src="images/Sitemap.png" alt="Sitemap" class="visual" />
+        <img src="images/Sitemap.png" alt="Sitemap" class="visual scroll-slide-in-up" />
         <p class="caption">Sitemap outlining the website's structure (Home, Villas, News, Activities, Contact).</p>
-        <img src="images/moodboard.jpg" alt="Moodboard" class="visual" />
+        <img src="images/moodboard.jpg" alt="Moodboard" class="visual scroll-slide-in-up" />
         <p class="caption">Moodboard representing the visual style and color palette for the project.</p>
-        <p>View the full set of wireframes and design sketches in the <a href="https://www.figma.com/file/sQYeLg6uKj8t2S0DfcQAcX/CMS_Projekt?node-id=0%3A1" target="_blank" rel="noopener noreferrer">Figma prototype</a>.</p>
+        <p>View the full set of wireframes and design sketches in the <a class="styled-link shakeX"
+            href="https://www.figma.com/file/sQYeLg6uKj8t2S0DfcQAcX/CMS_Projekt?node-id=0%3A1" target="_blank"
+            rel="noopener noreferrer">Figma prototype</a>.</p>
       </section>
 
       <section id="key-features" class="section">
@@ -133,24 +126,24 @@
         <p>
           The developed WordPress theme includes the following key features:
         </p>
-        <ul>
-          <li>**Dynamic Content Management:** The ability to easily update villas, news, and activities. [cite: 194, 199, 200]</li>
-          <li>**Villa Listings:** Detailed pages for each villa with descriptions, specifications, and booking options (as shown in Bild 1 of the report). [cite: 196, 197]</li>
-          <li>**Activities and News Sections:** Dedicated sections for displaying activities and news (as shown in Bild 2 of the report). [cite: 199, 200]</li>
-          <li>**Contact Page:** Includes staff information and a contact form (as shown in Bild 3 of the report). [cite: 201, 202]</li>
-          <li>**Widget Area:** For displaying promotions and offers. [cite: 209]</li>
-          <li>**SEO Optimization:** Implementation of various SEO techniques to improve search engine visibility.</li>
-          <li>**Customizable Editor Role:** A WordPress "Editor" role was created to allow staff to manage content. [cite: 199]</li>
+        <ul class="custom-bullets">
+          <li>Dynamic Content Management: The ability to easily update villas, news, and activities. </li>
+          <li>Villa Listings: Detailed pages for each villa with descriptions, specifications, and booking options</li>
+          <li>Activities and News Sections: Dedicated sections for displaying activities and news. </li>
+          <li>Contact Page: Includes staff information and a contact form. </li>
+          <li>Widget Area: For displaying promotions and offers.</li>
+          <li>SEO Optimization: Implementation of various SEO techniques to improve search engine visibility.</li>
+          <li>Customizable Editor Role:A WordPress "Editor" role was created to allow staff to manage content. </li>
         </ul>
 
-        <img src="[PATH_TO_YOUR_VILLA_PAGE_IMAGE]" alt="Villa Page" class="visual" />
-        <p class="caption">Example of a villa details page with booking information.</p>
+        <img src="images/villaspalomas_home.png" alt="Villa Page" class="visual scroll-slide-in-up" />
+        <p class="text-muted">Example of a villa details page with booking information.</p>
 
-        <img src="[PATH_TO_YOUR_ACTIVITIES_PAGE_IMAGE]" alt="Activities Page" class="visual" />
-        <p class="caption">Activities listing page.</p>
+        <img src="images/villaspalomas_activities.png" alt="Activities Page" class="visual scroll-slide-in-up" />
+        <p class="text-muted">Activities listing page.</p>
 
-        <img src="[PATH_TO_YOUR_CONTACT_PAGE_IMAGE]" alt="Contact Page" class="visual" />
-        <p class="caption">Contact page with staff information and form.</p>
+        <img src="images/villaspalomas_contact.png" alt="Contact Page" class="visual scroll-slide-in-up" />
+        <p class="text-muted">Contact page with staff information and form.</p>
       </section>
 
       <section id="seo-strategy" class="section">
@@ -158,7 +151,7 @@
         <p>
           A comprehensive SEO strategy was implemented, including:
         </p>
-        <ul>
+        <ul class="custom-bullets">
           <li>Using Google Search Console and Site Kit for analysis.</li>
           <li>Installing Yoast SEO plugin.</li>
           <li>Optimizing URLs, meta descriptions, and H1 headings.</li>
@@ -176,11 +169,12 @@
         <p>
           The complete website for this project can be viewed at the following address:
         </p>
-        <a href="http://example.com" target="_blank" rel="noopener noreferrer">http://example.com</a>
+        <a class="styled-link shakeX" href="https://studenter.miun.se/~fabe2100/writeable/cms/moment0/" target="_blank"
+          rel="noopener noreferrer">View The Website</a>
       </section>
     </main>
 
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-black text-white py-4">
       <div class="container">
         <div class="row align-items-center">
           <!-- Footer Brand -->
@@ -188,39 +182,35 @@
             <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo"
               style="max-width: 100px; height: auto;">
           </div>
-  
+
           <!-- Footer Navigation -->
           <div class="col-md-4 text-center mb-3 mb-md-0">
             <ul class="list-inline mb-0">
               <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
               <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
-              <li class="list-inline-item"><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+              <li class="list-inline-item"><a href="cv.html" class="text-white text-decoration-none">CV</a></li>
               <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
             </ul>
-            <p class="text-white mt-3">Website: <a href="http://example.com" class="text-white" target="_blank" rel="noopener noreferrer">http://example.com</a></p>
           </div>
-  
+
           <!-- Footer Social Media -->
           <div class="col-md-4 text-md-end text-center">
             <ul class="list-inline mb-0">
-              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-dribbble"></i></a></li>
               <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+
             </ul>
           </div>
         </div>
         <hr class="border-secondary my-3">
         <div class="text-center">
-          <p class="mb-0">&copy; 2025 Your Portfolio. All rights reserved.</p>
+          <p class="mb-0 text-light">&copy; 2025 FB Portfolio. All rights reserved.</p>
         </div>
       </div>
     </footer>
-  
-  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-  </body>
-  
-  </html>
+  </div>
+</body>
+
+</html>

@@ -16,7 +16,6 @@
   <!-- icon library -->
   <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  <script src="parallax.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 </head>
 
@@ -25,27 +24,23 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
-          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo" />
+          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo">
         </a>
-        <button
-          class="navbar-toggler navbar-light"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="index.html#projects">PROJECTS</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">CONTAKT</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">CONTACT</a></li>
             <li class="nav-item">
-              <a href="index.html#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
+              <a href="index.html#about" class="nav-link btn btn-outline-dark nav-btn "><span
+                  class="underline-text">ABOUT</span></a>
             </li>
           </ul>
+          <!-- Close button for mobile menu -->
+          <button id="mobile-menu-close" aria-label="Close menu" style="display:none;">&#x2715;</button>
         </div>
       </nav>
     </header>
@@ -55,45 +50,41 @@
       <section id="introduction" class="mb-5 text-center">
         <h1>Kivra: UX/UI Analysis & Improvement of Concept</h1>
         <div class="marquee-container">
-          <ul class="marquee-text">
+          <ul class="marquee-text custom-bullets">
             <li>UX Research</li>
             <li>Wireframing</li>
             <li>Prototyping</li>
             <li>User Testing</li>
-            <li>Visual Design</li>
+            <li>Evaluation</li>
             <li>Interaction Design</li>
-            <li>Responsive Design</li>
+            <li>Sketches</li>
           </ul>
         </div>
-        <img
-          src="images/kivra_omdesign.webp"
-          alt="Kivra Figma Prototype Hero Image"
-          class="img-fluid my-4"
-          style="max-height: 650px; object-fit: contain"
-        />
-        <p class="lead">
+        <img src="images/kivra_omdesign.webp" alt="Kivra Figma Prototype Hero Image" class="img-fluid my-4"
+          style="max-height: 650px; object-fit: contain" />
+        <p class="lead scroll-slide-in-up">
           An analyse of Kivras usability that leads to a designkoncept and an interactive prototype with new added
           feautures.
         </p>
       </section>
 
-      <section class="project-background fade-in curly-section custom-color">
+      <section class="project-background curly-section custom-color">
         <h2>Background and Goals</h2>
         <p>
           This project involved analyzing Kivra to identify usability weaknesses and strengths, aiming to improve the
           concept and user experience.
         </p>
-        <ul>
+        <ul class="custom-bullets">
           <li><strong>Overall Goal:</strong> Improve usability and user satisfaction.</li>
           <li><strong>UX Goals:</strong> Simplify navigation and clarify features.</li>
           <li><strong>Target Audience Needs:</strong> Easy-to-use, efficient, and accessible design.</li>
         </ul>
       </section>
 
-      <section class="my-role fade-in">
+      <section class="my-role">
         <h2>My Role</h2>
         <p>In this project, I was responsible for:</p>
-        <ul>
+        <ul class="custom-bullets">
           <li>UX Design</li>
           <li>User Research</li>
           <li>Information Architecture</li>
@@ -103,7 +94,7 @@
         </ul>
       </section>
 
-      <section class="design-process fade-in">
+      <section class="design-process">
         <h2>Design Process</h2>
         <div class="process-step">
           <h3>Analysis</h3>
@@ -123,48 +114,70 @@
         </div>
       </section>
 
-      <section class="design-solution fade-in">
+      <section class="design-solution">
         <h2>Design Solution</h2>
         <h3>Sketches & Ideas</h3>
         <div class="gallery mb-4">
-          <img src="images/skiss_1_4_designforslag.jpg" alt="Early Sketches 1" class="img-fluid mb-2" />
-          <img src="images/skiss_5_9_designforslag.jpg" alt="Early Sketches 2" class="img-fluid mb-2" />
-          <img src="images/mockup_jpg.webp" alt="Early Sketches 2" class="img-fluid mb-2" />
+          <img src="images/skiss_1_4_designforslag.jpg" alt="Early Sketches 1"
+            class="img-fluid mb-2 scroll-slide-in-up" />
+          <img src="images/skiss_5_9_designforslag.jpg" alt="Early Sketches 2"
+            class="img-fluid mb-2 scroll-slide-in-up" />
+          <img src="images/mockup_jpg.webp" alt="Early Sketches 2" class="img-fluid mb-2 scroll-slide-in-up" />
 
-          <p class="text-muted">Early sketches exploring different navigation options.</p>
+          <p class="text-muted">Early sketches exploring different ideas of how to improve Kivra.</p>
         </div>
 
         <h3>Interactive Prototype</h3>
-        <div class="figma-embed mb-4">
-          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/kp9qiYGfWsruZ1CjLrcaGQ/Kivra_added_features?node-id=8-2&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8%3A2&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
-          <a href="https://www.figma.com/proto/kp9qiYGfWsruZ1CjLrcaGQ/Kivra_added_features" class="figma-link" target="_blank" rel="noopener noreferrer">View Prototype on Figma</a>
+        <div class="figma-embed mb-2 pulse ">
+          <iframe class="desktop-only scroll-slide-in" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800"
+            height="450"
+            src="https://embed.figma.com/proto/kp9qiYGfWsruZ1CjLrcaGQ/Kivra_added_features?node-id=8-2&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8%3A2&show-proto-sidebar=1&embed-host=share"
+            allowfullscreen></iframe>
+
         </div>
-        
+        <a href="https://www.figma.com/proto/kp9qiYGfWsruZ1CjLrcaGQ/Kivra_added_features" class="styled-link shakeX"
+          target="_blank" rel="noopener noreferrer">View Prototype on Figma</a>
         <p>The prototype demonstrates how the design solves user problems and improves flow.</p>
       </section>
 
-      <section class="results-learnings fade-in">
+      <section class="results-learnings">
         <h2>Results and Learnings</h2>
         <h3>Results</h3>
-        <ul>
-          <li>Usability tests showed improved user-friendliness, aesthetics, and efficiency (according to Benyon's 12 points).</li>
-          <li>Identified areas for improvement include customization options and clearer explanations of some features.</li>
+        <ul class="custom-bullets">
+          <li>Usability tests showed improved user-friendliness, aesthetics, and efficiency (according to Benyon's 12
+            points).</li>
+          <li>Identified areas for improvement include customization options and clearer explanations of some features.
+          </li>
           <li>The app is assessed to have the potential to attract users and offer a positive experience.</li>
         </ul>
         <h3>Learnings</h3>
         <p>
-          Throughout the project, I learned the importance of early usability testing and iterative design. I also realized how crucial it is to continuously evaluate design decisions based on user needs and established UX principles.
+          Throughout the project, I learned the importance of early usability testing and iterative design. I also
+          realized how crucial it is to continuously evaluate design decisions based on user needs and established UX
+          principles.
         </p>
-        <p>In future projects, I would like to explore further customization options and ensure clearer communication of all features to minimize confusion.</p>
+
       </section>
+
+      <section class="further-material">
+        <h2>Explore More</h2>
+        <p>
+          For a more in-depth look at the design process and additional materials, please visit my Padlet:
+        </p>
+        <p><a class="styled-link shakeX"
+            href="https://digitaldesign.padlet.org/fauziaben_sliman0026_1/id102i-woe8p8vrmownldfl" target="_blank">Kivra
+            Improvement - Padlet</a></p>
+      </section>
+
     </main>
 
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-black text-white py-4">
       <div class="container">
         <div class="row align-items-center">
           <!-- Footer Brand -->
           <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
-            <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo" style="max-width: 100px; height: auto" />
+            <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo"
+              style="max-width: 100px; height: auto;">
           </div>
 
           <!-- Footer Navigation -->
@@ -172,7 +185,7 @@
             <ul class="list-inline mb-0">
               <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
               <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
-              <li class="list-inline-item"><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+              <li class="list-inline-item"><a href="cv.html" class="text-white text-decoration-none">CV</a></li>
               <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
             </ul>
           </div>
@@ -180,36 +193,17 @@
           <!-- Footer Social Media -->
           <div class="col-md-4 text-md-end text-center">
             <ul class="list-inline mb-0">
-              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-dribbble"></i></a></li>
               <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+
             </ul>
           </div>
         </div>
-        <hr class="border-secondary my-3" />
+        <hr class="border-secondary my-3">
         <div class="text-center">
-          <p class="mb-0">&copy; 2025 Your Portfolio. All rights reserved.</p>
+          <p class="mb-0 text-light">&copy; 2025 FB Portfolio. All rights reserved.</p>
         </div>
       </div>
     </footer>
-
-    <script>
-      // Fade-in animation script (can be placed in a separate js file)
-      const fadeElements = document.querySelectorAll('.fade-in');
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1 });
-
-      fadeElements.forEach(element => {
-        observer.observe(element);
-      });
-    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

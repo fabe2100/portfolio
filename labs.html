@@ -10,13 +10,12 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
     rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <title>Min Portfolio</title>
+  <title>Min Portfolio - Digital Twin Chemistry Lab</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="animated-title.css">
   <!-- icon library -->
   <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  <script src="parallax.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -25,7 +24,7 @@
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="images/logotyp namn_black.svg" alt="Logo" class="logo">
         </a>
         <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -34,182 +33,237 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">CONTAKT</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">CONTACT</a></li>
             <li class="nav-item">
-              <a href="#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
+              <a href="index.html#about" class="nav-link btn btn-outline-dark nav-btn "><span
+                  class="underline-text">ABOUT</span></a>
             </li>
           </ul>
+          <!-- Close button for mobile menu -->
+          <button id="mobile-menu-close" aria-label="Close menu" style="display:none;">&#x2715;</button>
         </div>
       </nav>
     </header>
 
-  <main class="container py-5 container-kivra">
-    <!-- Marquee text section added at the top -->
-    <h1 class="mb-5 text-center">Digital Twin application: Implementing modern techniques to attract local Tourists</h1>
+    <main class="container py-5 container-kivra">
+      <!-- Marquee text section added at the top -->
+      <h1 class="mb-5 text-center">Digital Twin Chemistry Lab: A Participatory Design Approach</h1>
 
-    <section class="marquee-container mb-4">
-      <ul class="marquee-text">
-        <li>Participatory Design Process</li>
-        <li>Mobile Application Prototype</li>
-        <li>Stakeholder Needs and Problem Solving</li>
-        <li>User-Centered Digital Twin Design</li>
-        <li>Exploration, Ideation, and Mindmapping</li>
-        <li>Stakeholder Involvement and Feedback</li>
-        <li>Low and High-Fidelity Prototyping</li>
-        <li>Design Dialogues and Desirability Testing</li>
-        <li>Digital Twin for Chemistry Lab</li>
-        <li>Real-Time Monitoring and Data Analysis</li>
-        <li>Results, Learnings, and Future Testing</li>
-        <li>Additional Materials on Padlet</li>
-      </ul>
-    </section>
-<section class="project-overview">
-  <img src="images/kemi_mockup1.webp" alt="App Overview" style="max-width: 100%;">
+      <section class="marquee-container mb-4">
+        <ul class="marquee-text custom-bullets">
+          <li>Participatory Design Process</li>
+          <li>Mobile Application Prototype</li>
+          <li>Stakeholder Needs</li>
+          <li>User-Centered Digital Twin Design</li>
+          <li>Mindmapping</li>
+          <li>Exploration</li>
+          <li>User Feedback</li>
+          <li>Design Dialogues</li>
+          <li> Problem Solving</li>
+          <li>Low and High-Fidelity Prototyping</li>
+          <li>Desirability Testing</li>
+          <li>Digital Twin for Chemistry Lab</li>
 
-            <h2>Overview</h2>
-            <p>
-                This project involved a participatory design process to create a mobile application prototype for a digital twin. The application aims to support activities related to a digital twin, focusing on meeting the needs and solving problems identified by stakeholders.
-            </p>
-        </section>
+      </section>
 
-        <section class="project-background">
-            <h2>Background and Goals</h2>
-            <p>
-                The project addressed the challenge of designing a user-centered digital twin application. The primary goals were to:
-            </p>
-            <ul>
-                <li>Develop a mobile application prototype for a digital twin.</li>
-                <li>Incorporate stakeholder needs through a participatory design process.</li>
-                <li>Create a clickable prototype demonstrating key interactions.</li>
+      <section id="introduction" class="mb-5 text-center">
+        <img class="img-fluid my-4" src="images/kemi_mockup1.webp" alt="App Overview" style="max-width: 100%;">
+        <p class="lead scroll-slide-in-up">
+          This project involved a participatory design process to create a mobile application prototype for a digital
+          twin. The application aims to support activities related to a chemistry lab, focusing on meeting the needs
+          and solving problems identified by stakeholders (students aged 10-18).
+        </p>
+      </section>
+
+      <section class="project-background">
+        <h2>Background and Goals</h2>
+        <p>
+          The project addressed the challenge of designing a user-centered digital twin application for a chemistry lab.
+          The primary goals were:
+        </p>
+        <ul class="custom-bullets">
+          <li>Develop a mobile application prototype for a digital twin.</li>
+          <li>Incorporate stakeholder needs through a participatory design process.</li>
+          <li>Create a clickable prototype demonstrating key interactions.</li>
+        </ul>
+      </section>
+
+      <section class="my-role">
+        <h2>My Role</h2>
+        <p>
+          My role in this project focused on:
+        </p>
+        <ul class="custom-bullets">
+          <li>Conducting a participatory design process.</li>
+          <li>Identifying and involving relevant stakeholders.</li>
+          <li>Designing and prototyping the mobile application.</li>
+          <li>Documenting the design process and rationale.</li>
+        </ul>
+      </section>
+
+      <section class="design-process">
+        <h2>Design Process</h2>
+        <p>
+          The design process emphasized user involvement and iterative development. Key stages included:
+        </p>
+
+        <h3>Exploration and Ideation</h3>
+        <p>
+          Initial exploration involved generating ideas around digital twins. Mindmapping was used to identify
+          potential functions and user needs.
+        </p>
+        <p>
+          <strong>Mindmapping:</strong> Visualized thoughts and created a clear structure for ideas.
+        </p>
+        <img src="images/labs_mindmapping.webp" alt="Design Solution 2" class="img-fluid py-2 scroll-slide-in-up">
+        <p>
+          <strong>Brainstorming and Sketching:</strong> Developed initial concepts through sketching.
+        </p>
+        <img src="images/labs_brainstorming.webp" alt="Design Solution 2" class="img-fluid py-2 scroll-slide-in-up">
+        <img src="images/labs_sketch1.webp" alt="Design Solution 2" class="img-fluid py-2 scroll-slide-in-up">
+        <img src="images/labs_sketch2.webp" alt="Design Solution 2" class="img-fluid py-2 scroll-slide-in-up">
+
+        <h3>Stakeholder Involvement</h3>
+        <p>
+          Stakeholders (two students aged 12 and 15) were involved to provide insights into user preferences and
+          needs.
+        </p>
+        <p>
+          <strong>12-year-old:</strong> Beginner in chemistry, expected educational and fun experiments with a simple
+          layout.
+        </p>
+        <p>
+          <strong>15-year-old:</strong> Experienced in chemistry, expected detailed real-time data and adjustable
+          experiment parameters.
+        </p>
+
+        <h3>Prototyping</h3>
+        <p>
+          Low-fidelity sketches were created to visualize initial concepts.
+        </p>
+        <img class="img-fluid scroll-slide-in-up" src="images/labs_desigsolution1.webp" alt="Design Solution 1" class="prototype-image scroll-slide-in-up">
+        <img src="images/labs_designsolution2.webp" alt="Design Solution 2" class="img-fluid py-4 scroll-slide-in-up">
+
+        <h3>Design Dialogues and Desirability Testing</h3>
+        <p>
+          Design dialogues with stakeholders influenced the prototype's development. Desirability testing was conducted
+          to gather feedback on the design's attractiveness.
+        </p>
+        <p>
+          <strong>Desirability Testing:</strong> Assessed the attractiveness of the low-fidelity prototype.
+        </p>
+        <img class="img-fluid scroll-slide-in-up" src="images/labs_testing1.webp" alt="Design Solution 1" class="prototype-image scroll-slide-in-up">
+        <img src="images/labs_testing2.webp" alt="Design Solution 2" class="img-fluid py-4 scroll-slide-in-up">
+
+        <p>
+          <strong>Effects of Design Dialogues:</strong> Led to a simpler interface, restructured experiment list, and
+          optimized functionality.
+        </p>
+      
+      </section>
+
+      <section class="design-solution">
+        <h2>Design Solution: Digital Twin for Chemistry Lab</h2>
+        <p>
+          The design solution is a mobile application that functions as a digital twin for a chemistry lab. It aims to
+          help students (10-18 years) conduct and understand chemical experiments by using a live video feed to monitor
+          experiments in real-time.
+        </p>
+        <p>
+          Key features include:
+        </p>
+        <ul class="custom-bullets">
+          <li>Real-time monitoring of experiments via live video feed.</li>
+          <li>Ability to adjust parameters like temperature, volume, and concentration.</li>
+          <li>Data analysis tools for temperature and pH.</li>
+          <li>Feedback and result display.</li>
+        </ul>
+
+        <video controls width="100%" style="margin-top: 1rem;">
+          <source src="images/labs_video_prototype.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p style="margin-top: 0.5rem;">
+          <a class="styled-link shakeX"
+            href="https://www.figma.com/design/ULEzRWKCDJassXyRS4oz96/Digital-Tvilling-f%C3%B6r-Kemi-labb?node-id=1-2&t=cgkTQn2HA3VIvHOW-1"
+            target="_blank" rel="noopener noreferrer">
+            View Figma Prototype
+          </a>
+        </p>
+
+      </section>
+
+      <section class="results-learnings">
+        <h2>Results and Learnings</h2>
+        <p>
+          The participatory design process was effective in creating a user-centered application. Involving
+          stakeholders led to valuable insights and design adjustments, such as clearer instructions and interactive
+          elements. Challenges included time constraints for testing and the difficulty of fully implementing real-time
+          data and live video feed simulations in the prototype.
+        </p>
+        <p>
+          Key learnings:
+        </p>
+        <ul class="custom-bullets">
+          <li>The importance of early and continuous stakeholder involvement.</li>
+          <li>The value of iterative prototyping in refining the design.</li>
+          <li>The need for more extensive testing in future projects.</li>
+        </ul>
+        <p>
+          <strong>What Went Well:</strong> Early stakeholder involvement allowed for a design that directly addressed
+          their needs and desires. The iterative method enabled continuous improvements.
+        </p>
+        <p>
+          <strong>What Could Be Improved:</strong> Limited time for interviews and testing, and technical challenges in
+          implementing real-time data and live video feed simulations.
+        </p>
+        <p>
+          <strong>Changes for Future Work:</strong> Plan for longer and more extensive user testing with a larger group
+          of
+          students, and implement continuous feedback from users throughout the development process.
+        </p>
+      </section>
+
+    </main>
+
+    <footer class="bg-black text-white py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Footer Brand -->
+          <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
+            <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo"
+              style="max-width: 100px; height: auto;">
+          </div>
+
+          <!-- Footer Navigation -->
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
+              <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
+              <li class="list-inline-item"><a href="cv.html" class="text-white text-decoration-none">CV</a></li>
+              <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
             </ul>
-        </section>
+          </div>
 
-        <section class="my-role">
-            <h2>My Role</h2>
-            <p>
-                My role in this project focused on:
-            </p>
-            <ul>
-                <li>Conducting a participatory design process.</li>
-                <li>Identifying and involving relevant stakeholders.</li>
-                <li>Designing and prototyping the mobile application.</li>
-                <li>Documenting the design process and rationale.</li>
+          <!-- Footer Social Media -->
+          <div class="col-md-4 text-md-end text-center">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
+
             </ul>
-        </section>
-
-        <section class="design-process">
-            <h2>Design Process</h2>
-            <p>
-                The design process was structured to emphasize user involvement and iterative development. Key stages included:
-            </p>
-            <h3>Exploration and Ideation</h3>
-            <p>
-                Initial exploration involved generating ideas around digital twins. Mindmapping was used to identify potential functions and user needs.
-            </p>
-            <h3>Stakeholder Involvement</h3>
-            <p>
-                Stakeholders (two students aged 12 and 15) were involved to provide insights into user preferences and needs.
-            </p>
-            
-
-<h3>Prototyping</h3>
-            <p>
-                Low-fidelity prototypes were created to visualize initial concepts, followed by high-fidelity prototypes in Figma.
-            </p>
-            <img src="link-to-prototype.jpg" alt="Prototype" class="prototype-image">
-
-            <h3>Design Dialogues and Testing</h3>
-            <p>
-                Design dialogues with stakeholders influenced the prototype's development. Desirability testing was conducted to gather feedback on the design's attractiveness.
-            </p>
-        </section>
-
-        <section class="design-solution">
-            <h2>Design Solution: Digital Twin for Chemistry Lab</h2>
-            <p>
-                The design solution is a mobile application that functions as a digital twin for a chemistry lab. It aims to help students (10-18 years) conduct and understand chemical experiments by using a live video feed to monitor experiments in real-time[cite: 133, 134]. 
-            </p>
-            <p>
-                Key features include:
-            </p>
-            <ul>
-                <li>Real-time monitoring of experiments via live video feed.</li>
-                <li>Ability to adjust parameters like temperature, volume, and concentration[cite: 169].</li>
-                <li>Data analysis tools for temperature and pH[cite: 170].</li>
-                <li>Feedback and result display[cite: 170].</li>
-            </ul>
-            <img src="link-to-design-solution-1.jpg" alt="Design Solution 1" class="prototype-image">
-            <img src="link-to-design-solution-2.jpg" alt="Design Solution 2" class="prototype-image">
-        </section>
-
-        <section class="results-learnings">
-            <h2>Results and Learnings</h2>
-            <p>
-                The participatory design process was effective in creating a user-centered application. Involving stakeholders led to valuable insights and design adjustments, such as clearer instructions and interactive elements[cite: 116, 117, 118]. Challenges included time constraints for testing and the difficulty of fully implementing real-time data and live video feed simulations in the prototype[cite: 119, 120, 121, 122].
-            </p>
-            <p>
-                Key learnings:
-            </p>
-            <ul>
-                <li>The importance of early and continuous stakeholder involvement.</li>
-                <li>The value of iterative prototyping in refining the design.</li>
-                <li>The need for more extensive testing in future projects[cite: 123].</li>
-            </ul>
-        </section>
-
-        <section class="further-material">
-            <h2>Explore More</h2>
-            <p>
-                For a more in-depth look at the design process and additional materials, please visit my Padlet:
-            </p>
-            <ul>
-                <li><a href="https://digitaldesign.padlet.org/fauziaben_sliman0026_1/interaktionsdesign_dp2-yy8xg38lbakr72f5" target="_blank">Interaction Design DP2 - Padlet</a></li>
-                <li><a href="https://digitaldesign.padlet.org/fauziaben_sliman0026_1/designprojekt-f-r-delprov-1-2-gcxt1pnq9e8kh39g" target="_blank">Designprojekt för delprov 1 & 2 - Padlet</a></li>
-                <li><a href="https://digitaldesign.padlet.org/fauziaben_sliman0026_1/designprojekt-id450i-pervasive-game-r59mj4pwx3idp3m3" target="_blank">Designprojekt ID450i Pervasive Game - Padlet</a></li>
-            </ul>
-        </section>
-  </main>
-
-  <footer class="bg-dark text-white py-4">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Footer Brand -->
-        <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
-          <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo"
-            style="max-width: 100px; height: auto;">
+          </div>
         </div>
-
-        <!-- Footer Navigation -->
-        <div class="col-md-4 text-center mb-3 mb-md-0">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
-            <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
-            <li class="list-inline-item"><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
-            <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Footer Social Media -->
-        <div class="col-md-4 text-md-end text-center">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-dribbble"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
-          </ul>
+        <hr class="border-secondary my-3">
+        <div class="text-center">
+          <p class="mb-0 text-light">&copy; 2025 FB Portfolio. All rights reserved.</p>
         </div>
       </div>
-      <hr class="border-secondary my-3">
-      <div class="text-center">
-        <p class="mb-0">&copy; 2025 Your Portfolio. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </div>
 </body>
 
 </html>

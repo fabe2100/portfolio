@@ -1,5 +1,6 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,39 +16,32 @@
   <!-- icon library -->
   <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  <script src="parallax.js"></script>
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 </head>
+
 <body>
   <div class="wrapper">
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo" />
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo">
         </a>
-        <button
-          class="navbar-toggler navbar-light"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-        
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">CONTAKT</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">CONTACT</a></li>
             <li class="nav-item">
-              <a href="#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
+              <a href="index.html#about" class="nav-link btn btn-outline-dark nav-btn "><span
+                  class="underline-text">ABOUT</span></a>
             </li>
           </ul>
+          <!-- Close button for mobile menu -->
+          <button id="mobile-menu-close" aria-label="Close menu" style="display:none;">&#x2715;</button>
         </div>
       </nav>
     </header>
@@ -55,9 +49,9 @@
     <div class="container py-5 container-kivra">
 
       <div class="section text-center">
-        <h2>Client-Based Website Project</h2>
+        <h1>Client-Based Website Project</h1>
         <div class="marquee-container">
-          <ul class="marquee-text">
+          <ul class="marquee-text custom-bullets">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
@@ -70,53 +64,52 @@
             <li>Responsive Design</li>
           </ul>
         </div>
-        <img src="images/restaurang_mockup.jpg" alt="Restaurang Etoile Mockup" class="img-fluid my-4" style="max-height: 300px; object-fit: contain;" />
-      </div>
-
-      <div class="lead">
-        <p>
-          This project simulated a real-world web development scenario, where our group took on two roles: client and
-          web agency. We created a website based on another group's brief and also provided a brief for another group to
-          develop.
-        </p>
+        <img src="images/restaurang_mockup.webp" alt="Restaurang Etoile Mockup" class="img-fluid my-4"
+          style="max-height: 300px; object-fit: contain;" />
+        <div class="lead scroll-slide-in-up">
+          <p>
+            This project simulated a real-world web development scenario, where our group took on two roles: client and
+            web agency. We created a website based on another group's brief and also provided a brief for another group
+            to
+            develop.
+          </p>
+        </div>
       </div>
 
       <div class="section">
-        <h3>My Roles and Responsibilities</h3>
-        <ul>
+        <h2>My Roles and Responsibilities</h2>
+        <ul class="custom-bullets">
           <li>
             Acted as part of a team to define a website brief, including company information, target audience, website
             purpose, and content requirements.
           </li>
           <li>Collaborated with my group to develop a functional website based on a provided brief.</li>
           <li>Contributed to the design and implementation of the website using HTML and CSS.</li>
-          <li>Participated in the client presentation, showcasing the developed website and explaining design choices.</li>
-          <li>Provided individual reflection on the project, analyzing design decisions and the development process.</li>
+          <li>Participated in the client presentation, showcasing the developed website and explaining design choices.
+          </li>
+          <li>Provided individual reflection on the project, analyzing design decisions and the development process.
+          </li>
         </ul>
       </div>
 
       <div class="section">
-        <h3>Project Highlights</h3>
-        <h4>Part 1: Brief Creation (Client Role)</h4>
+        <h2>Project Highlights</h2>
+        <h3>Part 1: Brief Creation (Client Role)</h3>
         <p>Our group developed a brief for a fictional restaurant called "Etoile." The brief included:</p>
-        <ul>
+        <ul class="custom-bullets">
           <li>Company description and target audience.</li>
-          <li>Website purpose: to provide information (opening hours, menu, address) and facilitate online bookings.</li>
+          <li>Website purpose: to provide information (opening hours, menu, address) and facilitate online bookings.
+          </li>
           <li>Required pages: Home, Menu, Book a Table, Contact Us, About Us.</li>
           <li>Graphic guidelines: logo, color scheme, typography.</li>
           <li>Content: Text and images (AI-generated and sourced with attribution).</li>
         </ul>
-
-        <div class="image-placeholder">
-          <img src="image_wireframes.jpg" alt="Wireframes" style="max-width: 100%" />
-          <p>Image: Example Wireframes (Replace 'image_wireframes.jpg' with your wireframe images)</p>
-        </div>
       </div>
 
       <div class="section">
-        <h4>Part 2: Website Development (Web Agency Role)</h4>
+        <h3>Part 2: Website Development (Web Agency Role)</h3>
         <p>Our group developed a website based on another group's brief. Key aspects of this phase included:</p>
-        <ul>
+        <ul class="custom-bullets">
           <li>HTML and CSS development to create the website structure and design.</li>
           <li>Implementation of navigation and page layouts.</li>
           <li>Focus on user experience and accessibility.</li>
@@ -124,10 +117,20 @@
           <li>Client presentation via a recorded video.</li>
         </ul>
 
-        <div class="image-placeholder">
-          <img src="image_website_homepage.jpg" alt="Website Homepage" style="max-width: 100%" />
-          <p>Image: Screenshot of the website's homepage (Replace 'image_website_homepage.jpg' with your image)</p>
-        </div>
+        <h5>Restaurant Logo Made in Affinity Designer</h5>
+        <img class="scroll-slide-in-up" src="images/logo_etoile_restaurang.svg" alt="Restaurant Logo" />
+
+        <h5>Low-Fidelity Wireframes</h5>
+        <img class="scroll-slide-in-up" src="images/etoile_low_wireframes.webp" alt="Low-Fidelity Wireframes"
+          style="max-width: 100%" />
+
+        <h5>High-Fidelity Wireframes</h5>
+        <img class="scroll-slide-in-up" src="images/etoile_high_wireframes.webp" alt="High-Fidelity Wireframes"
+          style="max-width: 100%" />
+
+        <p>View the full set of wireframes and design sketches in the <a class="styled-link"
+            href="https://www.figma.com/design/kWN0b0GXtApHRul6gG7Ycs/Boka_bord?node-id=0-1&t=ZbTdxDj6VHlGJHus-1"
+            target="_blank" rel="noopener noreferrer">Figma prototype</a>.</p>
       </div>
 
       <div class="section">
@@ -138,15 +141,24 @@
           for user-centered design. The experience highlighted the collaborative nature of web development and the
           importance of considering client requirements while creating a functional and engaging website.
         </p>
+        <section id="website-address" class="section">
+          <h2>Website</h2>
+          <p>
+            The complete website for this project can be viewed at the following address:
+          </p>
+          <a class="styled-link shakeX" href="https://fabe2100.github.io/etoile_restaurant/" target="_blank"
+            rel="noopener noreferrer">View The Website</a>
+        </section>
       </div>
     </div>
 
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-black text-white py-4">
       <div class="container">
         <div class="row align-items-center">
           <!-- Footer Brand -->
           <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
-            <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo" style="max-width: 100px; height: auto" />
+            <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo"
+              style="max-width: 100px; height: auto;">
           </div>
 
           <!-- Footer Navigation -->
@@ -154,7 +166,7 @@
             <ul class="list-inline mb-0">
               <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
               <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
-              <li class="list-inline-item"><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+              <li class="list-inline-item"><a href="cv.html" class="text-white text-decoration-none">CV</a></li>
               <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
             </ul>
           </div>
@@ -162,19 +174,17 @@
           <!-- Footer Social Media -->
           <div class="col-md-4 text-md-end text-center">
             <ul class="list-inline mb-0">
-              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-dribbble"></i></a></li>
               <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+
             </ul>
           </div>
         </div>
-        <hr class="border-secondary my-3" />
+        <hr class="border-secondary my-3">
         <div class="text-center">
-          <p class="mb-0">&copy; 2025 Your Portfolio. All rights reserved.</p>
+          <p class="mb-0 text-light">&copy; 2025 FB Portfolio. All rights reserved.</p>
         </div>
       </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

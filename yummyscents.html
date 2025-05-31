@@ -16,7 +16,6 @@
   <!-- icon library -->
   <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  <script src="parallax.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -25,7 +24,7 @@
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="images/logotyp namn_black.svg" alt="Logo" class="logo">
         </a>
         <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -34,118 +33,162 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">CONTAKT</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">CONTACT</a></li>
             <li class="nav-item">
-              <a href="#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
+              <a href="index.html#about" class="nav-link btn btn-outline-dark nav-btn "><span
+                  class="underline-text">ABOUT</span></a>
             </li>
           </ul>
+          <!-- Close button for mobile menu -->
+          <button id="mobile-menu-close" aria-label="Close menu" style="display:none;">&#x2715;</button>
         </div>
       </nav>
     </header>
 
-    <main role="main" class="flex-grow-1 container" style="padding-top: 30vh;">
+    <main class="container py-5 container-kivra">
       <section id="mockup-image" class="section text-center mb-5">
-        <img src="images/yummyscents_mockup.jpg" alt="Yummy Scents Mockup" class="img-fluid rounded shadow" />
-      </section>
-      <section class="marquee-container mb-4">
-        <ul class="marquee-text">
-          <li>Responsive Design</li>
-          <li>E-commerce Webstore</li>
-          <li>Gourmand Perfumes</li>
-          <li>Natural Ingredients</li>
-          <li>User-friendly Experience</li>
-          <li>Multi-device Optimization</li>
-        </ul>
-      </section>
-      <div class="project-overview">
         <h2>Yummy Scents - E-commerce Webstore Development</h2>
-        <p>This project involved the design and development of "Yummy Scents," a responsive e-commerce webstore specializing in gourmand perfumes with natural ingredients. The objective was to create an engaging and user-friendly online shopping experience, optimized for various devices.</p>
+        <section class="marquee-container mb-4">
+          <ul class="marquee-text custom-bullets">
+            <li>Responsive Design</li>
+            <li>E-commerce Webstore</li>
+            <li>Gourmand Perfumes</li>
+            <li>Natural Ingredients</li>
+            <li>User-friendly Experience</li>
+            <li>Multi-device Optimization</li>
+          </ul>
+
+        </section>
+        <img src="images/yummyscentes_mockup_transparent.webp" alt="Yummy Scents Mockup" class="img-fluid mb-5 my-5" />
+        <div class="lead scroll-slide-in-up">
+          <p>This project involved the design and development of "Yummy Scents," a responsive e-commerce webstore
+            specializing in gourmand perfumes with natural ingredients. The objective was to create an engaging and
+            user-friendly online shopping experience, optimized for various devices.</p>
         </div>
-      
-        <div class="image-placeholder">
+      </section>
+
+      <div class="image-placeholder">
         <img src="image_project_planning.jpg" alt="Project Planning Image" style="max-width: 100%;">
         <p>Image: Project Planning (Replace 'image_project_planning.jpg' with your image file)</p>
-        </div>
-      
-        <div class="section">
+      </div>
+
+      <div class="section">
         <h2>Key Skills Demonstrated</h2>
         <ul>
-        <li><strong>Responsive Web Design:</strong> Developed a fully responsive design using HTML, CSS, and media queries to ensure optimal display across desktops, tablets, and smartphones.</li>
-        <li><strong>Front-End Development:</strong> Utilized HTML and CSS for structure and styling, incorporating modern techniques like Flexbox for layout management.</li>
-        <li><strong>User Experience (UX) Design:</strong> Focused on creating intuitive navigation, clear calls to action, and engaging product presentation to enhance the user's shopping journey.</li>
-        <li><strong>Visual Design:</strong> Implemented a cohesive visual identity, including color palette, typography (Playfair Display, Roboto), and imagery, to create an appealing and on-brand aesthetic.</li>
-        <li><strong>E-commerce Functionality:</strong> Integrated essential e-commerce features such as product displays, shopping cart notifications, and detailed product descriptions.</li>
-        <li><strong>Accessibility:</strong> Addressed web accessibility by implementing proper color contrast and addressing WAVE tool errors to ensure a better user experience.</li>
-        <li><strong>Performance Optimization:</strong> Utilized Google PageSpeed Insights to analyze and optimize website performance, including image compression (webp) to improve loading times.</li>
-        <li><strong>AI Tools Integration:</strong> Leveraged AI tools to generate product images, descriptions, and assist with JavaScript coding, demonstrating efficient use of technology in the design process.</li>
+          <li><strong>Responsive Web Design:</strong> Developed a fully responsive design using HTML, CSS, and media
+            queries to ensure optimal display across desktops, tablets, and smartphones.</li>
+          <li><strong>Front-End Development:</strong> Utilized HTML and CSS for structure and styling, incorporating
+            modern techniques like Flexbox for layout management.</li>
+          <li><strong>User Experience (UX) Design:</strong> Focused on creating intuitive navigation, clear calls to
+            action, and engaging product presentation to enhance the user's shopping journey.</li>
+          <li><strong>Visual Design:</strong> Implemented a cohesive visual identity, including color palette,
+            typography (Playfair Display, Roboto), and imagery, to create an appealing and on-brand aesthetic.</li>
+          <li><strong>E-commerce Functionality:</strong> Integrated essential e-commerce features such as product
+            displays, shopping cart notifications, and detailed product descriptions.</li>
+          <li><strong>Accessibility:</strong> Addressed web accessibility by implementing proper color contrast and
+            addressing WAVE tool errors to ensure a better user experience.</li>
+          <li><strong>Performance Optimization:</strong> Utilized Google PageSpeed Insights to analyze and optimize
+            website performance, including image compression (webp) to improve loading times.</li>
+          <li><strong>AI Tools Integration:</strong> Leveraged AI tools to generate product images, descriptions, and
+            assist with JavaScript coding, demonstrating efficient use of technology in the design process.</li>
         </ul>
-        </div>
-      
-        <div class="image-placeholder">
-        <img src="image_wireframes.jpg" alt="Wireframes Image" style="max-width: 100%;">
-        <p>Image: Wireframes (Replace 'image_wireframes.jpg' with your image file)</p>
-        </div>
-      
-        <div class="section">
+      </div>
+
+      <div class="section">
         <h2>Design Process</h2>
         <ol>
-        <li><strong>Wireframing:</strong> Started with low-fidelity wireframes to plan the site's structure and navigation, followed by high-fidelity wireframes for detailed design visualization. [cite: 32, 33, 38, 39]</li>
-        <li><strong>Visual Identity:</strong> Developed a unique visual identity incorporating a custom logo, color palette, and typography to reflect the brand and appeal to the target audience. [cite: 34, 35, 36, 37]</li>
-        <li><strong>Development:</strong> Built the webstore using HTML, CSS, and JavaScript, with a focus on responsive design and user-centered functionality. [cite: 52, 53]</li>
-        <li><strong>Testing and Optimization:</strong> Conducted thorough testing for code validation, accessibility (WAVE tool), performance (Google PageSpeed Insights), and cross-browser compatibility. [cite: 28, 29, 30, 81, 85]</li>
+          <li><strong>Wireframing:</strong> Started with low-fidelity wireframes to plan the site's structure and
+            navigation, followed by high-fidelity wireframes for detailed design visualization.
+          </li>
+          <li><strong>Visual Identity:</strong> Developed a unique visual identity incorporating a custom logo, color
+            palette, and typography to reflect the brand and appeal to the target audience.</li>
+          <li><strong>Development:</strong> Built the webstore using HTML, CSS, and JavaScript, with a focus on
+            responsive design and user-centered functionality. [cite: 52, 53]</li>
+          <li><strong>Testing and Optimization:</strong> Conducted thorough testing for code validation, accessibility
+            (WAVE tool), performance (Google PageSpeed Insights), and cross-browser compatibility.</li>
         </ol>
-        </div>
-      
-        <div class="image-placeholder">
-        <img src="image_visual_identity.jpg" alt="Visual Identity Image" style="max-width: 100%;">
-        <p>Image: Visual Identity (Replace 'image_visual_identity.jpg' with your image file)</p>
-        </div>
-      
-        <div class="image-placeholder">
-        <img src="image_website_pictures.jpg" alt="Website Pictures" style="max-width: 100%;">
-        <p>Image: Website Pictures (Replace 'image_website_pictures.jpg' with your image file)</p>
-        </div>
-      
-        <div class="section">
-        <h2>Outcomes</h2>
-        <p>The result is a fully functional and visually appealing e-commerce webstore that effectively showcases the "Yummy Scents" brand and provides a seamless shopping experience. The project demonstrates a strong understanding of web design principles, responsive development, and the importance of user-centered design.</p>
-        </div>
-    </main>
+      </div>
 
-    <footer class="bg-dark text-white py-4 mt-auto">
+      <div class="image-placeholder">
+        <img class="img-fluid scroll-slide-in-up" src="images/yummyscents_logotypes.webp" alt="Visual Identity Image" style="max-width: 100%;">
+        <p class="text-muted my-2 mb-4">YummyScents Logotype</p>
+      </div>
+
+      <div class="image-placeholder">
+        <img class="img-fluid scroll-slide-in-up" src="images/visualidentity_yummy.webp" alt="Visual Identity Image" style="max-width: 100%;">
+        <p class="text-muted my-2 mb-4">YummyScents Visual Identity</p>
+      </div>
+
+      <div class="image-placeholder">
+        <img class="img-fluid scroll-slide-in-up" src="images/yummy_sitemap.png" alt="Visual Identity Image" style="max-width: 100%;">
+        <p class="text-muted my-2 mb-4">Website Sitemap</p>
+      </div>
+
+      <div class="image-placeholder">
+        <img class="img-fluid scroll-slide-in-up" src="images/yummy_wireframes_low.webp" alt="Visual Identity Image" style="max-width: 100%;">
+        <p class="text-muted my-2 mb-4">Website Low-fidelity Wireframes</p>
+      </div>
+
+      <div class="image-placeholder">
+        <img class="img-fluid scroll-slide-in-up" src="images/yummy_wireframes_highfidelity.webp" alt="Visual Identity Image" style="max-width: 100%;">
+        <p class="text-muted my-2 mb-4">Website High-fidelity Wireframes</p>
+      </div>
+
+      <div class="section">
+        <h2>Outcomes</h2>
+        <p>The result is a fully functional and visually appealing e-commerce webstore that effectively showcases the
+          "Yummy Scents" brand and provides a seamless shopping experience. The project demonstrates a strong
+          understanding of web design principles, responsive development, and the importance of user-centered design.
+        </p>
+      </div>
+      <section id="website-address" class="section">
+        <h2>Website</h2>
+        <p>
+          The complete website for this project can be viewed at the following address:
+        </p>
+        <a class="styled-link shakeX" href="https://studenter.miun.se/~fabe2100/writeable/cms/moment0/" target="_blank"
+          rel="noopener noreferrer">View The Website</a>
+      </section>
+
+    </main>
+ <footer class="bg-black text-white py-4">
       <div class="container">
         <div class="row align-items-center">
+          <!-- Footer Brand -->
           <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
-            <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo" style="max-width: 100px; height: auto;" />
+            <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo"
+              style="max-width: 100px; height: auto;">
           </div>
+
+          <!-- Footer Navigation -->
           <div class="col-md-4 text-center mb-3 mb-md-0">
             <ul class="list-inline mb-0">
-              <li class="list-inline-item"><a href="index.html#projects" class="text-white text-decoration-none">Projects</a></li>
-              <li class="list-inline-item"><a href="index.html#about" class="text-white text-decoration-none">About</a></li>
-              <li class="list-inline-item"><a href="index.html#skills" class="text-white text-decoration-none">Skills</a></li>
-              <li class="list-inline-item"><a href="index.html#contact" class="text-white text-decoration-none">Contact</a></li>
+              <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
+              <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
+              <li class="list-inline-item"><a href="cv.html" class="text-white text-decoration-none">CV</a></li>
+              <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
             </ul>
           </div>
+
+          <!-- Footer Social Media -->
           <div class="col-md-4 text-md-end text-center">
             <ul class="list-inline mb-0">
-              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-dribbble"></i></a></li>
               <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+
             </ul>
           </div>
         </div>
-        <hr class="border-secondary my-3" />
+        <hr class="border-secondary my-3">
         <div class="text-center">
-          <p class="mb-0">&copy; 2025 Your Portfolio. All rights reserved.</p>
+          <p class="mb-0 text-light">&copy; 2025 FB Portfolio. All rights reserved.</p>
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </div>
-
-  <!-- Bootstrap JS, Popper.js, and jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

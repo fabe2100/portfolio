@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
     rel="stylesheet">
@@ -16,16 +18,14 @@
   <!-- icon library -->
   <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  <script src="parallax.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="wrapper" id="top">
-
     <header class="video-header">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="images/logotyp namn_black.svg" alt="Logo" class="logo">
         </a>
         <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -34,14 +34,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link " href="#projects">PROJECTS</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
             <li class="nav-item">
               <a href="#about" class="nav-link btn btn-outline-dark nav-btn "><span
                   class="underline-text">ABOUT</span></a>
-
             </li>
           </ul>
+          <!-- Close button for mobile menu -->
+          <button id="mobile-menu-close" aria-label="Close menu" style="display:none;">&#x2715;</button>
         </div>
       </nav>
 
@@ -57,10 +58,10 @@
               <div class="hero-content">
                 <div class="animated-title">
                   <div class="text-top">
-                    <div><span>NAME : FAUZIA</span></div>
+                    <div><span>I'M FAUZIA</span></div>
                   </div>
                   <div class="text-bottom">
-                    <div><span>AND I AM A DIGITAL DESIGNER</span></div>
+                    <div><span>- DIGITAL DESIGNER</span></div>
                   </div>
                 </div>
                 <!--<p class="hero-description">Driven by curiosity and a love for the digital landscape, I design
@@ -68,7 +69,7 @@
                   portfolio.</p>-->
                 <div class="hero-scroll">
                   <button type="button" class="btn btn-sm btn-outline-secondary ">
-                    <a href="projects.html" class="d-flex justify-content-center link-projects"> LETS FIND OUT HOW
+                    <a href="#projects" class="d-flex justify-content-center link-projects"> Let’s find out how
                       <i class="fas fa-arrow-down"></i>
                     </a>
                   </button>
@@ -82,30 +83,25 @@
 
 
     <main role="main" id="projects">
-      <div class="view">
-        <div class="block">
-          <section class="jumbotron text-center">
+      <div class="view ">
+        <div class="scroll-slide-in-up">
+          <section class="py-5 text-center">
             <div class="container">
-              <h1 class="jumbotron-heading">Selected Projects</h1>
-              <p class="lead text-muted">Welcome to a handpicked collection of my design work, spanning UX/UI, graphic,
-                and web design. These projects highlight my dedication to creating thoughtful, user-focused, and
-                visually engaging digital experiences.</p>
+              <h1 class="h1-index">Selected Projects</h1>
+              <p class="lead text-muted scroll-slide-in-up">
+                Welcome to my portfolio, which I built myself using Bootstrap to showcase a curated selection of my
+                projects across UX/UI, graphic, and web design. This collection highlights my commitment to creating
+                thoughtful, user-centered, and visually engaging digital experiences.
+              </p>
             </div>
-
         </div>
-
         </section>
 
-        <section id="featured-projects" class="py-5 text-center">
+        <section id="featured-projects" class="py-2 text-center">
           <div class="container">
-            <h3 class="text-uppercase text-muted" style="font-size: 0.85rem;">Dive Into My Work</h3>
-            <h2 class="mb-4 font-weight-bold">Explore My Projects</h2>
-            <p class="text-muted mb-5">
-              Browse through a diverse range of projects that highlight my skills in UX/UI, web, and graphic design.
-            </p>
 
             <!-- Filter Buttons -->
-            <div class="mb-4">
+            <div id="filter-buttons-container" class="mb-4">
               <button class="btn btn-outline-dark mx-1 filters active" data-filter="all">All</button>
               <button class="btn btn-outline-dark mx-1 filters" data-filter="ux-ui">UX/UI Design</button>
               <button class="btn btn-outline-dark mx-1 filters" data-filter="web">Web Design / Web Developping</button>
@@ -114,7 +110,7 @@
 
             <!-- Project Cards -->
             <div class="row">
-              <div class="col-md-6 mb-4 block" data-category="ux-ui">
+              <div class="col-md-6 mb-4 scroll-slide-in-up" data-category="ux-ui">
                 <a href="kivra.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -138,7 +134,94 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4 block" data-category="ux-ui">
+              <div class="col-md-6 mb-4 block scroll-slide-in-up" data-category="ux-ui">
+                <a href="kusten.html" class="clickable-card">
+                  <div class="card shadow-lg h-100">
+                    <div class="position-relative">
+                      <img src="images/kusten_mockup.webp" class="card-img-top border-bottom" alt="Project Image">
+                      <span class="badge badge-dark card-label">UX/UI Design</span>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="font-weight-bold">Höga Kusten Guide App</h5>
+                      <p class="text-muted">A mobile application designed to enhance the visitor experience of the
+                        Höga
+                        Kusten region, focusing on accessibility and intuitive navigation.
+                      </p>
+                      <div class="tech-tags">
+                        <span class="badge badge-light">Interview</span>
+                        <span class="badge badge-light">Surveys</span>
+                        <span class="badge badge-light">Pact Analysis</span>
+                        <span class="badge badge-light">Environmental Analysis</span>
+                        <span class="badge badge-light">Affinity Diagramming</span>
+                        <span class="badge badge-light">Sketches</span>
+                        <span class="badge badge-light">Prototypes</span>
+                        <span class="badge badge-light">Mockups</span>
+                        <span class="badge badge-light">Testing</span>
+                        <span class="badge badge-light">Iterations</span>
+                        <span class="badge badge-light">Interaction Map</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-6 mb-4 block scroll-slide-in-up" data-category="ux-ui">
+                <a href="gamedesign.html" class="clickable-card">
+                  <div class="card shadow-lg h-100">
+                    <div class="position-relative">
+                      <img src="images/gamedesign_mockup.webp" class="card-img-top border-bottom" alt="Project Image">
+                      <span class="badge badge-dark card-label">UX/UI Design</span>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="font-weight-bold">Design for Play: Digital Artifacts for Social Interaction</h5>
+                      <p class="text-muted">This project explores the use of digital technology to enhance children's
+                        play and social interaction, moving beyond screen-based experiences.</p>
+
+                      <div class="tech-tags">
+                        <span class="badge badge-light">Design for Play</span>
+                        <span class="badge badge-light">Pervasive Game Design</span>
+                        <span class="badge badge-light">Heuristic Evaluation</span>
+                        <span class="badge badge-light">Game Mechanics</span>
+                        <span class="badge badge-light">User Experience (UX)</span>
+                        <span class="badge badge-light">Prototyping</span>
+                        <span class="badge badge-light">Participatory Design</span>
+                        <span class="badge badge-light">Designstudio with Critiques</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-6 mb-4 block scroll-slide-in-up" data-category="ux-ui">
+                <a href="labs.html" class="clickable-card">
+                  <div class="card shadow-lg h-100">
+                    <div class="position-relative">
+                      <img src="images/kemi_mockup.webp" class="card-img-top border-bottom" alt="Project Image">
+                      <span class="badge badge-dark card-label">UX/UI Design</span>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="font-weight-bold">Digital Twin for Chemistry Labs</h5>
+                      <p class="text-muted"> This project developed a mobile application prototype that acts as a
+                        digital twin for chemistry labs. The application uses live video feed to monitor experiments
+                        in
+                        real-time, aiming to enhance the learning experience for students aged 10-18 by enabling them
+                        to
+                        conduct and understand chemical experiments more effectively.</p>
+                      <div class="tech-tags">
+                        <span class="badge badge-light">Participatory Design</span>
+                        <span class="badge badge-light">UX Design</span>
+                        <span class="badge badge-light">Mobile Application</span>
+                        <span class="badge badge-light">Digital Twin</span>
+                        <span class="badge badge-light">Figma</span>
+                        <span class="badge badge-light">Prototyping</span>
+                        <span class="badge badge-light">E-learning</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-6 mb-4 block scroll-slide-in-up" data-category="ux-ui">
                 <a href="sverigesradio.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -169,92 +252,8 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4 block" data-category="ux-ui">
-                <a href="kusten.html" class="clickable-card">
-                  <div class="card shadow-lg h-100">
-                    <div class="position-relative">
-                      <img src="images/kusten_mockup.webp" class="card-img-top border-bottom" alt="Project Image">
-                      <span class="badge badge-dark card-label">UX/UI Design</span>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="font-weight-bold">Höga Kusten Guide App</h5>
-                      <p class="text-muted">A mobile application designed to enhance the visitor experience of the
-                        Höga
-                        Kusten region, focusing on accessibility and intuitive navigation.
-                      </p>
-                      <div class="tech-tags">
-                        <span class="badge badge-light">Figma</span>
-                        <span class="badge badge-light">User Research</span>
-                        <span class="badge badge-light">Usability Testing</span>
-                        <span class="badge badge-light">Interaction Design</span>
-                        <span class="badge badge-light">Information Architecture</span>
-                        <span class="badge badge-light">Prototyping</span>
-                        <span class="badge badge-light">Accessibility</span>
-                        <span class="badge badge-light">Navigation Design</span>
-                        <span class="badge badge-light">Iterative Design</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="col-md-6 mb-4 block" data-category="ux-ui">
-                <a href="gamedesign.html" class="clickable-card">
-                  <div class="card shadow-lg h-100">
-                    <div class="position-relative">
-                      <img src="images/gamedesign_mockup.webp" class="card-img-top border-bottom" alt="Project Image">
-                      <span class="badge badge-dark card-label">UX/UI Design</span>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="font-weight-bold">Design for Play: Digital Artifacts for Social Interaction</h5>
-                      <p class="text-muted">This project explores the use of digital technology to enhance children's
-                        play and social interaction, moving beyond screen-based experiences.</p>
-
-                      <div class="tech-tags">
-                        <span class="badge badge-light">Design for Play</span>
-                        <span class="badge badge-light">Pervasive Game Design</span>
-                        <span class="badge badge-light">Location-Based Games</span>
-                        <span class="badge badge-light">Game Mechanics</span>
-                        <span class="badge badge-light">User Experience (UX)</span>
-                        <span class="badge badge-light">Prototyping</span>
-                        <span class="badge badge-light">Padlet</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="col-md-6 mb-4 block" data-category="ux-ui">
-                <a href="labs.html" class="clickable-card">
-                  <div class="card shadow-lg h-100">
-                    <div class="position-relative">
-                      <img src="images/kemi_mockup.webp" class="card-img-top border-bottom" alt="Project Image">
-                      <span class="badge badge-dark card-label">UX/UI Design</span>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="font-weight-bold">Digital Twin for Chemistry Labs</h5>
-                      <p class="text-muted"> This project developed a mobile application prototype that acts as a
-                        digital twin for chemistry labs. The application uses live video feed to monitor experiments
-                        in
-                        real-time, aiming to enhance the learning experience for students aged 10-18 by enabling them
-                        to
-                        conduct and understand chemical experiments more effectively.</p>
-                      <div class="tech-tags">
-                        <span class="badge badge-light">Participatory Design</span>
-                        <span class="badge badge-light">UX Design</span>
-                        <span class="badge badge-light">Mobile Application</span>
-                        <span class="badge badge-light">Digital Twin</span>
-                        <span class="badge badge-light">Figma</span>
-                        <span class="badge badge-light">Prototyping</span>
-                        <span class="badge badge-light">E-learning</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
               <!--Webdesign-->
-              <div class="col-md-6 mb-4 block" data-category="web">
+              <div class="col-md-6 mb-4 block scroll-slide-in-up" data-category="web">
                 <a href="palomasvilla.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -285,7 +284,7 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4 block" data-category="web">
+              <div class="col-md-6 mb-4 block scroll-slide-in-up" data-category="web">
                 <a href="paratransit.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -313,7 +312,7 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4 block" data-category="web">
+              <div class="col-md-6 mb-4 block scroll-slide-in-up" data-category="web">
                 <a href="pensstore.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -322,14 +321,15 @@
                     </div>
                     <div class="card-body">
                       <h5 class="font-weight-bold">Creating Penstore webshop</h5>
-                      <p class="text-muted">Custom financial dashboard with data visualization and analytics features.
+                      <p class="text-muted">Designed and developed a responsive e-commerce webshop for pens, focusing on
+                        user-friendly navigation, product showcase, and seamless shopping experience across devices.
                       </p>
                       <div class="tech-tags">
                         <span class="badge badge-light">Sitemap</span>
                         <span class="badge badge-light">Wireframes</span>
                         <span class="badge badge-light">Moadboard</span>
                         <span class="badge badge-light">Figma Prototype</span>
-                        <span class="badge badge-light">Image editing (Affinity Photo 2)</span>
+                        <span class="badge badge-light">Image editing</span>
                         <span class="badge badge-light">HTML</span>
                         <span class="badge badge-light">CSS</span>
                         <span class="badge badge-light">Javascript</span>
@@ -343,7 +343,7 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4 block" data-category="web">
+              <div class="col-md-6 mb-4 block scroll-slide-in-up" data-category="web">
                 <a href="pizzauno.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -372,7 +372,7 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4 block" data-category="web">
+              <div class="col-md-6 mb-4 block scroll-slide-in-up" data-category="web">
                 <a href="sweetcupcakes.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -397,11 +397,11 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4 block" data-category="web">
+              <div class="col-md-6 mb-4 block scroll-slide-in-up" data-category="web">
                 <a href="yummyscents.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
-                      <img src="images/yummyscents_mockup.webp" class="card-img-top border-bottom" alt="Project Image">
+                      <img src="images/yummyscentes_mockup.webp" class="card-img-top border-bottom" alt="Project Image">
                       <span class="badge badge-dark card-label">Web Design</span>
                     </div>
                     <div class="card-body">
@@ -429,7 +429,7 @@
               </div>
 
 
-              <div class="col-md-6 mb-4 block" data-category="web">
+              <div class="col-md-6 mb-4 block scroll-slide-in-up" data-category="web">
                 <a href="etoile.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -438,7 +438,9 @@
                     </div>
                     <div class="card-body">
                       <h5 class="font-weight-bold">Creating Etoile a responsive Michelin Restaurang</h5>
-                      <p class="text-muted">Custom financial dashboard with data visualization and analytics features.
+                      <p class="text-muted">Designed and developed a sophisticated, responsive website for a
+                        Michelin-starred restaurant, emphasizing elegant design, seamless navigation, and an immersive
+                        dining experience online.
                       </p>
                       <div class="tech-tags">
                         <span class="badge badge-light">Wireframes</span>
@@ -455,7 +457,7 @@
 
 
               <!--Graphic design-->
-              <div class="col-md-6 mb-4" data-category="graphic">
+              <div class="col-md-6 mb-4 scroll-slide-in-up" data-category="graphic">
                 <a href="omslag.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -477,7 +479,7 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4" data-category="graphic">
+              <div class="col-md-6 mb-4 scroll-slide-in-up" data-category="graphic">
                 <a href="kivra.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -486,8 +488,8 @@
                     </div>
                     <div class="card-body">
                       <h5 class="font-weight-bold">Möten Av Färg och Form</h5>
-                      <p class="text-muted">Complete brand identity including logo, color palette, typography, and
-                        guidelines.</p>
+                      <p class="text-muted">Created a unique poster design focusing on the interplay of color and form,
+                        emphasizing visual impact and artistic expression.</p>
                       <div class="tech-tags">
                         <span class="badge badge-light">Typography</span>
                         <span class="badge badge-light">Layout</span>
@@ -500,7 +502,7 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4" data-category="graphic">
+              <div class="col-md-6 mb-4 scroll-slide-in-up" data-category="graphic">
                 <a href="kivra.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -527,7 +529,7 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4" data-category="graphic">
+              <div class="col-md-6 mb-4 scroll-slide-in-up" data-category="graphic">
                 <a href="yummyscentes-branding.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -553,22 +555,21 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4" data-category="graphic">
+              <div class="col-md-6 mb-4 scroll-slide-in-up" data-category="graphic">
                 <a href="bookstore-card.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
-                      <img src="images/bookstore_card.jpg" class="card-img-top border-bottom"
+                      <img src="images/bookstore_card.webp" class="card-img-top border-bottom"
                         alt="Bookstore Business Card">
                       <span class="badge badge-dark card-label">Graphic Design</span>
                     </div>
                     <div class="card-body">
                       <h5 class="font-weight-bold">Bookstore Business Cards</h5>
-                      <p class="text-muted">A set of four distinct business cards designed with complete contact
+                      <p class="text-muted">A bookstore business card designed with complete contact
                         details, unique typography, color schemes, and graphic elements reflecting the bookstore theme.
                       </p>
                       <div class="tech-tags">
-                        <span class="badge badge-light">Adobe Illustrator</span>
-                        <span class="badge badge-light">InDesign</span>
+                        <span class="badge badge-light">Affinity Designer</span>
                         <span class="badge badge-light">Typography</span>
                         <span class="badge badge-light">Brand Identity</span>
                         <span class="badge badge-light">Graphic Design</span>
@@ -578,7 +579,7 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4" data-category="graphic">
+              <div class="col-md-6 mb-4 scroll-slide-in-up" data-category="graphic">
                 <a href="tech-card.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -593,7 +594,6 @@
                         and clear aesthetic. A rounded rectangle graphic element complements the technology concept.
                       </p>
                       <div class="tech-tags">
-                        <span class="badge badge-light">Brand Identity</span>
                         <span class="badge badge-light">Logo Design</span>
                         <span class="badge badge-light">Typography</span>
                         <span class="badge badge-light">Color Palette</span>
@@ -605,7 +605,7 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4" data-category="graphic">
+              <div class="col-md-6 mb-4 scroll-slide-in-up" data-category="graphic">
                 <a href="health-poster.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -629,11 +629,11 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4" data-category="graphic">
+              <div class="col-md-6 mb-4 scroll-slide-in-up" data-category="graphic">
                 <a href="etoile-logotype.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
-                      <img src="images/logotype_etoile.webp" class="card-img-top border-bottom"
+                      <img src="images/logotype_etoile_mockup.webp" class="card-img-top border-bottom"
                         alt="Etoile Restaurant Logotype">
                       <span class="badge badge-dark card-label">Graphic Design</span>
                     </div>
@@ -654,7 +654,7 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4" data-category="graphic">
+              <div class="col-md-6 mb-4 scroll-slide-in-up" data-category="graphic">
                 <a href="logotyp-namn.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -678,7 +678,7 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4" data-category="graphic">
+              <div class="col-md-6 mb-4 scroll-slide-in-up" data-category="graphic">
                 <a href="cuisine-actual.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -687,7 +687,7 @@
                       <span class="badge badge-dark card-label">Graphic Design</span>
                     </div>
                     <div class="card-body">
-                      <h5 class="font-weight-bold">Practical Part B: Magazine Spread for "Cuisine Actuelle"</h5>
+                      <h5 class="font-weight-bold">Magazine Spread for "Cuisine Actuelle"</h5>
                       <p class="text-muted">Created a detailed copy of a spread from the magazine "Cuisine Actuelle"
                         focusing on form, layout, typography, and color palette based on analysis.</p>
                       <div class="tech-tags">
@@ -703,7 +703,7 @@
               </div>
 
 
-              <div class="col-md-6 mb-4" data-category="graphic">
+              <div class="col-md-6 mb-4 scroll-slide-in-up" data-category="graphic">
                 <a href="spa-business-card.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -712,9 +712,9 @@
                       <span class="badge badge-dark card-label">Graphic Design</span>
                     </div>
                     <div class="card-body">
-                      <h5 class="font-weight-bold">Spa Business Cards</h5>
-                      <p class="text-muted">Complete brand identity including logo, color palette, typography, and
-                        guidelines for a spa business.</p>
+                      <h5 class="font-weight-bold">Spa Business Card</h5>
+                      <p class="text-muted">Created a spa business card featuring logo design, harmonious color palette,
+                        and elegant typography to convey a relaxing and luxurious brand identity.</p>
                       <div class="tech-tags">
                         <span class="badge badge-light">Wireframes</span>
                         <span class="badge badge-light">HTML</span>
@@ -727,30 +727,7 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4" data-category="graphic">
-                <a href="kivra.html" class="clickable-card">
-                  <div class="card shadow-lg h-100">
-                    <div class="position-relative">
-                      <img src="images/typografi_flyers.jpg" class="card-img-top border-bottom" alt="Project Image">
-                      <span class="badge badge-dark card-label">Graphic Design</span>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="font-weight-bold">Brand Identity System</h5>
-                      <p class="text-muted">Complete brand identity including logo, color palette, typography, and
-                        guidelines.</p>
-                      <div class="tech-tags">
-                        <span class="badge badge-light">Wireframes</span>
-                        <span class="badge badge-light">HTML</span>
-                        <span class="badge badge-light">CSS</span>
-                        <span class="badge badge-light">Javascript</span>
-                        <span class="badge badge-light">Responsive</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="col-md-6 mb-4" data-category="graphic">
+              <div class="col-md-6 mb-4 scroll-slide-in-up" data-category="graphic">
                 <a href="pensstore-logotype.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
@@ -774,11 +751,11 @@
                 </a>
               </div>
 
-              <div class="col-md-6 mb-4" data-category="graphic">
+              <div class="col-md-6 mb-4 scroll-slide-in-up" data-category="graphic">
                 <a href="sweetcupcakes-logotype.html" class="clickable-card">
                   <div class="card shadow-lg h-100">
                     <div class="position-relative">
-                      <img src="images/sweetcupcakes_mockup_box.webp" class="card-img-top border-bottom"
+                      <img src="images/delicious-cupcakes-mockup.webp" class="card-img-top border-bottom"
                         alt="Bakery Logotype">
                       <span class="badge badge-dark card-label">Graphic Design</span>
                     </div>
@@ -806,57 +783,50 @@
 
     <section id="about" class="py-5">
       <div class="container">
+        <h1 class="h1-index"> About me</h1>
+
         <div class="row align-items-center">
           <!-- Image Section -->
           <div class="col-md-6">
-            <img src="images/logotyp namn_black.svg" alt="Work Environment" class="img-fluid rounded shadow">
+            <img src="images/logotyp namn_black.svg" alt="Work Environment" class="img-fluid scroll-slide-in-up">
           </div>
 
           <!-- Text Section -->
-          <div class="col-md-6">
-          <h6 class="text-uppercase text-muted mb-3">About Me</h6>
-          <h2 class="mb-4">Passionate UX/UI & Graphic Designer</h2>
-          <p>
-            I'm Fauzia Ben Sliman, an engaged and ambitious UX/UI and graphic designer with a broad educational background in digital design. I am passionate about creating user-friendly and aesthetically pleasing digital solutions, always eager to explore new techniques and design methods.
-          </p>
-          <p>
-            My skills include user experience, visual communication, interactive design, web development, and responsive design. I have experience with tools like Figma, Affinity Designer, and WordPress, and a strong foundation in HTML, CSS, JavaScript, and PHP.
-          </p>
-          <p>
-            I combine creativity with a user-centered approach, focusing on accessibility and meaningful digital experiences.
-          </p>
-          <a href="cv.html" class="btn btn-sm btn-outline-secondary d-flex justify-content-center link-projects">View My CV</a>
+          <div class="col-md-6 py-3">
+
+            <h2 class="mb-4">Passionate UX/UI & Graphic Designer</h2>
+            <p>
+              I'm Fauzia Ben Sliman, an engaged and ambitious UX/UI and graphic designer with a broad educational
+              background in digital design. I am passionate about creating user-friendly and aesthetically pleasing
+              digital solutions, always eager to explore new techniques and design methods.
+            </p>
+            <p>
+              My skills include user experience, visual communication, interactive design, web development, and
+              responsive design. I have experience with tools like Figma, Affinity Designer, and WordPress, and a strong
+              foundation in HTML, CSS, JavaScript, and PHP.
+            </p>
+            <p>
+              I combine creativity with a user-centered approach, focusing on accessibility and meaningful digital
+              experiences.
+            </p>
+            <a href="cv.html" class="btn btn-sm btn-outline-secondary d-flex justify-content-center link-projects">View
+              My CV</a>
           </div>
         </div>
       </div>
     </section>
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-2">
       <div class="container">
+                    <h1 class="h1-index">Contact Information</h1>
+
         <div class="row">
           <!-- Contact Information -->
-          <div class="col-md-6 mb-4">
-            <h3 class="mb-4">Contact Information</h3>
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <i class="fas fa-envelope fa-lg mr-3"></i>
-                <span>Email: <a href="mailto:hello@yourportfolio.com"
-                    class="text-dark text-decoration-none">hello@yourportfolio.com</a></span>
-              </li>
-              <li class="mb-3">
-                <i class="fas fa-phone fa-lg mr-3"></i>
-                <span>Phone: <a href="tel:+15551234567" class="text-dark text-decoration-none">+1 (555)
-                    123-4567</a></span>
-              </li>
-              <li class="mb-3">
-                <i class="fas fa-user fa-lg mr-3"></i>
-                <span>Social Media: <a href="#" class="text-dark text-decoration-none">@portfoliodesigner</a></span>
-              </li>
-            </ul>
-            <h5 class="mt-4">Working Hours</h5>
-            <p>Monday - Friday: 9am - 5pm<br>Weekend: By appointment</p>
-          </div>
+<div class="col-md-6 mb-4 d-flex align-items-center">
+  <i class="fas fa-envelope fa-lg mr-3"></i>
+  <span>Email: <a class="shakeX styled-link text-dark text-decoration-none" href="mailto:fawfaw86@hotmail.com">fawfaw86@hotmail.com</a></span>
+</div>
 
-          <!-- Contact Form -->
+          <!-- Contact Form 
           <div class="col-md-6">
             <h3 class="mb-4">Let's Work Together</h3>
             <p class="mb-4">Have a project in mind? Let's discuss how I can help bring your ideas to life.</p>
@@ -876,14 +846,14 @@
               </div>
               <button type="submit" class="btn btn-dark btn-block">Send Message</button>
             </form>
-          </div>
+          </div>-->
         </div>
       </div>
     </section>
 
   </div>
 
-  <footer class="bg-dark text-white py-4">
+  <footer class="bg-black text-white py-4">
     <div class="container">
       <div class="row align-items-center">
         <!-- Footer Brand -->
@@ -895,28 +865,34 @@
         <!-- Footer Navigation -->
         <div class="col-md-4 text-center mb-3 mb-md-0">
           <ul class="list-inline mb-0">
-            <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
-            <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
-            <li class="list-inline-item"><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
-            <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+            <li class="list-inline-item"><a href="index.html#projects"
+                class="text-white text-decoration-none">Projects</a></li>
+            <li class="list-inline-item"><a href="index.html#about" class="text-white text-decoration-none">About</a>
+            </li>
+            <li class="list-inline-item"><a href="cv.html" class="text-white text-decoration-none">CV</a></li>
+            <li class="list-inline-item"><a href="index.html#contact"
+                class="text-white text-decoration-none">Contact</a></li>
           </ul>
         </div>
 
         <!-- Footer Social Media -->
         <div class="col-md-4 text-md-end text-center">
           <ul class="list-inline mb-0">
-            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-dribbble"></i></a></li>
             <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+
           </ul>
         </div>
       </div>
       <hr class="border-secondary my-3">
       <div class="text-center">
-        <p class="mb-0">&copy; 2025 Your Portfolio. All rights reserved.</p>
+        <p class="mb-0 text-light">&copy; 2025 FB Portfolio. All rights reserved.</p>
       </div>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
@@ -924,56 +900,18 @@
 
   <a href="#top" id="button" title="Back to Top" class="show">↑</a>
 
-  <style>
-    #button {
-      display: inline-block;
-      background-color: #000000;
-      width: 50px;
-      height: 50px;
-      text-align: center;
-      border-radius: 20px;
-      position: fixed;
-      bottom: 30px;
-      right: 25px;
-      transition: background-color .3s, 
-        opacity .5s, visibility .5s;
-      opacity: 0;
-      visibility: hidden;
-      z-index: 20;
-      font-size: 2em;
-      line-height: 50px;
-      color: #fff;
-      font-weight: normal;
-      font-style: normal;
-    }
-    /* Removed #button::after */
-    #button:hover {
-      cursor: pointer;
-      background-color: #333;
-    }
-    #button:active {
-      background-color: #555;
-    }
-    #button.show {
-      opacity: 1;
-      visibility: visible;
-    }
-  </style>
-
   <script>
-const btn = document.getElementById('button');
-window.addEventListener('scroll', () => {
-  if (window.pageYOffset > 0) {
-    btn.classList.add('show');
-  } else {
-    btn.classList.remove('show');
-  }
-});
-btn.addEventListener('click', () => {
-  window.scrollTo({top: 0, behavior: 'smooth'});
-});
-
-
+    const btn = document.getElementById('button');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 0) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    });
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   </script>
 </body>
 

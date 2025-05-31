@@ -16,7 +16,6 @@
   <!-- icon library -->
   <script src="https://kit.fontawesome.com/0a9571566c.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  <script src="parallax.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 </head>
 
@@ -26,7 +25,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
-          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo" />
+          <img src="images/logotyp namn_black.svg" alt="Logo" class="logo">
         </a>
         <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,11 +34,14 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="index.html#projects">PROJECTS</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">CONTACT</a></li>
             <li class="nav-item">
-              <a href="index.html#about" class="btn btn-outline-dark nav-btn">ABOUT</a>
+              <a href="index.html#about" class="nav-link btn btn-outline-dark nav-btn "><span
+                  class="underline-text">ABOUT</span></a>
             </li>
           </ul>
+          <!-- Close button for mobile menu -->
+          <button id="mobile-menu-close" aria-label="Close menu" style="display:none;">&#x2715;</button>
         </div>
       </nav>
     </header>
@@ -48,34 +50,33 @@
       <section id="introduction" class="mb-5 text-center">
         <h1>Bookstore Business Cards</h1>
         <div class="marquee-container">
-          <ul class="marquee-text">
+          <ul class="marquee-text custom-bullets">
             <li>Business Cards</li>
-            <li>Adobe Illustrator</li>
-            <li>InDesign</li>
+            <li>Affinity Designer</li>
             <li>Typography</li>
             <li>Brand Identity</li>
           </ul>
         </div>
-        <img src="images/bookstore_card.jpg" alt="Bookstore Business Cards" class="img-fluid my-4" style="max-height: 500px; object-fit: contain;" />
-        <p class="lead">
-          This project involved designing four distinct business cards, each containing complete contact details including title, name, postal address, phone, and email.
+        <img src="images/bookstore_card.webp" alt="Bookstore Business Cards" class="img-fluid my-4"
+         />
+        <p class="lead scroll-slide-in-up">
+          This project involved designing business cards, containing complete contact details
+          including title, name, postal address, phone, and email. Typography choices ensure readability and clarity.
         </p>
         <p>
-          The cards differ clearly from each other through typography, color, and placement of graphic elements. The size of the cards is 90 x 55 mm or 55 x 90 mm, with some cards having front and back sides.
+          The design reflects the bookstore theme with a simple color palette of dusty rose background and bookish brown
+          text and logo, emphasizing the content and evoking a classic, literary feel. The Garamond font was chosen for
+          its classic style fitting the bookstore concept.
         </p>
         <p>
-          Typography choices ensure readability and clarity, with at least one card featuring a portrait created in Illustrator. Two cards use at least two colors beyond white, gray, and black, while one card is black and white.
+          Typography hierarchy was carefully considered to highlight important information such as name and title, with
+          smaller text for contact details accompanied by icons for clarity.
         </p>
-        <p>
-          The design reflects the bookstore theme with a simple color palette of dusty rose background and bookish brown text and logo, emphasizing the content and evoking a classic, literary feel. The Garamond font was chosen for its classic style fitting the bookstore concept.
-        </p>
-        <p>
-          Typography hierarchy was carefully considered to highlight important information such as name and title, with smaller text for contact details accompanied by icons for clarity.
-        </p>
+       
       </section>
     </main>
 
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-black text-white py-4">
       <div class="container">
         <div class="row align-items-center">
           <!-- Footer Brand -->
@@ -83,37 +84,36 @@
             <img src="images/logotyp namn_white.svg" alt="Footer Logo" class="footer-logo"
               style="max-width: 100px; height: auto;">
           </div>
-  
+
           <!-- Footer Navigation -->
           <div class="col-md-4 text-center mb-3 mb-md-0">
             <ul class="list-inline mb-0">
               <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
               <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">About</a></li>
-              <li class="list-inline-item"><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+              <li class="list-inline-item"><a href="cv.html" class="text-white text-decoration-none">CV</a></li>
               <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
             </ul>
           </div>
-  
+
           <!-- Footer Social Media -->
           <div class="col-md-4 text-md-end text-center">
             <ul class="list-inline mb-0">
-              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-dribbble"></i></a></li>
               <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+
             </ul>
           </div>
         </div>
         <hr class="border-secondary my-3">
         <div class="text-center">
-          <p class="mb-0">&copy; 2025 Your Portfolio. All rights reserved.</p>
+          <p class="mb-0 text-light">&copy; 2025 FB Portfolio. All rights reserved.</p>
         </div>
       </div>
     </footer>
-  
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-  </body>
-  
-  </html>
+
+</body>
+
+</html>
