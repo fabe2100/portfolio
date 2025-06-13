@@ -144,24 +144,7 @@ detail-item p {
   display: block;
 }
 
-.detail-pair img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
 
-/* Fade-in Animation */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 /* Responsivitet */
 @media (max-width: 768px) {
@@ -237,26 +220,12 @@ body {
   color: rgb(0, 0, 0);
 }
 
-/* Typography Scaling */
-.hero-title {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-  color: black;
-}
 
 .hero-subtitle {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   margin-bottom: 2.5rem;
   max-width: 600px;
 
-}
-
-/* Button Group */
-.hero-buttons {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .btn {
@@ -287,11 +256,6 @@ body {
 
   .hero-video video {
     display: none;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    width: 100%;
   }
 
   .btn {
@@ -333,9 +297,7 @@ body {
 }
 
 @media (max-width: 480px) {
-  .hero-title {
-    margin-bottom: 1rem;
-  }
+
 
   .hero-subtitle {
     margin-bottom: 2rem;
@@ -1131,10 +1093,7 @@ header {
   text-align: left;
 }
 
-.hero-title {
-  font-size: 3rem;
-  font-weight: bold;
-}
+
 
 .hero-description {
   font-size: 1.2rem;
@@ -2060,12 +2019,6 @@ body {
   opacity: 0;
 }
 
-.scroll-fade-in {
-  animation-name: fadeIn;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
 
 .scroll-scale-up {
   animation-name: scaleUp;
@@ -2308,4 +2261,5 @@ ul.custom-bullets li::before {
     vertical-align: middle;
   }
 }
+
 
