@@ -2263,3 +2263,26 @@ ul.custom-bullets li::before {
 }
 
 
+
+@media (min-width: 768px) {
+  .responsive-video  {
+    max-width: 42vw;
+    max-height: 80vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .responsive-video {
+    max-width: 90vw;
+    max-height: 40vh;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.prototype-video{
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+}
+
