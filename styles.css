@@ -2168,6 +2168,32 @@ body {
   }
 }
 
+.tools {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 0rem;
+}
+.tools h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+.tool-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.tool-icons img {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.tool-icons img:hover {
+  transform: scale(1.1);
+}
+
 /*li::marker {
     content: "*";
   font-size: 48px;
